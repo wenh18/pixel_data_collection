@@ -1,0 +1,12 @@
+{
+  "tag": "2023-06-03_214836",
+  "event": {
+    "event_type": "intent",
+    "log_lines": null,
+    "prompt": null,
+    "intent": "am start com.simplemobiletools.calendar.pro/com.simplemobiletools.calendar.pro.activities.SplashActivity.Orange"
+  },
+  "start_state": "845248ae17772c01397603d1fe9763e9",
+  "stop_state": "7b7d278f7014434b925bc645f9fc7a85",
+  "event_str": "IntentEvent(intent='am start com.simplemobiletools.calendar.pro/com.simplemobiletools.calendar.pro.activities.SplashActivity.Orange')"
+}

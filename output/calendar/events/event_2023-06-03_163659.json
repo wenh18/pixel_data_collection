@@ -1,0 +1,51 @@
+{
+  "tag": "2023-06-03_163659",
+  "event": {
+    "event_type": "set_text",
+    "log_lines": null,
+    "prompt": null,
+    "view": {
+      "package": "com.simplemobiletools.calendar.pro",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": true,
+      "clickable": true,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          196,
+          164
+        ],
+        [
+          838,
+          332
+        ]
+      ],
+      "resource_id": "com.simplemobiletools.calendar.pro:id/top_toolbar_search",
+      "checked": false,
+      "text": "Search",
+      "class": "android.widget.EditText",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": true,
+      "parent": 8,
+      "temp_id": 10,
+      "size": "642*168",
+      "signature": "[class]android.widget.EditText[resource_id]com.simplemobiletools.calendar.pro:id/top_toolbar_search[text]Search[enabled,,]",
+      "view_str": "2a2fa7feac345d7bc204e6837754bd61",
+      "content_free_signature": "[class]android.widget.EditText[resource_id]com.simplemobiletools.calendar.pro:id/top_toolbar_search"
+    },
+    "x": null,
+    "y": null,
+    "text": "hello"
+  },
+  "start_state": "7b7d278f7014434b925bc645f9fc7a85",
+  "stop_state": "2d3ed7f8e10777b8dbae46a4a9cd618b",
+  "event_str": "SetTextEvent(state=7b7d278f7014434b925bc645f9fc7a85, view=2a2fa7feac345d7bc204e6837754bd61(MainActivity/EditText-Search), text=hello)"
+}

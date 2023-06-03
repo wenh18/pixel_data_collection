@@ -1,0 +1,55 @@
+{
+  "tag": "2023-06-03_215002",
+  "event": {
+    "event_type": "scroll",
+    "log_lines": null,
+    "prompt": null,
+    "view": {
+      "package": "com.simplemobiletools.calendar.pro",
+      "visible": true,
+      "checkable": false,
+      "child_count": 3,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [
+        12,
+        13,
+        14
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          314,
+          1131
+        ],
+        [
+          538,
+          1761
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.NumberPicker",
+      "scrollable": true,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 10,
+      "temp_id": 11,
+      "size": "224*630",
+      "signature": "[class]android.widget.NumberPicker[resource_id]None[text]None[enabled,,]",
+      "view_str": "38337353fd9f6876aedbf583e6735020",
+      "content_free_signature": "[class]android.widget.NumberPicker[resource_id]None"
+    },
+    "x": null,
+    "y": null,
+    "direction": "DOWN"
+  },
+  "start_state": "31c6cd64efef72182bc18ea1faa4fb49",
+  "stop_state": "31c6cd64efef72182bc18ea1faa4fb49",
+  "event_str": "ScrollEvent(state=31c6cd64efef72182bc18ea1faa4fb49, view=38337353fd9f6876aedbf583e6735020(MainActivity/NumberPicker-), direction=DOWN)"
+}

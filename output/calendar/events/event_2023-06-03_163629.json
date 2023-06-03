@@ -1,0 +1,50 @@
+{
+  "tag": "2023-06-03_163629",
+  "event": {
+    "event_type": "click",
+    "log_lines": null,
+    "prompt": null,
+    "view": {
+      "package": "com.simplemobiletools.calendar.pro",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "content_description": "Change view",
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          894,
+          164
+        ],
+        [
+          1062,
+          332
+        ]
+      ],
+      "resource_id": "com.simplemobiletools.calendar.pro:id/change_view",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.Button",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 12,
+      "temp_id": 13,
+      "size": "168*168",
+      "signature": "[class]android.widget.Button[resource_id]com.simplemobiletools.calendar.pro:id/change_view[text]None[enabled,,]",
+      "view_str": "e1a29581953af57027994ef7089c3b43",
+      "content_free_signature": "[class]android.widget.Button[resource_id]com.simplemobiletools.calendar.pro:id/change_view"
+    },
+    "x": null,
+    "y": null
+  },
+  "start_state": "045bc057095315400dfed2f2fed3ef4a",
+  "stop_state": "a8b9e4ee1a882f59cf797f7a182577f9",
+  "event_str": "TouchEvent(state=045bc057095315400dfed2f2fed3ef4a, view=e1a29581953af57027994ef7089c3b43(MainActivity/Button-))"
+}

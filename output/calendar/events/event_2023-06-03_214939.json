@@ -1,0 +1,51 @@
+{
+  "tag": "2023-06-03_214939",
+  "event": {
+    "event_type": "set_text",
+    "log_lines": null,
+    "prompt": null,
+    "view": {
+      "package": "com.simplemobiletools.calendar.pro",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": true,
+      "clickable": true,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          314,
+          1362
+        ],
+        [
+          538,
+          1530
+        ]
+      ],
+      "resource_id": "android:id/numberpicker_input",
+      "checked": false,
+      "text": "May",
+      "class": "android.widget.EditText",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": true,
+      "parent": 11,
+      "temp_id": 13,
+      "size": "224*168",
+      "signature": "[class]android.widget.EditText[resource_id]android:id/numberpicker_input[text]May[enabled,,]",
+      "view_str": "837f0ba97c2605a3b5c3549df02579f3",
+      "content_free_signature": "[class]android.widget.EditText[resource_id]android:id/numberpicker_input"
+    },
+    "x": null,
+    "y": null,
+    "text": "Jun"
+  },
+  "start_state": "f752c6f9f8697a1b85486d372299fcce",
+  "stop_state": "f752c6f9f8697a1b85486d372299fcce",
+  "event_str": "SetTextEvent(state=f752c6f9f8697a1b85486d372299fcce, view=837f0ba97c2605a3b5c3549df02579f3(MainActivity/EditText-May), text=Jun)"
+}

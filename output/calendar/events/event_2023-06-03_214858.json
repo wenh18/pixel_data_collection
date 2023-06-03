@@ -1,0 +1,50 @@
+{
+  "tag": "2023-06-03_214858",
+  "event": {
+    "event_type": "click",
+    "log_lines": null,
+    "prompt": null,
+    "view": {
+      "package": "com.simplemobiletools.calendar.pro",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "content_description": "June 3 (Sat)",
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          196,
+          388
+        ],
+        [
+          1244,
+          575
+        ]
+      ],
+      "resource_id": "com.simplemobiletools.calendar.pro:id/top_value",
+      "checked": false,
+      "text": "June 3 (Sat)",
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 26,
+      "temp_id": 28,
+      "size": "1048*187",
+      "signature": "[class]android.widget.TextView[resource_id]com.simplemobiletools.calendar.pro:id/top_value[text]June 3 (Sat)[enabled,,]",
+      "view_str": "035e7a66b75e0781cc74a15823ff3824",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]com.simplemobiletools.calendar.pro:id/top_value"
+    },
+    "x": null,
+    "y": null
+  },
+  "start_state": "7b7d278f7014434b925bc645f9fc7a85",
+  "stop_state": "2dececddc392b6cb3370e5c05b76f808",
+  "event_str": "TouchEvent(state=7b7d278f7014434b925bc645f9fc7a85, view=035e7a66b75e0781cc74a15823ff3824(MainActivity/TextView-June 3 (Sa))"
+}

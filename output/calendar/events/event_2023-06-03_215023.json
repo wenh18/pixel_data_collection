@@ -1,0 +1,50 @@
+{
+  "tag": "2023-06-03_215023",
+  "event": {
+    "event_type": "click",
+    "log_lines": null,
+    "prompt": null,
+    "view": {
+      "package": "com.simplemobiletools.calendar.pro",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "content_description": "May 31 (Wed)",
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          196,
+          388
+        ],
+        [
+          1244,
+          575
+        ]
+      ],
+      "resource_id": "com.simplemobiletools.calendar.pro:id/top_value",
+      "checked": false,
+      "text": "May 31 (Wed)",
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 26,
+      "temp_id": 28,
+      "size": "1048*187",
+      "signature": "[class]android.widget.TextView[resource_id]com.simplemobiletools.calendar.pro:id/top_value[text]May 31 (Wed)[enabled,,]",
+      "view_str": "840cf7238ca94c9f20c49916abcef968",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]com.simplemobiletools.calendar.pro:id/top_value"
+    },
+    "x": null,
+    "y": null
+  },
+  "start_state": "31c6cd64efef72182bc18ea1faa4fb49",
+  "stop_state": "f752c6f9f8697a1b85486d372299fcce",
+  "event_str": "TouchEvent(state=31c6cd64efef72182bc18ea1faa4fb49, view=840cf7238ca94c9f20c49916abcef968(MainActivity/TextView-May 31 (We))"
+}
