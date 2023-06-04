@@ -1,0 +1,50 @@
+{
+  "tag": "2023-06-04_115803",
+  "event": {
+    "event_type": "click",
+    "log_lines": null,
+    "prompt": null,
+    "view": {
+      "package": "com.simplemobiletools.calendar.pro",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": "10 May 2023",
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          650,
+          1499
+        ],
+        [
+          790,
+          1639
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": "10",
+      "class": "android.view.View",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 47,
+      "temp_id": 57,
+      "size": "140*140",
+      "signature": "[class]android.view.View[resource_id]None[text]10[enabled,,]",
+      "view_str": "02610af8919cf961b451697497811be1",
+      "content_free_signature": "[class]android.view.View[resource_id]None"
+    },
+    "x": null,
+    "y": null
+  },
+  "start_state": "29dd4ec119e4e045d64cfd4d57b3ad46",
+  "stop_state": "141dfa57908978e614e8b76de27bcf9c",
+  "event_str": "TouchEvent(state=29dd4ec119e4e045d64cfd4d57b3ad46, view=02610af8919cf961b451697497811be1(TaskActivity/View-10))"
+}

@@ -1,0 +1,50 @@
+{
+  "tag": "2023-06-04_115905",
+  "event": {
+    "event_type": "click",
+    "log_lines": null,
+    "prompt": null,
+    "view": {
+      "package": "com.simplemobiletools.calendar.pro",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": "20",
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          922,
+          1736
+        ],
+        [
+          1062,
+          1876
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.RadialTimePickerView$RadialPickerTouchHelper",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 15,
+      "temp_id": 20,
+      "size": "140*140",
+      "signature": "[class]android.widget.RadialTimePickerView$RadialPickerTouchHelper[resource_id]None[text]None[enabled,,]",
+      "view_str": "f0cad24b22bdddf12ab3fb7f379ef6b1",
+      "content_free_signature": "[class]android.widget.RadialTimePickerView$RadialPickerTouchHelper[resource_id]None"
+    },
+    "x": null,
+    "y": null
+  },
+  "start_state": "51430d252fd2e3104670e3149c3f9a78",
+  "stop_state": "d05549682dc082922adec09c0ff5a9af",
+  "event_str": "TouchEvent(state=51430d252fd2e3104670e3149c3f9a78, view=f0cad24b22bdddf12ab3fb7f379ef6b1(TaskActivity/RadialTimePickerView$RadialPickerTouchHelper-))"
+}

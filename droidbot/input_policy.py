@@ -4,7 +4,7 @@ import re
 import logging
 import random
 from abc import abstractmethod
-
+import yaml
 from .input_event import *
 from .utg import UTG
 
@@ -762,6 +762,39 @@ class TaskPolicy(UtgBasedInputPolicy):
             return None, candidate_actions
         idx = int(match.group(0))
         selected_action = candidate_actions[idx]
+
+        import hashlib
+        task_hash = hashlib.md5(self.task.encode('utf-8')).hexdigest()
+
+        file_name = self.device.output_dir +'/'+ task_hash + '.yaml' #str(str(time.time()).replace('.', ''))
+
+        if not os.path.exists(file_name):
+            tmp_data = {
+            'task_name': self.task,
+            'step_num': 0,
+            'records': []
+            }
+            with open(file_name, 'w', encoding='utf-8') as f:
+                yaml.dump(tmp_data, f)
+
+        with open(file_name, 'r', encoding='utf-8') as f:
+            old_yaml_data = yaml.safe_load(f)
+        
+        new_records = old_yaml_data['records']
+        new_records.append(
+                {'State': state_prompt,
+                'Choice': idx,
+                'Input': 'null'}
+            )
+        # import pdb;pdb.set_trace()
+        data = {
+            'task_name': self.task,
+            'step_num': len(list(old_yaml_data['records'])),
+            'records': new_records
+        }
+        with open(file_name, 'w', encoding='utf-8') as f:
+            yaml.dump(data, f)
+
         if isinstance(selected_action, SetTextEvent):
             view_text = current_state.get_view_desc(selected_action.view)
             # question = f'What text should I enter to the {view_text}? Just return the text and nothing else.'
@@ -770,9 +803,25 @@ class TaskPolicy(UtgBasedInputPolicy):
             # response = self._query_llm(prompt)
             response = input(f"input into the element {view_text}: ")
             print(f'response: {response}')
-            selected_action.text = response.replace('"', '')#.replace(' ', '-')
+            selected_action.text = response.replace('"', '').replace(' ', '-')
             if len(selected_action.text) > 30:  # heuristically disable long text input
                 selected_action.text = ''
+
+            new_records = old_yaml_data['records']
+            new_records.append(
+                {'State': state_prompt,
+                'Choice': idx,
+                'Input': selected_action.text}
+            )
+            data = {
+            'task_name': self.task,
+            'step_num': len(list(old_yaml_data['records'])),
+            'records': new_records
+            }
+
+            with open(file_name, 'w', encoding='utf-8') as f:
+                yaml.dump(data, f)
+
         return selected_action, candidate_actions
         # except:
         #     import traceback

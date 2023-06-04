@@ -315,10 +315,10 @@ Registered ContentProviders:
 ContentProvider Authorities:
   [com.simplemobiletools.calendar.pro.provider]:
     Provider{e2117b0 com.simplemobiletools.calendar.pro/androidx.core.content.FileProvider}
-      applicationInfo=ApplicationInfo{edf03d2 com.simplemobiletools.calendar.pro}
+      applicationInfo=ApplicationInfo{52df3d0 com.simplemobiletools.calendar.pro}
   [com.simplemobiletools.calendar.pro.androidx-startup]:
     Provider{b6ee629 com.simplemobiletools.calendar.pro/androidx.startup.InitializationProvider}
-      applicationInfo=ApplicationInfo{e8acca3 com.simplemobiletools.calendar.pro}
+      applicationInfo=ApplicationInfo{7ba5fc9 com.simplemobiletools.calendar.pro}
 
 Key Set Manager:
   [com.simplemobiletools.calendar.pro]
@@ -392,7 +392,7 @@ Queries:
         com.simplemobiletools.calendar.pro
 
 Package Changes:
-  Sequence number=315
+  Sequence number=317
   User 0:
     seq=0, package=com.android.permissioncontroller
     seq=1, package=com.android.systemui
@@ -415,8 +415,8 @@ Package Changes:
     seq=302, package=com.simplemobiletools.smsmessenger
     seq=303, package=com.simplemobiletools.filemanager.pro
     seq=311, package=com.android.settings
-    seq=313, package=com.google.android.gms
     seq=314, package=com.simplemobiletools.calendar.pro
+    seq=316, package=com.google.android.gms
 
 
 Dexopt state:

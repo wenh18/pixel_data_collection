@@ -643,7 +643,7 @@ class DeviceState(object):
             else:
                 view_descs.append(text_frame.replace('@', str(len(view_descs))).replace('&', view_class).replace('#', text))
                 available_actions.append(TouchEvent(view=view))
-        view_descs.append("<button id=len(view_descs) class='ImageButton'>go back</button>")
+        view_descs.append(f"<button id={len(view_descs)} class='ImageButton'>go back</button>")
         available_actions.append(KeyEvent(name='BACK'))
         # state_desc = 'The current state has the following UI elements: \n' #views and corresponding actions, with action id in parentheses:\n '
         state_desc = prefix

@@ -1,0 +1,50 @@
+{
+  "tag": "2023-06-04_115754",
+  "event": {
+    "event_type": "click",
+    "log_lines": null,
+    "prompt": null,
+    "view": {
+      "package": "com.simplemobiletools.calendar.pro",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "content_description": "Previous month",
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          216,
+          1051
+        ],
+        [
+          384,
+          1219
+        ]
+      ],
+      "resource_id": "android:id/prev",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.ImageButton",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 14,
+      "temp_id": 111,
+      "size": "168*168",
+      "signature": "[class]android.widget.ImageButton[resource_id]android:id/prev[text]None[enabled,,]",
+      "view_str": "05b09ec94caa7731465657cddda5999c",
+      "content_free_signature": "[class]android.widget.ImageButton[resource_id]android:id/prev"
+    },
+    "x": null,
+    "y": null
+  },
+  "start_state": "29dd4ec119e4e045d64cfd4d57b3ad46",
+  "stop_state": "29dd4ec119e4e045d64cfd4d57b3ad46",
+  "event_str": "TouchEvent(state=29dd4ec119e4e045d64cfd4d57b3ad46, view=05b09ec94caa7731465657cddda5999c(TaskActivity/ImageButton-))"
+}
