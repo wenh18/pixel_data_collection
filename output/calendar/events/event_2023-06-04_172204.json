@@ -1,0 +1,50 @@
+{
+  "tag": "2023-06-04_172204",
+  "event": {
+    "event_type": "click",
+    "log_lines": null,
+    "prompt": null,
+    "view": {
+      "package": "com.simplemobiletools.calendar.pro",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          998,
+          2350
+        ],
+        [
+          1188,
+          2463
+        ]
+      ],
+      "resource_id": "com.simplemobiletools.calendar.pro:id/fab_task_label",
+      "checked": false,
+      "text": "Task",
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 17,
+      "temp_id": 166,
+      "size": "190*113",
+      "signature": "[class]android.widget.TextView[resource_id]com.simplemobiletools.calendar.pro:id/fab_task_label[text]Task[enabled,,]",
+      "view_str": "7272e0be759313f572736635bed75d56",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]com.simplemobiletools.calendar.pro:id/fab_task_label"
+    },
+    "x": null,
+    "y": null
+  },
+  "start_state": "106060e167479e2e2f11ef1e982d3370e9c978df5c9fce2e9b902b8ba4cdf754",
+  "stop_state": "af715739ebe02a377b229a4de9beb5f77f510dedc6f63f5f62b2c902c59d05d8",
+  "event_str": "TouchEvent(state=106060e167479e2e2f11ef1e982d3370e9c978df5c9fce2e9b902b8ba4cdf754, view=7272e0be759313f572736635bed75d56(MainActivity/TextView-Task))"
+}

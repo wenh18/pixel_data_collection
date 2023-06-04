@@ -1,6 +1,6 @@
 {
-  "tag": "2023-06-04_171022",
-  "state_str": "4578597a3a5b8d1c76265526d1895870aef4cad94e5016c286599b2bb92819aa",
+  "tag": "2023-06-04_172149",
+  "state_str": "39d649cc169ac57f3816ed34a5b529a16a46704f6d270c3e5265f94fc4a3f522",
   "state_str_content_free": "f1bd02e8803c5c575526ecfe0fc6ec82",
   "foreground_activity": "com.simplemobiletools.calendar.pro/.activities.MainActivity",
   "activity_stack": [
@@ -39,7 +39,6 @@
     "com.android.systemui/.SystemUIService",
     "android/.hardware.location.GeofenceHardwareService",
     "com.android.se/.SecureElementService",
-    "com.google.android.gms/.chimera.GmsIntentOperationService",
     "com.google.android.gms/.chimera.PersistentDirectBootAwareApiService",
     "com.android.bluetooth/.hid.HidDeviceService",
     "com.google.android.gms/.location.persistent.LocationPersistentService",
@@ -74,8 +73,7 @@
     "com.android.bluetooth/.pan.PanService",
     "com.google.android.gms/com.google.android.location.reporting.service.LocationHistoryInjectorService",
     "com.android.bluetooth/.avrcp.AvrcpTargetService",
-    "android.ext.services/.autofill.InlineSuggestionRenderServiceImpl",
-    "com.google.android.gms/.chimera.GmsIntentOperationService"
+    "android.ext.services/.autofill.InlineSuggestionRenderServiceImpl"
   ],
   "width": 1440,
   "height": 3120,

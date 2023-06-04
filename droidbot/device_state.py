@@ -38,7 +38,7 @@ class DeviceState(object):
         return self.foreground_activity.split('.')[-1]
 
     def __get_hashed_state_str(self):
-        state, _ = self.get_content_free_described_actions()
+        state, _ = self.get_described_actions()
         # Convert the string to bytes before hashing
         byte_string = state.encode()
 
@@ -751,7 +751,7 @@ class DeviceState(object):
             if not content_description and not view_text and not scrollable:  # actionable?
                 continue
             
-            # text = self._merge_text(view_text, content_description)
+            text = self._merge_text(view_text, content_description)
             # view_status = ''
             if editable:
                 # view_status += 'editable '

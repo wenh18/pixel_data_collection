@@ -1,5 +1,5 @@
 records:
-- Choice: 3
+- Choice: 6
   Input: 'null'
   State: "<input id=0 class='EditText'>Search </input>\n <button id=1 class='Button'>Change\
     \ view</button>\n <button id=2 class='Button'>Filter events by type</button>\n\
@@ -9,45 +9,52 @@ records:
     \ id=8 class='Button'>Birthdays </button>\n <button id=9 class='Button'>Holidays\
     \ </button>\n <button id=10 class='Button'>Regular event </button>\n <button id=11\
     \ class='ImageButton'>go back</button>"
-  state_str: 4578597a3a5b8d1c76265526d1895870aef4cad94e5016c286599b2bb92819aa
+  state_str: 39d649cc169ac57f3816ed34a5b529a16a46704f6d270c3e5265f94fc4a3f522
+- Choice: 6
+  Input: 'null'
+  State: "<input id=0 class='EditText'>Search </input>\n <button id=1 class='Button'>Change\
+    \ view</button>\n <button id=2 class='Button'>Filter events by type</button>\n\
+    \ <button id=3 class='ImageView'>More options</button>\n <button id=4 class='b'></button>\n\
+    \ <button id=5 class='TextView'>June June</button>\n <button id=6 class='TextView'>Task\
+    \ </button>\n <button id=7 class='TextView'>Event </button>\n <button id=8 class='ImageButton'>New\
+    \ Event</button>\n <button id=9 class='Button'>Anniversaries </button>\n <button\
+    \ id=10 class='Button'>Birthdays </button>\n <button id=11 class='Button'>Holidays\
+    \ </button>\n <button id=12 class='Button'>Regular event </button>\n <button id=13\
+    \ class='ImageButton'>go back</button>"
+  state_str: 106060e167479e2e2f11ef1e982d3370e9c978df5c9fce2e9b902b8ba4cdf754
+- Choice: 2
+  Input: 'null'
+  State: "<p id=0 class='TextView'>New Task </p>\n <button id=1 class='Button'>Save</button>\n\
+    \ <input id=2 class='EditText'>Title </input>\n <input id=3 class='EditText'>Description\
+    \ </input>\n <button id=4 class='CheckBox'>All-day </button>\n <button id=5 class='TextView'>June\
+    \ 4 (Sun) </button>\n <button id=6 class='TextView'>18:00 </button>\n <button\
+    \ id=7 class='TextView'>10 minutes before </button>\n <button id=8 class='TextView'>Add\
+    \ another reminder </button>\n <button id=9 class='TextView'>No repetition </button>\n\
+    \ <button id=10 class='TextView'>Task color </button>\n <button id=11 class='TextView'>Regular\
+    \ event </button>\n <button id=12 class='ImageButton'>go back</button>"
+  state_str: af715739ebe02a377b229a4de9beb5f77f510dedc6f63f5f62b2c902c59d05d8
+- Choice: 2
+  Input: birthday
+  State: "<p id=0 class='TextView'>New Task </p>\n <button id=1 class='Button'>Save</button>\n\
+    \ <input id=2 class='EditText'>Title </input>\n <input id=3 class='EditText'>Description\
+    \ </input>\n <button id=4 class='CheckBox'>All-day </button>\n <button id=5 class='TextView'>June\
+    \ 4 (Sun) </button>\n <button id=6 class='TextView'>18:00 </button>\n <button\
+    \ id=7 class='TextView'>10 minutes before </button>\n <button id=8 class='TextView'>Add\
+    \ another reminder </button>\n <button id=9 class='TextView'>No repetition </button>\n\
+    \ <button id=10 class='TextView'>Task color </button>\n <button id=11 class='TextView'>Regular\
+    \ event </button>\n <button id=12 class='ImageButton'>go back</button>"
+  state_str: af715739ebe02a377b229a4de9beb5f77f510dedc6f63f5f62b2c902c59d05d8
 - Choice: 1
   Input: 'null'
-  State: "<button id=0 class='TextView'>Go to date </button>\n <button id=1 class='TextView'>Print\
-    \ </button>\n <button id=2 class='TextView'>Add holidays </button>\n <button id=3\
-    \ class='TextView'>Add contact birthdays </button>\n <button id=4 class='TextView'>Add\
-    \ contact anniversaries </button>\n <button id=5 class='TextView'>Import events\
-    \ from an .ics file </button>\n <button id=6 class='TextView'>Export events to\
-    \ an .ics file </button>\n <button id=7 class='TextView'>Settings </button>\n\
-    \ <button id=8 class='TextView'>About </button>\n <button id=9 class='ImageButton'>go\
-    \ back</button>"
-  state_str: 6108cee72831b294b3485ccdc1e71f75e41948770adc7b15e2c1da35ea42eec3
-- Choice: 10
-  Input: 'null'
-  State: "<button id=0 class='FrameLayout'>Expand handle</button>\n <button id=1 class='Spinner'></button>\n\
-    \ <button id=2 class='TextView'>Save as PDF </button>\n <button id=3 class='LinearLayout'>Summary,\
-    \ copies 1, paper size Letter</button>\n <button id=4 class='TextView'>Copies:\
-    \ </button>\n <button id=5 class='TextView'>1 </button>\n <button id=6 class='TextView'>Paper\
-    \ size: </button>\n <button id=7 class='TextView'>Letter </button>\n <button id=8\
-    \ class='CompoundButton'>Page 1 of 1</button>\n <button id=9 class='TextView'>1/1\
-    \ </button>\n <button id=10 class='ImageButton'>Save to PDF</button>\n <button\
-    \ id=11 class='ImageButton'>go back</button>"
-  state_str: aaef41704fcd9d00f2eee6f2cb53bc7c5584722a963dc9ef034e1f3786237e08
-- Choice: 21
-  Input: 'null'
-  State: "<p id=0 class='TextView'>Downloads </p>\n <p id=1 class='TextView'>Downloads\
-    \ </p>\n <p id=2 class='TextView'>FILES IN DOWNLOADS </p>\n <button id=3 class='TextView'>List\
-    \ view</button>\n <button id=4 class='ImageButton'>Show roots</button>\n <p id=5\
-    \ class='TextView'>Downloads </p>\n <button id=6 class='TextView'>New folder</button>\n\
-    \ <button id=7 class='ImageView'>More options</button>\n <p id=8 class='TextView'>Simple\
-    \ Calendar (3).pdf </p>\n <p id=9 class='TextView'>80.29 kB </p>\n <p id=10 class='TextView'>5:08\
-    \ PM </p>\n <p id=11 class='TextView'>Simple Calendar (2).pdf </p>\n <p id=12\
-    \ class='TextView'>80.29 kB </p>\n <p id=13 class='TextView'>5:00 PM </p>\n <p\
-    \ id=14 class='TextView'>Simple Calendar (1).pdf </p>\n <p id=15 class='TextView'>80.29\
-    \ kB </p>\n <p id=16 class='TextView'>4:43 PM </p>\n <p id=17 class='TextView'>Simple\
-    \ Calendar.pdf </p>\n <p id=18 class='TextView'>69.74 kB </p>\n <p id=19 class='TextView'>3:40\
-    \ PM </p>\n <input id=20 class='EditText'>Simple Calendar </input>\n <button id=21\
-    \ class='Button'>SAVE </button>\n <button id=22 class='ImageButton'>go back</button>"
-  state_str: fda5939974e56a65e5b506effd44cc05250333ad142be4767602a94c62d6c071
+  State: "<p id=0 class='TextView'>New Task </p>\n <button id=1 class='Button'>Save</button>\n\
+    \ <input id=2 class='EditText'>birthday </input>\n <input id=3 class='EditText'>Description\
+    \ </input>\n <button id=4 class='CheckBox'>All-day </button>\n <button id=5 class='TextView'>June\
+    \ 4 (Sun) </button>\n <button id=6 class='TextView'>18:00 </button>\n <button\
+    \ id=7 class='TextView'>10 minutes before </button>\n <button id=8 class='TextView'>Add\
+    \ another reminder </button>\n <button id=9 class='TextView'>No repetition </button>\n\
+    \ <button id=10 class='TextView'>Task color </button>\n <button id=11 class='TextView'>Regular\
+    \ event </button>\n <button id=12 class='ImageButton'>go back</button>"
+  state_str: 410e8959a2ce7b0926dd9d9cad5d310b05491bcd47a72d69bb1df19f4a92c5ee
 - Choice: -1
   Input: 'null'
   State: "<input id=0 class='EditText'>Search </input>\n <button id=1 class='Button'>Change\
@@ -58,6 +65,6 @@ records:
     \ id=8 class='Button'>Birthdays </button>\n <button id=9 class='Button'>Holidays\
     \ </button>\n <button id=10 class='Button'>Regular event </button>\n <button id=11\
     \ class='ImageButton'>go back</button>"
-  state_str: 4578597a3a5b8d1c76265526d1895870aef4cad94e5016c286599b2bb92819aa
-step_num: 5
+  state_str: 39d649cc169ac57f3816ed34a5b529a16a46704f6d270c3e5265f94fc4a3f522
+step_num: 6
 task_name: print out the calendar of June as PDF

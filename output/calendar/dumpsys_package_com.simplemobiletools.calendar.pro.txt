@@ -315,10 +315,10 @@ Registered ContentProviders:
 ContentProvider Authorities:
   [com.simplemobiletools.calendar.pro.provider]:
     Provider{d346aae com.simplemobiletools.calendar.pro/androidx.core.content.FileProvider}
-      applicationInfo=ApplicationInfo{c54afcb com.simplemobiletools.calendar.pro}
+      applicationInfo=ApplicationInfo{bf5b8b2 com.simplemobiletools.calendar.pro}
   [com.simplemobiletools.calendar.pro.androidx-startup]:
     Provider{866a04f com.simplemobiletools.calendar.pro/androidx.startup.InitializationProvider}
-      applicationInfo=ApplicationInfo{fa0e3a8 com.simplemobiletools.calendar.pro}
+      applicationInfo=ApplicationInfo{1921003 com.simplemobiletools.calendar.pro}
 
 Key Set Manager:
   [com.simplemobiletools.calendar.pro]
