@@ -4,7 +4,7 @@ import os
 
 from .utils import md5
 from .input_event import TouchEvent, LongTouchEvent, ScrollEvent, SetTextEvent, KeyEvent, UIEvent
-
+import hashlib
 
 class DeviceState(object):
     """
@@ -26,7 +26,7 @@ class DeviceState(object):
         self.view_tree = {}
         self.__assemble_view_tree(self.view_tree, self.views)
         self.__generate_view_strs()
-        self.state_str = self.__get_state_str()
+        self.state_str = self.__get_hashed_state_str()
         self.structure_str = self.__get_content_free_state_str()
         self.search_content = self.__get_search_content()
         self.possible_events = None
@@ -36,6 +36,19 @@ class DeviceState(object):
     @property
     def activity_short_name(self):
         return self.foreground_activity.split('.')[-1]
+
+    def __get_hashed_state_str(self):
+        state, _ = self.get_content_free_described_actions()
+        # Convert the string to bytes before hashing
+        byte_string = state.encode()
+
+        # Create a hash object using the SHA-256 algorithm
+        hash_obj = hashlib.sha256(byte_string)
+
+        # Get the hashed value as a hexadecimal string
+        hashed_string = hash_obj.hexdigest()
+
+        return hashed_string
 
     def to_dict(self):
         state = {'tag': self.tag,
@@ -703,5 +716,65 @@ class DeviceState(object):
                 desc = view_desc + '.click()'
             # desc = f'- {action_name} {self.get_view_desc(action.view)}'
         return desc
+    
+    def get_content_free_described_actions(self):
+        enabled_view_ids = []
+        for view_dict in self.views:
+            # exclude navigation bar if exists
+            if self.__safe_dict_get(view_dict, 'visible') and \
+                self.__safe_dict_get(view_dict, 'resource_id') not in \
+               ['android:id/navigationBarBackground',
+                'android:id/statusBarBackground']:
+                enabled_view_ids.append(view_dict['temp_id'])
+        
+        text_frame = "<p id=@ class='&'></p>"
+        btn_frame = "<button id=@ class='&'></button>"
+        input_frame = "<input id=@ class='&'></input>"
+        scroll_down_frame = "<div id=@ class='scroller'>scroll down</div>"
+        scroll_up_frame = "<div id=@ class='scroller'>scroll up</div>"
+
+        view_descs = []
+        available_actions = []
+        for view_id in enabled_view_ids:
+            view = self.views[view_id]
+            clickable = self._get_self_ancestors_property(view, 'clickable')
+            scrollable = self.__safe_dict_get(view, 'scrollable')
+            checkable = self._get_self_ancestors_property(view, 'checkable')
+            long_clickable = self._get_self_ancestors_property(view, 'long_clickable')
+            editable = self.__safe_dict_get(view, 'editable')
+            actionable = clickable or scrollable or checkable or long_clickable or editable
+            checked = self.__safe_dict_get(view, 'checked')
+            selected = self.__safe_dict_get(view, 'selected')
+            content_description = self.__safe_dict_get(view, 'content_description', default='')
+            view_text = self.__safe_dict_get(view, 'text', default='')
+            view_class = self.__safe_dict_get(view, 'class').split('.')[-1]
+            if not content_description and not view_text and not scrollable:  # actionable?
+                continue
+            
+            # text = self._merge_text(view_text, content_description)
+            # view_status = ''
+            if editable:
+                # view_status += 'editable '
+                view_descs.append(input_frame.replace('@', str(len(view_descs))).replace('&', view_class))
+                available_actions.append(SetTextEvent(view=view, text='HelloWorld'))
+            elif (clickable or checkable or long_clickable):
+                view_descs.append(btn_frame.replace('@', str(len(view_descs))).replace('&', view_class))
+                available_actions.append(TouchEvent(view=view))
+            elif scrollable:
+                view_descs.append(scroll_up_frame.replace('@', str(len(view_descs))))#.replace('&', view_class).replace('#', text))
+                available_actions.append(ScrollEvent(view=view, direction='UP'))
+                view_descs.append(scroll_down_frame.replace('@', str(len(view_descs))))#.replace('&', view_class).replace('#', text))
+                available_actions.append(ScrollEvent(view=view, direction='DOWN'))
+            else:
+                view_descs.append(text_frame.replace('@', str(len(view_descs))).replace('&', view_class))
+                available_actions.append(TouchEvent(view=view))
+        view_descs.append(f"<button id=len(view_descs) class='ImageButton'>go back</button>")
+        available_actions.append(KeyEvent(name='BACK'))
+        # state_desc = 'The current state has the following UI elements: \n' #views and corresponding actions, with action id in parentheses:\n '
+        # state_desc = 'Given a screen, an instruction, predict the id of the UI element to perform the insturction. The screen has the following UI elements: \n'
+        # state_desc = 'You can perform actions on a contacts app, the current state of which has the following UI views and corresponding actions, with action id in parentheses:\n'
+        state_desc = '\n '.join(view_descs)
+        # import pdb;pdb.set_trace()
+        return state_desc, available_actions
 
 

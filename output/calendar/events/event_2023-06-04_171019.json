@@ -1,0 +1,12 @@
+{
+  "tag": "2023-06-04_171019",
+  "event": {
+    "event_type": "intent",
+    "log_lines": null,
+    "prompt": null,
+    "intent": "am start com.simplemobiletools.calendar.pro/com.simplemobiletools.calendar.pro.activities.SplashActivity.Orange"
+  },
+  "start_state": "13ba531b5367ab5bec642d91ee21a7f6a3c5809398013bccaaa38b0b777d330d",
+  "stop_state": "4578597a3a5b8d1c76265526d1895870aef4cad94e5016c286599b2bb92819aa",
+  "event_str": "IntentEvent(intent='am start com.simplemobiletools.calendar.pro/com.simplemobiletools.calendar.pro.activities.SplashActivity.Orange')"
+}

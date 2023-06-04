@@ -744,30 +744,8 @@ class TaskPolicy(UtgBasedInputPolicy):
         headers = {'Content-Type': 'application/json', 'path': 'v1/chat/completions'}
         r = requests.post(url=URL, json=body, headers=headers)
         return r.content.decode()
-
-    def _get_action_with_LLM(self, current_state, action_history):
-        # task_prompt = f"I'm using a smartphone to {self.task}."
-        # history_prompt = f'I have already completed the following steps, which should not be performed again: \n ' + ';\n '.join(action_history)
-        state_prompt, candidate_actions = current_state.get_described_actions()
-        # question = 'Which action should I choose next? Just return the action id and nothing else.\nIf no more action is needed, return -1.'
-        prompt = f'{state_prompt}'
-        print(prompt)
-        # response = self._query_llm(prompt)
-        response = input(f"UI element ID: ")
-        print(f'response: {response}')
-        if '-1' in response:
-            input(f"Seems the task is completed. Press Enter to continue...")
-        match = re.search(r'\d+', response)
-        if not match:
-            return None, candidate_actions
-        idx = int(match.group(0))
-        selected_action = candidate_actions[idx]
-
-        import hashlib
-        task_hash = hashlib.md5(self.task.encode('utf-8')).hexdigest()
-
-        file_name = self.device.output_dir +'/'+ task_hash + '.yaml' #str(str(time.time()).replace('.', ''))
-
+    
+    def _save2yaml(self, file_name, state_prompt, idx, state_str, inputs='null'):
         if not os.path.exists(file_name):
             tmp_data = {
             'task_name': self.task,
@@ -784,7 +762,8 @@ class TaskPolicy(UtgBasedInputPolicy):
         new_records.append(
                 {'State': state_prompt,
                 'Choice': idx,
-                'Input': 'null'}
+                'Input': inputs,
+                'state_str': state_str}
             )
         # import pdb;pdb.set_trace()
         data = {
@@ -794,6 +773,36 @@ class TaskPolicy(UtgBasedInputPolicy):
         }
         with open(file_name, 'w', encoding='utf-8') as f:
             yaml.dump(data, f)
+
+
+    def _get_action_with_LLM(self, current_state, action_history):
+        # task_prompt = f"I'm using a smartphone to {self.task}."
+        # history_prompt = f'I have already completed the following steps, which should not be performed again: \n ' + ';\n '.join(action_history)
+        state_prompt, candidate_actions = current_state.get_described_actions()
+        state_str = current_state.state_str
+        # question = 'Which action should I choose next? Just return the action id and nothing else.\nIf no more action is needed, return -1.'
+        prompt = f'{state_prompt}'
+        print(prompt)
+        # response = self._query_llm(prompt)
+        response = input(f"UI element ID: ")
+        print(f'response: {response}')
+
+        import hashlib
+        task_hash = hashlib.md5(self.task.encode('utf-8')).hexdigest()
+
+        file_name = self.device.output_dir +'/'+ task_hash + '.yaml' #str(str(time.time()).replace('.', ''))
+
+        if '-1' in response:
+            self._save2yaml(file_name, state_prompt, -1, state_str, inputs='null')
+            input(f"Seems the task is completed. Press Enter to continue...")
+
+        match = re.search(r'\d+', response)
+        if not match:
+            return None, candidate_actions
+        idx = int(match.group(0))
+        selected_action = candidate_actions[idx]
+
+        self._save2yaml(file_name, state_prompt, idx, state_str, inputs='null')
 
         if isinstance(selected_action, SetTextEvent):
             view_text = current_state.get_view_desc(selected_action.view)
@@ -807,20 +816,7 @@ class TaskPolicy(UtgBasedInputPolicy):
             if len(selected_action.text) > 30:  # heuristically disable long text input
                 selected_action.text = ''
 
-            new_records = old_yaml_data['records']
-            new_records.append(
-                {'State': state_prompt,
-                'Choice': idx,
-                'Input': selected_action.text}
-            )
-            data = {
-            'task_name': self.task,
-            'step_num': len(list(old_yaml_data['records'])),
-            'records': new_records
-            }
-
-            with open(file_name, 'w', encoding='utf-8') as f:
-                yaml.dump(data, f)
+            self._save2yaml(file_name, state_prompt, idx, state_str, inputs=selected_action.text)
 
         return selected_action, candidate_actions
         # except:

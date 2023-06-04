@@ -1,0 +1,50 @@
+{
+  "tag": "2023-06-04_171033",
+  "event": {
+    "event_type": "click",
+    "log_lines": null,
+    "prompt": null,
+    "view": {
+      "package": "com.simplemobiletools.calendar.pro",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          502,
+          379
+        ],
+        [
+          1300,
+          455
+        ]
+      ],
+      "resource_id": "com.simplemobiletools.calendar.pro:id/title",
+      "checked": false,
+      "text": "Print",
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 9,
+      "temp_id": 10,
+      "size": "798*76",
+      "signature": "[class]android.widget.TextView[resource_id]com.simplemobiletools.calendar.pro:id/title[text]Print[enabled,,]",
+      "view_str": "1eca8edaaf27183a036f2929ba891dfd",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]com.simplemobiletools.calendar.pro:id/title"
+    },
+    "x": null,
+    "y": null
+  },
+  "start_state": "6108cee72831b294b3485ccdc1e71f75e41948770adc7b15e2c1da35ea42eec3",
+  "stop_state": "aaef41704fcd9d00f2eee6f2cb53bc7c5584722a963dc9ef034e1f3786237e08",
+  "event_str": "TouchEvent(state=6108cee72831b294b3485ccdc1e71f75e41948770adc7b15e2c1da35ea42eec3, view=1eca8edaaf27183a036f2929ba891dfd(MainActivity/TextView-Print))"
+}
