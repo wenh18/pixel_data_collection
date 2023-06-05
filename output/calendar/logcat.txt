@@ -1,574 +1,371 @@
 --------- beginning of main
-06-04 17:21:37.909 22113 22115 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:21:37.927 22118 22120 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:21:37.953 22123 22125 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
---------- beginning of kernel
-06-04 17:21:38.103 22146 22149 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:21:38.120 22150 22153 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
+06-05 10:44:16.310  6944  6946 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
+06-05 10:44:16.324  3419  3419 I abb     : StartCommandInProcess(73657474696e67730067657400656e61 settings.get.ena [truncated])
+06-05 10:44:16.328  3419  3424 I abb     : oneway function results will be dropped but finished with status OK and parcel size 4
+06-05 10:44:16.330  3419  3419 I abb     : StartCommandInProcess(7061636b61676500696e7374616c6c00 package.install. [truncated])
+06-05 10:44:16.324   530   530 W Binder:530_9: type=1400 audit(0.0:47285): avc: denied { getopt } for scontext=u:r:system_server:s0 tcontext=u:r:shell:s0 tclass=unix_stream_socket permissive=0
 --------- beginning of system
-06-04 17:21:38.128   530   747 W ActivityTaskManager: Current config: {1.0 310mcc260mnc [en_US] ldltr sw411dp w411dp h804dp 560dpi nrml long port finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1440, 3120) mAppBounds=Rect(0, 136 - 1440, 2952) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} s.25} unchanged for IME proc io.github.ylimit.droidbotapp
-06-04 17:21:38.387 22177 22177 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.profilebootclasspath"
-06-04 17:21:38.387 22177 22177 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_apex_image"
-06-04 17:21:38.387 22177 22177 I AndroidRuntime: Using default boot image
-06-04 17:21:38.387 22177 22177 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.disable_lock_profiling"
-06-04 17:21:38.387 22177 22177 I AndroidRuntime: Leaving lock profiling enabled
-06-04 17:21:38.387 22177 22177 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_generational_cc"
-06-04 17:21:38.384 22177 22177 W app_process: type=1400 audit(0.0:44346): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8368 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
-06-04 17:21:38.388 22177 22177 W app_process: Could not reserve sentinel fault page
-06-04 17:21:38.388 22177 22177 I app_process: Core platform API reporting enabled, enforcing=false
-06-04 17:21:38.384 22177 22177 W app_process: type=1400 audit(0.0:44347): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8368 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
-06-04 17:21:38.437 22177 22177 W app_process: Unexpected CPU variant for X86 using defaults: x86
-06-04 17:21:38.437 22177 22177 I app_process: The ClassLoaderContext is a special shared library.
-06-04 17:21:38.443 22177 22177 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
-06-04 17:21:38.451   530 17034 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:21:38.451   530 17034 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:21:38.588   530   859 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:21:38.912 22195 22195 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.profilebootclasspath"
-06-04 17:21:38.912 22195 22195 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_apex_image"
-06-04 17:21:38.912 22195 22195 I AndroidRuntime: Using default boot image
-06-04 17:21:38.908 22195 22195 W app_process: type=1400 audit(0.0:44350): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8368 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
-06-04 17:21:38.914 22195 22195 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.disable_lock_profiling"
-06-04 17:21:38.914 22195 22195 I AndroidRuntime: Leaving lock profiling enabled
-06-04 17:21:38.940     0     0 W audit   : audit_lost=20085 audit_rate_limit=5 audit_backlog_limit=64
-06-04 17:21:38.914 22195 22195 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_generational_cc"
-06-04 17:21:38.915 22195 22195 I app_process: Core platform API reporting enabled, enforcing=false
-06-04 17:21:38.940     0     0 E audit   : rate limit exceeded
-06-04 17:21:38.908 22195 22195 W app_process: type=1400 audit(0.0:44351): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8368 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
-06-04 17:21:38.946 22195 22195 W app_process: Unexpected CPU variant for X86 using defaults: x86
-06-04 17:21:38.947 22195 22195 I app_process: The ClassLoaderContext is a special shared library.
-06-04 17:21:38.951 22195 22195 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
-06-04 17:21:38.128   530   747 I chatty  : uid=1000(system) Binder:530_5 identical 1 line
-06-04 17:21:38.128   530   747 W ActivityTaskManager: Current config: {1.0 310mcc260mnc [en_US] ldltr sw411dp w411dp h804dp 560dpi nrml long port finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1440, 3120) mAppBounds=Rect(0, 136 - 1440, 2952) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} s.25} unchanged for IME proc io.github.ylimit.droidbotapp
-06-04 17:21:38.995   530   859 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
-06-04 17:21:38.995   530   859 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
-06-04 17:21:38.995   530   859 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
-06-04 17:21:38.995   530   859 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
-06-04 17:21:38.995   530   859 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
-06-04 17:21:38.995   530   859 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
-06-04 17:21:38.995   530   859 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
-06-04 17:21:38.995   530   859 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
-06-04 17:21:38.995   530   859 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
-06-04 17:21:38.995   530   859 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
-06-04 17:21:38.995   530   859 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
-06-04 17:21:38.995   530   859 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
-06-04 17:21:38.995   530   859 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
-06-04 17:21:38.995   530   859 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
-06-04 17:21:38.995   530   859 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
-06-04 17:21:38.995   530   859 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
-06-04 17:21:38.995   530   859 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
-06-04 17:21:38.995   530   859 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
-06-04 17:21:38.995   530   859 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
-06-04 17:21:38.995   530   859 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
-06-04 17:21:39.078   530   541 W JavaBinder: BinderProxy is being destroyed but the application did not call unlinkToDeath to unlink all of its death recipients beforehand.  Releasing leaked death recipient: com.android.server.AlarmManagerService$2
-06-04 17:21:39.078   530   541 I BpBinder: onLastStrongRef automatically unlinking death recipients: <uncached descriptor>
-06-04 17:21:39.421 22225 22227 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:21:39.436   178   178 I servicemanager: Since 'apexservice' could not be found, trying to start it as a lazy AIDL service
-06-04 17:21:39.467     0     0 I init    : starting service 'apexd'...
-06-04 17:21:39.468     0     0 I init    : Control message: Processed ctl.interface_start for 'aidl/apexservice' from pid: 178 (/system/bin/servicemanager)
-06-04 17:21:39.474     0     0 I apexd   : Scanning /system/apex for preinstalled data
-06-04 17:21:39.477     0     0 I apexd   : Scanning /system_ext/apex for preinstalled data
-06-04 17:21:39.477     0     0 I apexd   : ... does not exist. Skipping
-06-04 17:21:39.477     0     0 I apexd   : Scanning /product/apex for preinstalled data
-06-04 17:21:39.477     0     0 I apexd   : ... does not exist. Skipping
-06-04 17:21:39.478     0     0 I apexd   : Scanning /vendor/apex for preinstalled data
-06-04 17:21:39.478     0     0 I apexd   : ... does not exist. Skipping
-06-04 17:21:39.478     0     0 I apexd   : Populating APEX database from mounts...
-06-04 17:21:39.479     0     0 I apexd   : Found "/apex/com.android.mediaprovider@300000000" backed by file /system/apex/com.android.mediaprovider.apex
-06-04 17:21:39.479     0     0 I apexd   : Found "/apex/com.android.tethering@300000000" backed by file /system/apex/com.android.tethering.apex
-06-04 17:21:39.480     0     0 I apexd   : Found "/apex/com.android.wifi@300000000" backed by file /system/apex/com.android.wifi.apex
-06-04 17:21:39.480     0     0 I apexd   : Found "/apex/com.android.cellbroadcast@300000000" backed by file /system/apex/com.android.cellbroadcast.apex
-06-04 17:21:39.481     0     0 I apexd   : Found "/apex/com.android.neuralnetworks@300000000" backed by file /system/apex/com.android.neuralnetworks.apex
-06-04 17:21:39.481     0     0 I apexd   : Found "/apex/com.android.resolv@300000000" backed by file /system/apex/com.android.resolv.apex
-06-04 17:21:39.481     0     0 I apexd   : Found "/apex/com.android.media.swcodec@300000000" backed by file /system/apex/com.android.media.swcodec.apex
-06-04 17:21:39.482     0     0 I apexd   : Found "/apex/com.android.conscrypt@300000000" backed by file /system/apex/com.android.conscrypt.apex
-06-04 17:21:39.482     0     0 I apexd   : Found "/apex/com.android.adbd@300000000" backed by file /system/apex/com.android.adbd.apex
-06-04 17:21:39.483     0     0 I apexd   : Found "/apex/com.android.art@1" backed by file /system/apex/com.android.art.debug.apex
-06-04 17:21:39.483     0     0 I apexd   : Found "/apex/com.android.permission@300000000" backed by file /system/apex/com.android.permission.apex
-06-04 17:21:39.484     0     0 I apexd   : Found "/apex/com.android.runtime@1" backed by file /system/apex/com.android.runtime.apex
-06-04 17:21:39.484     0     0 I apexd   : Found "/apex/com.android.sdkext@300000000" backed by file /system/apex/com.android.sdkext.apex
-06-04 17:21:39.485     0     0 I apexd   : Found "/apex/com.android.tzdata@300000000" backed by file /system/apex/com.android.tzdata.apex
-06-04 17:21:39.485     0     0 I apexd   : Found "/apex/com.android.media@300000000" backed by file /system/apex/com.android.media.apex
-06-04 17:21:39.485     0     0 I apexd   : Found "/apex/com.android.extservices@300000000" backed by file /system/apex/com.android.extservices.apex
-06-04 17:21:39.486     0     0 I apexd   : Found "/apex/com.android.vndk.v30@1" backed by file /system/apex/com.android.vndk.current.apex
-06-04 17:21:39.486     0     0 I apexd   : Found "/apex/com.android.os.statsd@300000000" backed by file /system/apex/com.android.os.statsd.apex
-06-04 17:21:39.487     0     0 I apexd   : Found "/apex/com.android.apex.cts.shim@1" backed by file /system/apex/com.android.apex.cts.shim.apex
-06-04 17:21:39.461   178   178 I BpBinder: onLastStrongRef automatically unlinking death recipients: <uncached descriptor>
-06-04 17:21:39.461   178   178 I servicemanager: Tried to unregister apexservice, but there is about to be a client.
-06-04 17:21:39.487     0     0 I apexd   : Found "/apex/com.android.i18n@1" backed by file /system/apex/com.android.i18n.apex
-06-04 17:21:39.488     0     0 I apexd   : Found "/apex/com.android.ipsec@300000000" backed by file /system/apex/com.android.ipsec.apex
-06-04 17:21:39.488     0     0 I apexd   : 21 packages restored.
-06-04 17:21:39.488     0     0 I AidlLazyServiceRegistrar: Registering service apexservice
-06-04 17:21:39.489     0     0 I AidlLazyServiceRegistrar: Trying to shut down the service. No clients in use for any service in process.
-06-04 17:21:39.489     0     0 I AidlLazyServiceRegistrar: Failed to unregister service apexservice
-06-04 17:21:39.562   179   179 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-06-04 17:21:39.562 22249 22249 I Gralloc4: mapper 4.x is not supported
-06-04 17:21:39.949  1466  2347 I MediaProvider: Begin Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/screen_2023-06-04_172143.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
-06-04 17:21:39.944  1466  1466 W com.android.providers.media.module: type=1400 audit(0.0:44354): avc: denied { read } for comm=4173796E635461736B202331 name="primary" dev="tmpfs" ino=18207 scontext=u:r:mediaprovider_app:s0:c118,c256,c512,c768 tcontext=u:object_r:mnt_pass_through_file:s0 tclass=lnk_file permissive=0 app=com.android.providers.media.module
-06-04 17:21:39.953  1466  2347 W ModernMediaScanner: Failed to visit /sdcard/screen_2023-06-04_172143.png: java.nio.file.AccessDeniedException: /sdcard/screen_2023-06-04_172143.png
-06-04 17:21:39.953  1466  2347 I MediaProvider: Scanned internal due to REASON_DEMAND, found 0 items in 1ms, 0 inserts 0 updates 0 deletes
-06-04 17:21:39.954  1466  2347 I MediaProvider: End Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/screen_2023-06-04_172143.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
-06-04 17:21:39.980     0     0 W audit   : audit_lost=20087 audit_rate_limit=5 audit_backlog_limit=64
-06-04 17:21:39.980     0     0 E audit   : rate limit exceeded
-06-04 17:21:39.948  1466  1466 W com.android.providers.media.module: type=1400 audit(0.0:44355): avc: denied { read } for comm=4173796E635461736B202331 name="primary" dev="tmpfs" ino=18207 scontext=u:r:mediaprovider_app:s0:c118,c256,c512,c768 tcontext=u:object_r:mnt_pass_through_file:s0 tclass=lnk_file permissive=0 app=com.android.providers.media.module
-06-04 17:21:39.981  1466  4324 I MediaProvider: Deleted 1 items on external_primary due to com.android.shell
-06-04 17:21:40.073 22267 22269 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:21:40.165   530  2659 I ActivityManager: Force stopping com.simplemobiletools.calendar.pro appid=10127 user=0: from pid 22281
-06-04 17:21:40.166   530  2659 I ActivityManager: Killing 20993:com.simplemobiletools.calendar.pro/u0a127 (adj 900): stop com.simplemobiletools.calendar.pro due to from pid 22281
-06-04 17:21:40.178   530   570 W ActivityManager: setHasOverlayUi called on unknown pid: 20993
-06-04 17:21:40.179   302   302 I Zygote  : Process 20993 exited due to signal 9 (Killed)
-06-04 17:21:40.201   530   578 I libprocessgroup: Successfully killed process cgroup uid 10127 pid 20993 in 35ms
-06-04 17:21:40.217 22284 22284 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.profilebootclasspath"
-06-04 17:21:40.217 22284 22284 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_apex_image"
-06-04 17:21:40.217 22284 22284 I AndroidRuntime: Using default boot image
-06-04 17:21:40.217 22284 22284 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.disable_lock_profiling"
-06-04 17:21:40.217 22284 22284 I AndroidRuntime: Leaving lock profiling enabled
-06-04 17:21:40.218 22284 22284 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_generational_cc"
-06-04 17:21:40.219 22284 22284 I app_process: Core platform API reporting enabled, enforcing=false
-06-04 17:21:40.262 22284 22284 W app_process: Unexpected CPU variant for X86 using defaults: x86
-06-04 17:21:40.263 22284 22284 I app_process: The ClassLoaderContext is a special shared library.
-06-04 17:21:40.269 22284 22284 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
-06-04 17:21:40.273   530   568 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000100 cmp=com.android.launcher3/.uioverrides.QuickstepLauncher (has extras)} from uid 0
-06-04 17:21:40.275   393   393 I perfetto: ing_service_impl.cc:758 Configured tracing session 247, #sources:1, duration:5000 ms, #buffers:1, total buffer size:4096 KB, total sessions:1, uid:1071 session name: ""
-06-04 17:21:40.275   392   392 I perfetto: probes_producer.cc:230  Ftrace setup (target_buf=247)
-06-04 17:21:40.292   392   392 I perfetto: ftrace_procfs.cc:176    enabled ftrace
-06-04 17:21:40.320     0     0 W perfetto: enabled ftrace
-06-04 17:21:41.535   178   178 I servicemanager: Notifying apexservice they have clients: 1
-06-04 17:21:41.564     0     0 I AidlLazyServiceRegistrar: Process has 1 (of 1 available) client(s) in use after notification android.apex.IApexService has clients: 1
-06-04 17:21:41.553   530  9799 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:21:41.934   179   179 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-06-04 17:21:41.934 22319 22319 I Gralloc4: mapper 4.x is not supported
-06-04 17:21:42.305 22325 22327 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:21:42.306  1466  2347 I MediaProvider: Begin Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/screen_2023-06-04_172145.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
-06-04 17:21:42.300  1466  1466 W com.android.providers.media.module: type=1400 audit(0.0:44364): avc: denied { read } for comm=4173796E635461736B202331 name="primary" dev="tmpfs" ino=18207 scontext=u:r:mediaprovider_app:s0:c118,c256,c512,c768 tcontext=u:object_r:mnt_pass_through_file:s0 tclass=lnk_file permissive=0 app=com.android.providers.media.module
-06-04 17:21:42.309  1466  2347 W ModernMediaScanner: Failed to visit /sdcard/screen_2023-06-04_172145.png: java.nio.file.AccessDeniedException: /sdcard/screen_2023-06-04_172145.png
-06-04 17:21:42.310  1466  2347 I MediaProvider: Scanned internal due to REASON_DEMAND, found 0 items in 3ms, 0 inserts 0 updates 0 deletes
-06-04 17:21:42.304  1466  1466 W com.android.providers.media.module: type=1400 audit(0.0:44366): avc: denied { read } for comm=4173796E635461736B202331 name="primary" dev="tmpfs" ino=18207 scontext=u:r:mediaprovider_app:s0:c118,c256,c512,c768 tcontext=u:object_r:mnt_pass_through_file:s0 tclass=lnk_file permissive=0 app=com.android.providers.media.module
-06-04 17:21:42.335     0     0 W audit   : audit_lost=20092 audit_rate_limit=5 audit_backlog_limit=64
-06-04 17:21:42.336     0     0 E audit   : rate limit exceeded
-06-04 17:21:42.311  1466  2347 I MediaProvider: End Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/screen_2023-06-04_172145.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
-06-04 17:21:42.304  1466  1466 W com.android.providers.media.module: type=1400 audit(0.0:44367): avc: denied { read } for comm=4173796E635461736B202331 name="primary" dev="tmpfs" ino=18207 scontext=u:r:mediaprovider_app:s0:c118,c256,c512,c768 tcontext=u:object_r:mnt_pass_through_file:s0 tclass=lnk_file permissive=0 app=com.android.providers.media.module
-06-04 17:21:42.334  1466  1653 I MediaProvider: Deleted 1 items on external_primary due to com.android.shell
-06-04 17:21:42.421 22336 22338 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:21:42.736   179   179 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-06-04 17:21:42.736 22358 22358 I Gralloc4: mapper 4.x is not supported
-06-04 17:21:42.785   530  1439 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
-06-04 17:21:43.101 22362 22364 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:21:43.101  1466  2347 I MediaProvider: Begin Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/screen_2023-06-04_172146.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
-06-04 17:21:43.102  1466  2347 W ModernMediaScanner: Failed to visit /sdcard/screen_2023-06-04_172146.png: java.nio.file.AccessDeniedException: /sdcard/screen_2023-06-04_172146.png
-06-04 17:21:43.103  1466  2347 I MediaProvider: Scanned internal due to REASON_DEMAND, found 0 items in 1ms, 0 inserts 0 updates 0 deletes
-06-04 17:21:43.104  1466  2347 I MediaProvider: End Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/screen_2023-06-04_172146.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
-06-04 17:21:43.132  1466 24747 I MediaProvider: Deleted 1 items on external_primary due to com.android.shell
-06-04 17:21:43.174 22374 22376 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:21:43.326   179   179 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-06-04 17:21:43.326 22398 22398 I Gralloc4: mapper 4.x is not supported
-06-04 17:21:43.694 22402 22404 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:21:43.694  1466  2347 I MediaProvider: Begin Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/screen_2023-06-04_172147.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
-06-04 17:21:43.688  1466  1466 W com.android.providers.media.module: type=1400 audit(0.0:44376): avc: denied { read } for comm=4173796E635461736B202331 name="primary" dev="tmpfs" ino=18207 scontext=u:r:mediaprovider_app:s0:c118,c256,c512,c768 tcontext=u:object_r:mnt_pass_through_file:s0 tclass=lnk_file permissive=0 app=com.android.providers.media.module
-06-04 17:21:43.692  1466  1466 W com.android.providers.media.module: type=1400 audit(0.0:44377): avc: denied { read } for comm=4173796E635461736B202331 name="primary" dev="tmpfs" ino=18207 scontext=u:r:mediaprovider_app:s0:c118,c256,c512,c768 tcontext=u:object_r:mnt_pass_through_file:s0 tclass=lnk_file permissive=0 app=com.android.providers.media.module
-06-04 17:21:43.698  1466  2347 W ModernMediaScanner: Failed to visit /sdcard/screen_2023-06-04_172147.png: java.nio.file.AccessDeniedException: /sdcard/screen_2023-06-04_172147.png
-06-04 17:21:43.723     0     0 W audit   : audit_lost=20099 audit_rate_limit=5 audit_backlog_limit=64
-06-04 17:21:43.724     0     0 E audit   : rate limit exceeded
-06-04 17:21:43.692  1466  1466 W com.android.providers.media.module: type=1400 audit(0.0:44378): avc: denied { read } for comm=4173796E635461736B202331 name="primary" dev="tmpfs" ino=18207 scontext=u:r:mediaprovider_app:s0:c118,c256,c512,c768 tcontext=u:object_r:mnt_pass_through_file:s0 tclass=lnk_file permissive=0 app=com.android.providers.media.module
-06-04 17:21:43.699  1466  2347 I MediaProvider: Scanned internal due to REASON_DEMAND, found 0 items in 4ms, 0 inserts 0 updates 0 deletes
-06-04 17:21:43.700  1466  2347 I MediaProvider: End Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/screen_2023-06-04_172147.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
-06-04 17:21:43.692  1466  1466 W com.android.providers.media.module: type=1400 audit(0.0:44379): avc: denied { read } for comm=4173796E635461736B202331 name="primary" dev="tmpfs" ino=18207 scontext=u:r:mediaprovider_app:s0:c118,c256,c512,c768 tcontext=u:object_r:mnt_pass_through_file:s0 tclass=lnk_file permissive=0 app=com.android.providers.media.module
-06-04 17:21:43.723  1466  4324 I MediaProvider: Deleted 1 items on external_primary due to com.android.shell
-06-04 17:21:43.866   530   697 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.simplemobiletools.calendar.pro/.activities.SplashActivity.Orange} from uid 2000
-06-04 17:21:43.869   393   393 I perfetto: ing_service_impl.cc:758 Configured tracing session 248, #sources:1, duration:5000 ms, #buffers:1, total buffer size:4096 KB, total sessions:2, uid:1071 session name: ""
-06-04 17:21:43.869   392   392 I perfetto: probes_producer.cc:230  Ftrace setup (target_buf=248)
-06-04 17:21:43.872 22425 22427 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:21:43.895   530   577 I ActivityManager: Start proc 22433:com.simplemobiletools.calendar.pro/u0a127 for pre-top-activity {com.simplemobiletools.calendar.pro/com.simplemobiletools.calendar.pro.activities.SplashActivity.Orange}
-06-04 17:21:43.900 22433 22433 W ls.calendar.pr: Unexpected CPU variant for X86 using defaults: x86
-06-04 17:21:43.902   385   401 I adbd    : jdwp connection from 22433
-06-04 17:21:43.905   530   857 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
-06-04 17:21:43.905   530   857 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
-06-04 17:21:43.905   530   857 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
-06-04 17:21:43.905   530   857 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
-06-04 17:21:43.905   530   857 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
-06-04 17:21:43.905   530   857 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
-06-04 17:21:43.905   530   857 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
-06-04 17:21:43.905   530   857 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
-06-04 17:21:43.905   530   857 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
-06-04 17:21:43.905   530   857 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
-06-04 17:21:43.905   530   857 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
-06-04 17:21:43.905   530   857 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
-06-04 17:21:43.905   530   857 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
-06-04 17:21:43.905   530   857 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
-06-04 17:21:43.905   530   857 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
-06-04 17:21:43.905   530   857 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
-06-04 17:21:43.905   530   857 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
-06-04 17:21:43.905   530   857 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
-06-04 17:21:43.905   530   857 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
-06-04 17:21:43.905   530   857 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
-06-04 17:21:43.919 22433 22433 I MultiDex: VM with version 2.1.0 has multidex support
-06-04 17:21:43.919 22433 22433 I MultiDex: Installing application
-06-04 17:21:43.919 22433 22433 I MultiDex: VM has multidex support, MultiDex support library is disabled.
-06-04 17:21:43.931   530  4350 I ActivityTaskManager: START u0 {cmp=com.simplemobiletools.calendar.pro/.activities.MainActivity} from uid 10127
-06-04 17:21:43.935   530  4350 W ActivityTaskManager: Tried to set launchTime (0) < mLastActivityLaunchTime (179701697)
-06-04 17:21:43.935   530  4350 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
-06-04 17:21:43.935   530  4350 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
-06-04 17:21:43.935   530  4350 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
-06-04 17:21:43.935   530  4350 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
-06-04 17:21:43.935   530  4350 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
-06-04 17:21:43.935   530  4350 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
-06-04 17:21:43.935   530  4350 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
-06-04 17:21:43.935   530  4350 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
-06-04 17:21:43.935   530  4350 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
-06-04 17:21:43.935   530  4350 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
-06-04 17:21:43.935   530  4350 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
-06-04 17:21:43.936   530  4350 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
-06-04 17:21:43.936   530  4350 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
-06-04 17:21:43.936   530  4350 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
-06-04 17:21:43.936   530  4350 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
-06-04 17:21:43.936   530  4350 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
-06-04 17:21:43.936   530  4350 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
-06-04 17:21:43.936   530  4350 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
-06-04 17:21:43.936   530  4350 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
-06-04 17:21:43.936   530  4350 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
-06-04 17:21:44.052   179   179 I hwservicemanager: getTransport: Cannot find entry android.hardware.configstore@1.0::ISurfaceFlingerConfigs/default in either framework or device manifest.
-06-04 17:21:44.052 22433 22460 W OpenGLRenderer: Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
-06-04 17:21:44.066   179   179 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-06-04 17:21:44.066 22433 22460 I Gralloc4: mapper 4.x is not supported
-06-04 17:21:44.111   530   575 I ActivityTaskManager: Displayed com.simplemobiletools.calendar.pro/.activities.MainActivity: +241ms
-06-04 17:21:45.118   179   179 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-06-04 17:21:45.118 22496 22496 I Gralloc4: mapper 4.x is not supported
-06-04 17:21:45.277   392   392 I perfetto: probes_producer.cc:329  Producer stop (id=247)
-06-04 17:21:45.278   393   393 I perfetto: ng_service_impl.cc:1948 Tracing session 247 ended, total sessions:1
-06-04 17:21:45.286 22500 22502 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:21:45.287  1466  2347 I MediaProvider: Begin Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/screen_2023-06-04_172148.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
-06-04 17:21:45.284  1466  1466 W com.android.providers.media.module: type=1400 audit(0.0:44382): avc: denied { read } for comm=4173796E635461736B202331 name="primary" dev="tmpfs" ino=18207 scontext=u:r:mediaprovider_app:s0:c118,c256,c512,c768 tcontext=u:object_r:mnt_pass_through_file:s0 tclass=lnk_file permissive=0 app=com.android.providers.media.module
-06-04 17:21:45.316     0     0 W audit   : audit_lost=20100 audit_rate_limit=5 audit_backlog_limit=64
-06-04 17:21:45.317     0     0 E audit   : rate limit exceeded
-06-04 17:21:45.284  1466  1466 W com.android.providers.media.module: type=1400 audit(0.0:44383): avc: denied { read } for comm=4173796E635461736B202331 name="primary" dev="tmpfs" ino=18207 scontext=u:r:mediaprovider_app:s0:c118,c256,c512,c768 tcontext=u:object_r:mnt_pass_through_file:s0 tclass=lnk_file permissive=0 app=com.android.providers.media.module
-06-04 17:21:45.290  1466  2347 W ModernMediaScanner: Failed to visit /sdcard/screen_2023-06-04_172148.png: java.nio.file.AccessDeniedException: /sdcard/screen_2023-06-04_172148.png
-06-04 17:21:45.291  1466  2347 I MediaProvider: Scanned internal due to REASON_DEMAND, found 0 items in 3ms, 0 inserts 0 updates 0 deletes
-06-04 17:21:45.284  1466  1466 W com.android.providers.media.module: type=1400 audit(0.0:44384): avc: denied { read } for comm=4173796E635461736B202331 name="primary" dev="tmpfs" ino=18207 scontext=u:r:mediaprovider_app:s0:c118,c256,c512,c768 tcontext=u:object_r:mnt_pass_through_file:s0 tclass=lnk_file permissive=0 app=com.android.providers.media.module
-06-04 17:21:45.292  1466  2347 I MediaProvider: End Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/screen_2023-06-04_172148.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
-06-04 17:21:45.284  1466  1466 W com.android.providers.media.module: type=1400 audit(0.0:44385): avc: denied { read } for comm=4173796E635461736B202331 name="primary" dev="tmpfs" ino=18207 scontext=u:r:mediaprovider_app:s0:c118,c256,c512,c768 tcontext=u:object_r:mnt_pass_through_file:s0 tclass=lnk_file permissive=0 app=com.android.providers.media.module
-06-04 17:21:45.323  1466  1652 I MediaProvider: Deleted 1 items on external_primary due to com.android.shell
-06-04 17:21:45.378 22513 22515 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:21:45.560   509   509 E wifi_forwarder: qemu_pipe_open_ns:62: Could not connect to the 'pipe:qemud:wififorward' service: Invalid argument
-06-04 17:21:45.560   509   509 E wifi_forwarder: RemoteConnection failed to initialize: RemoteConnection failed to open pipe
-06-04 17:21:45.596   179   179 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-06-04 17:21:45.596 22535 22535 I Gralloc4: mapper 4.x is not supported
-06-04 17:21:45.760 22539 22541 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:21:45.761  1466  2347 I MediaProvider: Begin Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/screen_2023-06-04_172149.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
-06-04 17:21:45.762  1466  2347 W ModernMediaScanner: Failed to visit /sdcard/screen_2023-06-04_172149.png: java.nio.file.AccessDeniedException: /sdcard/screen_2023-06-04_172149.png
-06-04 17:21:45.763  1466  2347 I MediaProvider: Scanned internal due to REASON_DEMAND, found 0 items in 1ms, 0 inserts 0 updates 0 deletes
-06-04 17:21:45.764  1466  2347 I MediaProvider: End Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/screen_2023-06-04_172149.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
-06-04 17:21:45.791  1466 24747 I MediaProvider: Deleted 1 items on external_primary due to com.android.shell
-06-04 17:21:45.875 22550 22552 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:21:46.535   178   178 I servicemanager: Notifying apexservice they have clients: 0
-06-04 17:21:46.564     0     0 I AidlLazyServiceRegistrar: Process has 0 (of 1 available) client(s) in use after notification android.apex.IApexService has clients: 0
-06-04 17:21:46.568     0     0 I AidlLazyServiceRegistrar: Trying to shut down the service. No clients in use for any service in process.
-06-04 17:21:46.543   178   178 I BpBinder: onLastStrongRef automatically unlinking death recipients: <uncached descriptor>
-06-04 17:21:46.572     0     0 I AidlLazyServiceRegistrar: Unregistered all clients and exiting
-06-04 17:21:46.579     0     0 I init    : Service 'apexd' (pid 22232) exited with status 0 oneshot service took 7.110000 seconds in background
-06-04 17:21:46.582     0     0 I init    : Sending signal 9 to service 'apexd' (pid 22232) process group...
-06-04 17:21:46.585     0     0 I libprocessgroup: Successfully killed process cgroup uid 0 pid 22232 in 0ms
-06-04 17:21:47.964   530  1439 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
-06-04 17:21:48.876   392   392 I perfetto: probes_producer.cc:329  Producer stop (id=248)
-06-04 17:21:48.905     0     0 W perfetto: disabled ftrace
-06-04 17:21:48.879   392   392 I perfetto: ftrace_procfs.cc:183    disabled ftrace
-06-04 17:21:48.880   393   393 I perfetto: ng_service_impl.cc:1948 Tracing session 248 ended, total sessions:0
-06-04 17:21:48.882   428 22429 I iorapd  : Perfetto TraceBuffer saved to file: /data/misc/iorapd/com.simplemobiletools.calendar.pro/235/com.simplemobiletools.calendar.pro.activities.SplashActivity.Orange/raw_traces/1685870508880980662.perfetto_trace.pb
-06-04 17:21:49.600 28555 28555 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
-06-04 17:21:49.999 28555 28555 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
-06-04 17:21:51.263   179   179 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-06-04 17:21:51.263 22585 22585 I Gralloc4: mapper 4.x is not supported
-06-04 17:21:51.428 22589 22591 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:21:51.428  1466  2347 I MediaProvider: Begin Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/screen_2023-06-04_172154.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
-06-04 17:21:51.424  1466  1466 W com.android.providers.media.module: type=1400 audit(0.0:44394): avc: denied { read } for comm=4173796E635461736B202331 name="primary" dev="tmpfs" ino=18207 scontext=u:r:mediaprovider_app:s0:c118,c256,c512,c768 tcontext=u:object_r:mnt_pass_through_file:s0 tclass=lnk_file permissive=0 app=com.android.providers.media.module
-06-04 17:21:51.457     0     0 W audit   : audit_lost=20107 audit_rate_limit=5 audit_backlog_limit=64
-06-04 17:21:51.458     0     0 E audit   : rate limit exceeded
-06-04 17:21:51.424  1466  1466 W com.android.providers.media.module: type=1400 audit(0.0:44395): avc: denied { read } for comm=4173796E635461736B202331 name="primary" dev="tmpfs" ino=18207 scontext=u:r:mediaprovider_app:s0:c118,c256,c512,c768 tcontext=u:object_r:mnt_pass_through_file:s0 tclass=lnk_file permissive=0 app=com.android.providers.media.module
-06-04 17:21:51.431  1466  2347 W ModernMediaScanner: Failed to visit /sdcard/screen_2023-06-04_172154.png: java.nio.file.AccessDeniedException: /sdcard/screen_2023-06-04_172154.png
-06-04 17:21:51.432  1466  2347 I MediaProvider: Scanned internal due to REASON_DEMAND, found 0 items in 3ms, 0 inserts 0 updates 0 deletes
-06-04 17:21:51.433  1466  2347 I MediaProvider: End Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/screen_2023-06-04_172154.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
-06-04 17:21:51.424  1466  1466 W com.android.providers.media.module: type=1400 audit(0.0:44396): avc: denied { read } for comm=4173796E635461736B202331 name="primary" dev="tmpfs" ino=18207 scontext=u:r:mediaprovider_app:s0:c118,c256,c512,c768 tcontext=u:object_r:mnt_pass_through_file:s0 tclass=lnk_file permissive=0 app=com.android.providers.media.module
-06-04 17:21:51.458  1466 24747 I MediaProvider: Deleted 1 items on external_primary due to com.android.shell
-06-04 17:21:51.542 22600 22602 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:21:51.650 22617 22619 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:21:51.763 22632 22634 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:21:51.891 22647 22649 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:21:52.028 22659 22659 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.profilebootclasspath"
-06-04 17:21:52.028 22659 22659 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_apex_image"
-06-04 17:21:52.028 22659 22659 I AndroidRuntime: Using default boot image
-06-04 17:21:52.028 22659 22659 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.disable_lock_profiling"
-06-04 17:21:52.028 22659 22659 I AndroidRuntime: Leaving lock profiling enabled
-06-04 17:21:52.028 22659 22659 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_generational_cc"
-06-04 17:21:52.029 22659 22659 W app_process: Could not reserve sentinel fault page
-06-04 17:21:52.029 22659 22659 I app_process: Core platform API reporting enabled, enforcing=false
-06-04 17:21:52.079 22659 22659 W app_process: Unexpected CPU variant for X86 using defaults: x86
-06-04 17:21:52.080 22659 22659 I app_process: The ClassLoaderContext is a special shared library.
-06-04 17:21:52.087 22659 22659 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
-06-04 17:21:52.314   530 30947 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:21:52.315   530   564 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:21:52.370 28555 28555 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
-06-04 17:21:52.453   530   564 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:21:53.167 28555 28555 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
-06-04 17:21:53.766 28555 28555 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
-06-04 17:21:53.861   179   179 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-06-04 17:21:53.861 22696 22696 I Gralloc4: mapper 4.x is not supported
-06-04 17:21:54.019 22700 22702 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:21:54.021  1466  2347 I MediaProvider: Begin Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/screen_2023-06-04_172157.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
-06-04 17:21:54.022  1466  2347 W ModernMediaScanner: Failed to visit /sdcard/screen_2023-06-04_172157.png: java.nio.file.AccessDeniedException: /sdcard/screen_2023-06-04_172157.png
-06-04 17:21:54.050     0     0 W audit   : audit_lost=20112 audit_rate_limit=5 audit_backlog_limit=64
-06-04 17:21:54.050     0     0 E audit   : rate limit exceeded
-06-04 17:21:54.023  1466  2347 I MediaProvider: Scanned internal due to REASON_DEMAND, found 0 items in 2ms, 0 inserts 0 updates 0 deletes
-06-04 17:21:54.024  1466  2347 I MediaProvider: End Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/screen_2023-06-04_172157.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
-06-04 17:21:54.016  1466  1466 W com.android.providers.media.module: type=1400 audit(0.0:44404): avc: denied { read } for comm=4173796E635461736B202331 name="primary" dev="tmpfs" ino=18207 scontext=u:r:mediaprovider_app:s0:c118,c256,c512,c768 tcontext=u:object_r:mnt_pass_through_file:s0 tclass=lnk_file permissive=0 app=com.android.providers.media.module
-06-04 17:21:54.045  1466  4324 I MediaProvider: Deleted 1 items on external_primary due to com.android.shell
-06-04 17:21:54.090 22711 22713 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:21:54.275   179   179 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-06-04 17:21:54.275 22733 22733 I Gralloc4: mapper 4.x is not supported
-06-04 17:21:54.435 22737 22739 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:21:54.436  1466  2347 I MediaProvider: Begin Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/screen_2023-06-04_172158.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
-06-04 17:21:54.437  1466  2347 W ModernMediaScanner: Failed to visit /sdcard/screen_2023-06-04_172158.png: java.nio.file.AccessDeniedException: /sdcard/screen_2023-06-04_172158.png
-06-04 17:21:54.438  1466  2347 I MediaProvider: Scanned internal due to REASON_DEMAND, found 0 items in 1ms, 0 inserts 0 updates 0 deletes
-06-04 17:21:54.438  1466  2347 I MediaProvider: End Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/screen_2023-06-04_172158.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
-06-04 17:21:54.463  1466  1652 I MediaProvider: Deleted 1 items on external_primary due to com.android.shell
-06-04 17:21:54.472  1317  7264 E GmsTaskScheduler: sendWakeUpEvent called on SchedulerClientBroadcastStrategy
-06-04 17:21:54.472  1317  7264 E WakeLock: GCM_HB_ALARM release without a matched acquire!
-06-04 17:21:54.477   223   226 E android.system.suspend@1.0-service: Error opening kernel wakelock stats for: wakeup34: Permission denied
-06-04 17:21:54.479   223   226 E android.system.suspend@1.0-service: Error opening kernel wakelock stats for: wakeup35: Permission denied
-06-04 17:21:54.518 22748 22750 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:21:54.532  1317  7282 E GmsTaskScheduler: sendWakeUpEvent called on SchedulerClientBroadcastStrategy
-06-04 17:21:55.347 28555 28555 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
-06-04 17:21:55.415   530 30947 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:21:55.803 28555 28555 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
-06-04 17:22:01.296 28555 28555 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
-06-04 17:22:01.311   179   179 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-06-04 17:22:01.311 22797 22797 I Gralloc4: mapper 4.x is not supported
-06-04 17:22:01.476 22801 22803 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:22:01.477  1466  2347 I MediaProvider: Begin Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/screen_2023-06-04_172205.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
-06-04 17:22:01.472  1466  1466 W com.android.providers.media.module: type=1400 audit(0.0:44418): avc: denied { read } for comm=4173796E635461736B202331 name="primary" dev="tmpfs" ino=18207 scontext=u:r:mediaprovider_app:s0:c118,c256,c512,c768 tcontext=u:object_r:mnt_pass_through_file:s0 tclass=lnk_file permissive=0 app=com.android.providers.media.module
-06-04 17:22:01.505     0     0 W audit   : audit_lost=20121 audit_rate_limit=5 audit_backlog_limit=64
-06-04 17:22:01.506     0     0 E audit   : rate limit exceeded
-06-04 17:22:01.472  1466  1466 W com.android.providers.media.module: type=1400 audit(0.0:44419): avc: denied { read } for comm=4173796E635461736B202331 name="primary" dev="tmpfs" ino=18207 scontext=u:r:mediaprovider_app:s0:c118,c256,c512,c768 tcontext=u:object_r:mnt_pass_through_file:s0 tclass=lnk_file permissive=0 app=com.android.providers.media.module
-06-04 17:22:01.480  1466  2347 W ModernMediaScanner: Failed to visit /sdcard/screen_2023-06-04_172205.png: java.nio.file.AccessDeniedException: /sdcard/screen_2023-06-04_172205.png
-06-04 17:22:01.472  1466  1466 W com.android.providers.media.module: type=1400 audit(0.0:44420): avc: denied { read } for comm=4173796E635461736B202331 name="primary" dev="tmpfs" ino=18207 scontext=u:r:mediaprovider_app:s0:c118,c256,c512,c768 tcontext=u:object_r:mnt_pass_through_file:s0 tclass=lnk_file permissive=0 app=com.android.providers.media.module
-06-04 17:22:01.481  1466  2347 I MediaProvider: Scanned internal due to REASON_DEMAND, found 0 items in 4ms, 0 inserts 0 updates 0 deletes
-06-04 17:22:01.482  1466  2347 I MediaProvider: End Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/screen_2023-06-04_172205.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
-06-04 17:22:01.472  1466  1466 W com.android.providers.media.module: type=1400 audit(0.0:44421): avc: denied { read } for comm=4173796E635461736B202331 name="primary" dev="tmpfs" ino=18207 scontext=u:r:mediaprovider_app:s0:c118,c256,c512,c768 tcontext=u:object_r:mnt_pass_through_file:s0 tclass=lnk_file permissive=0 app=com.android.providers.media.module
-06-04 17:22:01.500 28555 28555 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
-06-04 17:22:01.506  1466  1653 I MediaProvider: Deleted 1 items on external_primary due to com.android.shell
-06-04 17:22:01.567 22812 22814 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:22:01.749 22827 22829 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:22:01.884 22842 22844 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:22:02.043 22857 22859 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:22:02.131 22871 22871 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.profilebootclasspath"
-06-04 17:22:02.131 22871 22871 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_apex_image"
-06-04 17:22:02.131 22871 22871 I AndroidRuntime: Using default boot image
-06-04 17:22:02.131 22871 22871 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.disable_lock_profiling"
-06-04 17:22:02.131 22871 22871 I AndroidRuntime: Leaving lock profiling enabled
-06-04 17:22:02.131 22871 22871 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_generational_cc"
-06-04 17:22:02.133 22871 22871 I app_process: Core platform API reporting enabled, enforcing=false
-06-04 17:22:02.178 22871 22871 W app_process: Unexpected CPU variant for X86 using defaults: x86
-06-04 17:22:02.179 22871 22871 I app_process: The ClassLoaderContext is a special shared library.
-06-04 17:22:02.185 22871 22871 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
-06-04 17:22:02.406   530   564 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:22:02.408   530   697 I ActivityTaskManager: START u0 {flg=0x10000000 cmp=com.simplemobiletools.calendar.pro/.activities.TaskActivity (has extras)} from uid 10127
-06-04 17:22:02.406   530   564 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:22:02.416   393   393 I perfetto: ing_service_impl.cc:758 Configured tracing session 249, #sources:1, duration:5000 ms, #buffers:1, total buffer size:4096 KB, total sessions:1, uid:1071 session name: ""
-06-04 17:22:02.417   392   392 I perfetto: probes_producer.cc:230  Ftrace setup (target_buf=249)
-06-04 17:22:02.423   530   697 W ActivityTaskManager: Tried to set launchTime (0) < mLastActivityLaunchTime (179701727)
-06-04 17:22:02.423   530   697 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
-06-04 17:22:02.423   530   697 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
-06-04 17:22:02.423   530   697 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
-06-04 17:22:02.423   530   697 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
-06-04 17:22:02.423   530   697 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
-06-04 17:22:02.423   530   697 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
-06-04 17:22:02.423   530   697 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
-06-04 17:22:02.423   530   697 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
-06-04 17:22:02.423   530   697 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
-06-04 17:22:02.423   530   697 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
-06-04 17:22:02.424   530   697 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
-06-04 17:22:02.424   530   697 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
-06-04 17:22:02.424   530   697 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
-06-04 17:22:02.424   530   697 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
-06-04 17:22:02.424   530   697 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
-06-04 17:22:02.424   530   697 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
-06-04 17:22:02.424   530   697 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
-06-04 17:22:02.424   530   697 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
-06-04 17:22:02.424   530   697 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
-06-04 17:22:02.424   530   697 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
-06-04 17:22:02.447   392   392 I perfetto: ftrace_procfs.cc:176    enabled ftrace
-06-04 17:22:02.475     0     0 W perfetto: enabled ftrace
-06-04 17:22:02.478   530   575 I ActivityTaskManager: Displayed com.simplemobiletools.calendar.pro/.activities.TaskActivity: +70ms
-06-04 17:22:02.480 22433 22433 I AssistStructure: Flattened final assist data: 4268 bytes, containing 1 windows, 26 views
-06-04 17:22:02.484  1317  1317 W kqw     : Pending fill request while another request in the same session was triggered. [CONTEXT service_id=177 ]
-06-04 17:22:02.541   530  4350 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:22:03.900 28555 28555 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
-06-04 17:22:04.044   179   179 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-06-04 17:22:04.044 22923 22923 I Gralloc4: mapper 4.x is not supported
-06-04 17:22:04.087 28555 28555 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
-06-04 17:22:04.196 22929 22931 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:22:04.197  1466  2347 I MediaProvider: Begin Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/screen_2023-06-04_172207.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
-06-04 17:22:04.226     0     0 W audit   : audit_lost=20126 audit_rate_limit=5 audit_backlog_limit=64
-06-04 17:22:04.192  1466  1466 W com.android.providers.media.module: type=1400 audit(0.0:44428): avc: denied { read } for comm=4173796E635461736B202331 name="primary" dev="tmpfs" ino=18207 scontext=u:r:mediaprovider_app:s0:c118,c256,c512,c768 tcontext=u:object_r:mnt_pass_through_file:s0 tclass=lnk_file permissive=0 app=com.android.providers.media.module
-06-04 17:22:04.202  1466  2347 I MediaProvider: End Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/screen_2023-06-04_172207.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
-06-04 17:22:04.227     0     0 E audit   : rate limit exceeded
-06-04 17:22:04.192  1466  1466 W com.android.providers.media.module: type=1400 audit(0.0:44431): avc: denied { read } for comm=4173796E635461736B202331 name="primary" dev="tmpfs" ino=18207 scontext=u:r:mediaprovider_app:s0:c118,c256,c512,c768 tcontext=u:object_r:mnt_pass_through_file:s0 tclass=lnk_file permissive=0 app=com.android.providers.media.module
-06-04 17:22:04.221  1466 24747 I MediaProvider: Deleted 1 items on external_primary due to com.android.shell
-06-04 17:22:04.253 22940 22942 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:22:04.419   179   179 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-06-04 17:22:04.419 22962 22962 I Gralloc4: mapper 4.x is not supported
-06-04 17:22:04.500 28555 28555 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
-06-04 17:22:04.571 22966 22968 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:22:04.572  1466  2347 I MediaProvider: Begin Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/screen_2023-06-04_172208.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
-06-04 17:22:04.572  1466  2347 W ModernMediaScanner: Failed to visit /sdcard/screen_2023-06-04_172208.png: java.nio.file.AccessDeniedException: /sdcard/screen_2023-06-04_172208.png
-06-04 17:22:04.573  1466  2347 I MediaProvider: Scanned internal due to REASON_DEMAND, found 0 items in 1ms, 0 inserts 0 updates 0 deletes
-06-04 17:22:04.574  1466  2347 I MediaProvider: End Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/screen_2023-06-04_172208.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
-06-04 17:22:04.599  1466 24747 I MediaProvider: Deleted 1 items on external_primary due to com.android.shell
-06-04 17:22:04.632 22977 22979 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:22:05.443   530  1439 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
-06-04 17:22:05.509   530  4350 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:22:07.425   392   392 I perfetto: probes_producer.cc:329  Producer stop (id=249)
-06-04 17:22:07.428   392   392 I perfetto: ftrace_procfs.cc:183    disabled ftrace
-06-04 17:22:07.428   393   393 I perfetto: ng_service_impl.cc:1948 Tracing session 249 ended, total sessions:0
-06-04 17:22:07.454     0     0 W perfetto: disabled ftrace
-06-04 17:22:09.604  1885 22998 I GmscoreIpa: Starting mediastore instant index
-06-04 17:22:11.349 28555 28555 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
-06-04 17:22:14.233 28555 28555 I chatty  : uid=10055(com.android.documentsui) identical 3 lines
-06-04 17:22:14.441 28555 28555 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
-06-04 17:22:14.561   530   576 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.net.conn.NETWORK_CONDITIONS_MEASURED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
-06-04 17:22:14.639 28555 28555 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
-06-04 17:22:21.674   507   507 E netmgr  : qemu_pipe_open_ns:62: Could not connect to the 'pipe:qemud:network' service: Invalid argument
-06-04 17:22:21.674   507   507 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
-06-04 17:22:22.396   179   179 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-06-04 17:22:22.396 23048 23048 I Gralloc4: mapper 4.x is not supported
-06-04 17:22:22.563 23052 23054 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:22:22.564  1466  2347 I MediaProvider: Begin Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/screen_2023-06-04_172226.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
-06-04 17:22:22.560  1466  1466 W com.android.providers.media.module: type=1400 audit(0.0:44440): avc: denied { read } for comm=4173796E635461736B202331 name="primary" dev="tmpfs" ino=18207 scontext=u:r:mediaprovider_app:s0:c118,c256,c512,c768 tcontext=u:object_r:mnt_pass_through_file:s0 tclass=lnk_file permissive=0 app=com.android.providers.media.module
-06-04 17:22:22.593     0     0 W audit   : audit_lost=20133 audit_rate_limit=5 audit_backlog_limit=64
-06-04 17:22:22.594     0     0 E audit   : rate limit exceeded
-06-04 17:22:22.560  1466  1466 I chatty  : uid=10118(com.android.providers.media.module) identical 1 line
-06-04 17:22:22.560  1466  1466 W com.android.providers.media.module: type=1400 audit(0.0:44442): avc: denied { read } for comm=4173796E635461736B202331 name="primary" dev="tmpfs" ino=18207 scontext=u:r:mediaprovider_app:s0:c118,c256,c512,c768 tcontext=u:object_r:mnt_pass_through_file:s0 tclass=lnk_file permissive=0 app=com.android.providers.media.module
-06-04 17:22:22.567  1466  2347 W ModernMediaScanner: Failed to visit /sdcard/screen_2023-06-04_172226.png: java.nio.file.AccessDeniedException: /sdcard/screen_2023-06-04_172226.png
-06-04 17:22:22.568  1466  2347 I MediaProvider: Scanned internal due to REASON_DEMAND, found 0 items in 3ms, 0 inserts 0 updates 0 deletes
-06-04 17:22:22.569  1466  2347 I MediaProvider: End Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/screen_2023-06-04_172226.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
-06-04 17:22:22.560  1466  1466 W com.android.providers.media.module: type=1400 audit(0.0:44443): avc: denied { read } for comm=4173796E635461736B202331 name="primary" dev="tmpfs" ino=18207 scontext=u:r:mediaprovider_app:s0:c118,c256,c512,c768 tcontext=u:object_r:mnt_pass_through_file:s0 tclass=lnk_file permissive=0 app=com.android.providers.media.module
-06-04 17:22:22.590  1466  1652 I MediaProvider: Deleted 1 items on external_primary due to com.android.shell
-06-04 17:22:22.679 23063 23065 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:22:22.811 23078 23080 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:22:22.924 23095 23097 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:22:22.977 23110 23112 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:22:23.094 23122 23122 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.profilebootclasspath"
-06-04 17:22:23.094 23122 23122 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_apex_image"
-06-04 17:22:23.094 23122 23122 I AndroidRuntime: Using default boot image
-06-04 17:22:23.094 23122 23122 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.disable_lock_profiling"
-06-04 17:22:23.094 23122 23122 I AndroidRuntime: Leaving lock profiling enabled
-06-04 17:22:23.094 23122 23122 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_generational_cc"
-06-04 17:22:23.096 23122 23122 I app_process: Core platform API reporting enabled, enforcing=false
-06-04 17:22:23.139 23122 23122 W app_process: Unexpected CPU variant for X86 using defaults: x86
-06-04 17:22:23.140 23122 23122 I app_process: The ClassLoaderContext is a special shared library.
-06-04 17:22:23.146 23122 23122 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
-06-04 17:22:23.843 23140 23142 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:22:24.981   179   179 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-06-04 17:22:24.981 23159 23159 I Gralloc4: mapper 4.x is not supported
-06-04 17:22:25.139 23165 23167 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:22:25.140  1466  2347 I MediaProvider: Begin Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/screen_2023-06-04_172228.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
-06-04 17:22:25.136  1466  1466 W com.android.providers.media.module: type=1400 audit(0.0:44450): avc: denied { read } for comm=4173796E635461736B202331 name="primary" dev="tmpfs" ino=18207 scontext=u:r:mediaprovider_app:s0:c118,c256,c512,c768 tcontext=u:object_r:mnt_pass_through_file:s0 tclass=lnk_file permissive=0 app=com.android.providers.media.module
-06-04 17:22:25.169     0     0 W audit   : audit_lost=20138 audit_rate_limit=5 audit_backlog_limit=64
-06-04 17:22:25.170     0     0 E audit   : rate limit exceeded
-06-04 17:22:25.136  1466  1466 W com.android.providers.media.module: type=1400 audit(0.0:44451): avc: denied { read } for comm=4173796E635461736B202331 name="primary" dev="tmpfs" ino=18207 scontext=u:r:mediaprovider_app:s0:c118,c256,c512,c768 tcontext=u:object_r:mnt_pass_through_file:s0 tclass=lnk_file permissive=0 app=com.android.providers.media.module
-06-04 17:22:25.143  1466  2347 W ModernMediaScanner: Failed to visit /sdcard/screen_2023-06-04_172228.png: java.nio.file.AccessDeniedException: /sdcard/screen_2023-06-04_172228.png
-06-04 17:22:25.144  1466  2347 I MediaProvider: Scanned internal due to REASON_DEMAND, found 0 items in 3ms, 0 inserts 0 updates 0 deletes
-06-04 17:22:25.136  1466  1466 W com.android.providers.media.module: type=1400 audit(0.0:44452): avc: denied { read } for comm=4173796E635461736B202331 name="primary" dev="tmpfs" ino=18207 scontext=u:r:mediaprovider_app:s0:c118,c256,c512,c768 tcontext=u:object_r:mnt_pass_through_file:s0 tclass=lnk_file permissive=0 app=com.android.providers.media.module
-06-04 17:22:25.145  1466  2347 I MediaProvider: End Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/screen_2023-06-04_172228.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
-06-04 17:22:25.136  1466  1466 W com.android.providers.media.module: type=1400 audit(0.0:44453): avc: denied { read } for comm=4173796E635461736B202331 name="primary" dev="tmpfs" ino=18207 scontext=u:r:mediaprovider_app:s0:c118,c256,c512,c768 tcontext=u:object_r:mnt_pass_through_file:s0 tclass=lnk_file permissive=0 app=com.android.providers.media.module
-06-04 17:22:25.171  1466  1653 I MediaProvider: Deleted 1 items on external_primary due to com.android.shell
-06-04 17:22:25.217 23176 23178 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:22:25.461   179   179 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-06-04 17:22:25.461 23198 23198 I Gralloc4: mapper 4.x is not supported
-06-04 17:22:25.615 23202 23204 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:22:25.615  1466  2347 I MediaProvider: Begin Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/screen_2023-06-04_172229.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
-06-04 17:22:25.616  1466  2347 W ModernMediaScanner: Failed to visit /sdcard/screen_2023-06-04_172229.png: java.nio.file.AccessDeniedException: /sdcard/screen_2023-06-04_172229.png
-06-04 17:22:25.617  1466  2347 I MediaProvider: Scanned internal due to REASON_DEMAND, found 0 items in 1ms, 0 inserts 0 updates 0 deletes
-06-04 17:22:25.618  1466  2347 I MediaProvider: End Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/screen_2023-06-04_172229.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
-06-04 17:22:25.643  1466 24747 I MediaProvider: Deleted 1 items on external_primary due to com.android.shell
-06-04 17:22:25.728 23213 23215 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:22:32.436 28555 28555 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
-06-04 17:22:32.603 28555 28555 I chatty  : uid=10055(com.android.documentsui) identical 1 line
-06-04 17:22:35.182 28555 28555 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
-06-04 17:22:35.610   530   576 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.net.conn.NETWORK_CONDITIONS_MEASURED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
-06-04 17:22:35.655 28555 28555 I ProvidersCache: Updating roots due to change on user 0at content://com.android.providers.media.documents/root
-06-04 17:22:38.199   179   179 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-06-04 17:22:38.199 23271 23271 I Gralloc4: mapper 4.x is not supported
-06-04 17:22:38.359 23275 23277 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:22:38.360  1466  2347 I MediaProvider: Begin Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/screen_2023-06-04_172241.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
-06-04 17:22:38.356  1466  1466 W com.android.providers.media.module: type=1400 audit(0.0:44462): avc: denied { read } for comm=4173796E635461736B202331 name="primary" dev="tmpfs" ino=18207 scontext=u:r:mediaprovider_app:s0:c118,c256,c512,c768 tcontext=u:object_r:mnt_pass_through_file:s0 tclass=lnk_file permissive=0 app=com.android.providers.media.module
-06-04 17:22:38.389     0     0 W audit   : audit_lost=20145 audit_rate_limit=5 audit_backlog_limit=64
-06-04 17:22:38.390     0     0 E audit   : rate limit exceeded
-06-04 17:22:38.356  1466  1466 W com.android.providers.media.module: type=1400 audit(0.0:44463): avc: denied { read } for comm=4173796E635461736B202331 name="primary" dev="tmpfs" ino=18207 scontext=u:r:mediaprovider_app:s0:c118,c256,c512,c768 tcontext=u:object_r:mnt_pass_through_file:s0 tclass=lnk_file permissive=0 app=com.android.providers.media.module
-06-04 17:22:38.363  1466  2347 W ModernMediaScanner: Failed to visit /sdcard/screen_2023-06-04_172241.png: java.nio.file.AccessDeniedException: /sdcard/screen_2023-06-04_172241.png
-06-04 17:22:38.364  1466  2347 I MediaProvider: Scanned internal due to REASON_DEMAND, found 0 items in 3ms, 0 inserts 0 updates 0 deletes
-06-04 17:22:38.356  1466  1466 W com.android.providers.media.module: type=1400 audit(0.0:44464): avc: denied { read } for comm=4173796E635461736B202331 name="primary" dev="tmpfs" ino=18207 scontext=u:r:mediaprovider_app:s0:c118,c256,c512,c768 tcontext=u:object_r:mnt_pass_through_file:s0 tclass=lnk_file permissive=0 app=com.android.providers.media.module
-06-04 17:22:38.365  1466  2347 I MediaProvider: End Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/screen_2023-06-04_172241.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
-06-04 17:22:38.356  1466  1466 W com.android.providers.media.module: type=1400 audit(0.0:44465): avc: denied { read } for comm=4173796E635461736B202331 name="primary" dev="tmpfs" ino=18207 scontext=u:r:mediaprovider_app:s0:c118,c256,c512,c768 tcontext=u:object_r:mnt_pass_through_file:s0 tclass=lnk_file permissive=0 app=com.android.providers.media.module
-06-04 17:22:38.386  1466  1652 I MediaProvider: Deleted 1 items on external_primary due to com.android.shell
-06-04 17:22:38.470 23286 23288 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:22:38.554 23303 23305 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:22:38.653 23318 23320 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:22:38.779 23333 23335 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:22:38.945 23345 23345 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.profilebootclasspath"
-06-04 17:22:38.945 23345 23345 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_apex_image"
-06-04 17:22:38.945 23345 23345 I AndroidRuntime: Using default boot image
-06-04 17:22:38.945 23345 23345 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.disable_lock_profiling"
-06-04 17:22:38.945 23345 23345 I AndroidRuntime: Leaving lock profiling enabled
-06-04 17:22:38.945 23345 23345 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_generational_cc"
-06-04 17:22:38.946 23345 23345 I app_process: Core platform API reporting enabled, enforcing=false
-06-04 17:22:38.991 23345 23345 W app_process: Unexpected CPU variant for X86 using defaults: x86
-06-04 17:22:38.991 23345 23345 I app_process: The ClassLoaderContext is a special shared library.
-06-04 17:22:38.998 23345 23345 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
-06-04 17:22:39.225   530   697 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:22:39.225   530  9799 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:22:39.226   530  9799 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:22:39.241   530  9799 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
-06-04 17:22:39.241   530  9799 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
-06-04 17:22:39.241   530  9799 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
-06-04 17:22:39.241   530  9799 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
-06-04 17:22:39.241   530  9799 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
-06-04 17:22:39.241   530  9799 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
-06-04 17:22:39.241   530  9799 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
-06-04 17:22:39.241   530  9799 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
-06-04 17:22:39.241   530  9799 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
-06-04 17:22:39.241   530  9799 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
-06-04 17:22:39.241   530  9799 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
-06-04 17:22:39.241   530  9799 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
-06-04 17:22:39.241   530  9799 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
-06-04 17:22:39.241   530  9799 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
-06-04 17:22:39.241   530  9799 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
-06-04 17:22:39.241   530  9799 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
-06-04 17:22:39.241   530  9799 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
-06-04 17:22:39.241   530  9799 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
-06-04 17:22:39.241   530  9799 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
-06-04 17:22:39.241   530  9799 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
-06-04 17:22:39.242   530  3684 W OpenGLRenderer: Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
-06-04 17:22:39.359   530  9799 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:22:40.842   179   179 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-06-04 17:22:40.842 23408 23408 I Gralloc4: mapper 4.x is not supported
-06-04 17:22:41.000 23412 23414 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:22:41.001  1466  2347 I MediaProvider: Begin Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/screen_2023-06-04_172244.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
-06-04 17:22:40.996  1466  1466 W com.android.providers.media.module: type=1400 audit(0.0:44472): avc: denied { read } for comm=4173796E635461736B202331 name="primary" dev="tmpfs" ino=18207 scontext=u:r:mediaprovider_app:s0:c118,c256,c512,c768 tcontext=u:object_r:mnt_pass_through_file:s0 tclass=lnk_file permissive=0 app=com.android.providers.media.module
-06-04 17:22:41.003  1466  2347 W ModernMediaScanner: Failed to visit /sdcard/screen_2023-06-04_172244.png: java.nio.file.AccessDeniedException: /sdcard/screen_2023-06-04_172244.png
-06-04 17:22:41.004  1466  2347 I MediaProvider: Scanned internal due to REASON_DEMAND, found 0 items in 2ms, 0 inserts 0 updates 0 deletes
-06-04 17:22:41.005  1466  2347 I MediaProvider: End Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/screen_2023-06-04_172244.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
-06-04 17:22:41.030     0     0 W audit   : audit_lost=20150 audit_rate_limit=5 audit_backlog_limit=64
-06-04 17:22:41.031     0     0 E audit   : rate limit exceeded
-06-04 17:22:40.996  1466  1466 W com.android.providers.media.module: type=1400 audit(0.0:44473): avc: denied { read } for comm=4173796E635461736B202331 name="primary" dev="tmpfs" ino=18207 scontext=u:r:mediaprovider_app:s0:c118,c256,c512,c768 tcontext=u:object_r:mnt_pass_through_file:s0 tclass=lnk_file permissive=0 app=com.android.providers.media.module
-06-04 17:22:41.034  1466  1653 I MediaProvider: Deleted 1 items on external_primary due to com.android.shell
-06-04 17:22:41.109 23423 23425 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:22:41.248   530   857 W NotificationService: Toast already killed. pkg=com.simplemobiletools.calendar.pro token=android.os.BinderProxy@da4c41d
-06-04 17:22:41.357   179   179 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
-06-04 17:22:41.357 23445 23445 I Gralloc4: mapper 4.x is not supported
-06-04 17:22:41.524  1466  2347 I MediaProvider: Begin Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/screen_2023-06-04_172245.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
-06-04 17:22:41.525  1466  2347 W ModernMediaScanner: Failed to visit /sdcard/screen_2023-06-04_172245.png: java.nio.file.AccessDeniedException: /sdcard/screen_2023-06-04_172245.png
-06-04 17:22:41.525  1466  2347 I MediaProvider: Scanned internal due to REASON_DEMAND, found 0 items in 1ms, 0 inserts 0 updates 0 deletes
-06-04 17:22:41.526  1466  2347 I MediaProvider: End Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/screen_2023-06-04_172245.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
-06-04 17:22:41.553  1466  4324 I MediaProvider: Deleted 1 items on external_primary due to com.android.shell
-06-04 17:22:41.623 23460 23462 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:22:42.326   530   697 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
-06-04 17:22:42.759   530   570 W WindowManager: Unable to start animation, surface is null or no children.
-06-04 17:22:42.768   530  1439 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+06-05 10:44:16.365   530   635 W RuleEvaluation: Integrity rule files are not available.
+06-05 10:44:16.365   530   593 I PackageManager: Integrity check passed for file:///data/app/vmdl1868908140.tmp
+06-05 10:44:16.324   530   530 I chatty  : uid=1000(system) Binder:530_3 identical 2 lines
+06-05 10:44:16.344   530   530 W Binder:530_9: type=1400 audit(0.0:47288): avc: denied { getopt } for scontext=u:r:system_server:s0 tcontext=u:r:shell:s0 tclass=unix_stream_socket permissive=0
+06-05 10:44:16.381   426   638 E installd: Couldn't opendir /data/app/vmdl1868908140.tmp: No such file or directory
+06-05 10:44:16.381   426   638 E installd: Failed to delete /data/app/vmdl1868908140.tmp: No such file or directory
+06-05 10:44:16.381  3419  3424 I abb     : oneway function results will be dropped but finished with status OK and parcel size 4
+06-05 10:44:16.382  1466  1466 I MediaProvider: Invalidating LocalCallingIdentity cache for package io.github.ylimit.droidbotapp. Reason: package android.intent.action.PACKAGE_ADDED
+06-05 10:44:16.376   530   530 W Binder:530_9: type=1400 audit(0.0:47289): avc: denied { getopt } for scontext=u:r:system_server:s0 tcontext=u:r:shell:s0 tclass=unix_stream_socket permissive=0
+06-05 10:44:16.387   530   567 I RoleManagerService: Granting default roles...
+06-05 10:44:16.376   530   530 I chatty  : uid=1000(system) Binder:530_3 identical 1 line
+06-05 10:44:16.376   530   530 W Binder:530_9: type=1400 audit(0.0:47291): avc: denied { getopt } for scontext=u:r:system_server:s0 tcontext=u:r:shell:s0 tclass=unix_stream_socket permissive=0
+06-05 10:44:16.387   530   627 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS | 
+06-05 10:44:16.391   530  3624 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:io.github.ylimit.droidbotapp flg=0x4000010 (has extras) } to com.android.packageinstaller/.PackageInstalledReceiver
+06-05 10:44:16.391   530   530 I Telecom : DefaultDialerCache: Refreshing default dialer for user 0: now com.android.dialer: DDC.oR@AP0
+06-05 10:44:16.392  1879  1918 I PermissionControllerServiceImpl: Updating user sensitive for uid 10131
+06-05 10:44:16.409   530   576 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:io.github.ylimit.droidbotapp flg=0x4000010 (has extras) } to com.android.gallery3d/.app.PackagesMonitor
+06-05 10:44:16.409   530   576 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:io.github.ylimit.droidbotapp flg=0x4000010 (has extras) } to com.google.android.gms/.games.chimera.GamesSystemBroadcastReceiverProxy
+06-05 10:44:16.409   530   576 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:io.github.ylimit.droidbotapp flg=0x4000010 (has extras) } to com.google.android.gms/.gass.chimera.PackageChangeBroadcastReceiver
+06-05 10:44:16.409   530   576 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:io.github.ylimit.droidbotapp flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+06-05 10:44:16.416   530   575 W VoiceInteractionManager: no available voice recognition services found for user 0
+06-05 10:44:16.417   530   627 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS | 
+06-05 10:44:16.419  1317  6956 W GCM     : Unexpected forwarded intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:io.github.ylimit.droidbotapp flg=0x4000010 cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) }
+06-05 10:44:16.419  1317  6963 W GCM     : Unexpected forwarded intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:io.github.ylimit.droidbotapp flg=0x4000010 cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) }
+06-05 10:44:16.424  1885  6960 I Auth    : [SupervisedAccountIntentOperation] onHandleIntent(): android.intent.action.PACKAGE_ADDED
+06-05 10:44:16.424  1885  6960 I ChromeSync: [Sync,SyncIntentOperation] Handling the intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:io.github.ylimit.droidbotapp flg=0x4000010 cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+06-05 10:44:16.431   530   530 I Telecom : DefaultDialerCache: Refreshing default dialer for user 0: now com.android.dialer: DDC.oR@AQA
+06-05 10:44:16.431  6959  6969 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
+06-05 10:44:16.431   530  3624 W ActivityManager: Unable to start service Intent { act=com.google.android.gms.auth.key.retrieval.service.START pkg=com.google.android.gms } U=0: not found
+06-05 10:44:16.432  1885  6972 I FontsPackageChangeOp: Package io.github.ylimit.droidbotapp has no metadata
+06-05 10:44:16.433   530   857 W ActivityManager: Unbind failed: could not find connection for android.os.BinderProxy@2b46fdf
+06-05 10:44:16.433  1885  1988 E GmsClient: unable to connect to service: com.google.android.gms.auth.key.retrieval.service.START on com.google.android.gms
+06-05 10:44:16.440  1885  6960 I ChromeSync: [Persistence,AffiliationManager] One of affiliation or grouping data for android://oLr5anP-BJ19j-M_tFugU96AJHaN5jtjwXgvq72RZET1iU3RzB1hHhuIl8ZZ_NdpuapwNb8QjexGpYl_Z3khqA==@io.github.ylimit.droidbotapp/ was not found. Marking affiliation data as stale...
+06-05 10:44:16.450   530   575 W VoiceInteractionManager: no available voice interaction services found for user 0
+06-05 10:44:16.450  1317  6964 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package:io.github.ylimit.droidbotapp flg=0x5000010 cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+06-05 10:44:16.451  1317  6964 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package:io.github.ylimit.droidbotapp flg=0x5000010 cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+06-05 10:44:16.452   530   541 W JavaBinder: BinderProxy is being destroyed but the application did not call unlinkToDeath to unlink all of its death recipients beforehand.  Releasing leaked death recipient: com.android.server.AlarmManagerService$2
+06-05 10:44:16.452   530   541 I BpBinder: onLastStrongRef automatically unlinking death recipients: <uncached descriptor>
+06-05 10:44:16.457  1317  6966 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+06-05 10:44:16.457  1879  1911 I PermissionControllerServiceImpl: Updating user sensitive for uid 10131
+06-05 10:44:16.463  1317  6966 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+06-05 10:44:16.464  1885  6972 E ConfigFileUtils: Failed to read config file: /data/user_de/0/com.google.android.gms/app_chimera/next_container.pb: open failed: ENOENT (No such file or directory)
+06-05 10:44:16.467  6993  6995 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
+06-05 10:44:16.474  1885  2390 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.gms componentName=AppsCorpus serviceId=36 [CONTEXT service_id=21 ]
+06-05 10:44:16.476   530   577 I ActivityManager: Start proc 6998:io.github.ylimit.droidbotapp/u0a131 for service {io.github.ylimit.droidbotapp/io.github.privacystreams.accessibility.PSAccessibilityService}
+06-05 10:44:16.479  1885  6972 I ChmraDebugLogger: [73] 1801
+06-05 10:44:16.479  1885  6972 I ChmraDebugLogger: [30] [Pay.optional:201817020000] permitMetered=true,
+06-05 10:44:16.479  1885  6972 W ChimeraConfigService: Retry attempt was throttled.
+06-05 10:44:16.480  6998  6998 I mit.droidbotap: Late-enabling -Xcheck:jni
+06-05 10:44:16.491  6998  6998 I mit.droidbotap: Unquickening 12 vdex files!
+06-05 10:44:16.492  6998  6998 W mit.droidbotap: Unexpected CPU variant for X86 using defaults: x86
+06-05 10:44:16.493  1885  2650 W Icing   : No valid account for uploading user actions [CONTEXT service_id=21 ]
+06-05 10:44:16.498  1885  2171 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.gms componentName=null serviceId=30 [CONTEXT service_id=21 ]
+06-05 10:44:16.499  1885  2650 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0 [CONTEXT service_id=21 ]
+06-05 10:44:16.500  1885  2650 W Icing   : No valid account for uploading user actions [CONTEXT service_id=21 ]
+06-05 10:44:16.503  1885  2650 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0 [CONTEXT service_id=21 ]
+06-05 10:44:16.503  1885  2650 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms [CONTEXT service_id=21 ]
+06-05 10:44:16.509   385   401 I adbd    : jdwp connection from 6998
+06-05 10:44:16.510   983  1945 E FrameEvents: updateAcquireFence: Did not find frame.
+06-05 10:44:16.515  7008  7022 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
+06-05 10:44:16.515  1885  2650 I Icing   : Indexing com.google.android.gms-internal.3p:MobileApplication from com.google.android.gms [CONTEXT service_id=21 ]
+06-05 10:44:16.518  1885  2650 I Icing   : Indexing com.google.android.gms-internal.3p:Message from com.google.android.gms [CONTEXT service_id=21 ]
+06-05 10:44:16.520  1885  2650 I Icing   : Indexing done com.google.android.gms-apps [CONTEXT service_id=21 ]
+06-05 10:44:16.520  1885  2650 I Icing   : Indexing done com.google.android.gms-internal.3p:MobileApplication [CONTEXT service_id=21 ]
+06-05 10:44:16.521  1885  2650 I Icing   : Indexing done com.google.android.gms-internal.3p:Message [CONTEXT service_id=21 ]
+06-05 10:44:16.521  1885  2650 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms [CONTEXT service_id=21 ]
+06-05 10:44:16.521  1885  2650 I Icing   : Indexing done com.google.android.gms-apps [CONTEXT service_id=21 ]
+06-05 10:44:16.524  6998  6998 I mit.droidbotap: The ClassLoaderContext is a special shared library.
+06-05 10:44:16.528  1885  2650 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms [CONTEXT service_id=21 ]
+06-05 10:44:16.531  1885  2390 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.gms componentName=null serviceId=36 [CONTEXT service_id=21 ]
+06-05 10:44:16.534  1885  2650 W Icing   : No valid account for uploading user actions [CONTEXT service_id=21 ]
+06-05 10:44:16.535  1885  2650 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0 [CONTEXT service_id=21 ]
+06-05 10:44:16.536  1885  2650 I Icing   : Indexing done com.google.android.gms-apps [CONTEXT service_id=21 ]
+06-05 10:44:16.563  7034  7035 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
+06-05 10:44:16.572   385   385 E adbd    : failed to connect to socket 'tcp:7336': Connection refused
+06-05 10:44:16.579   385   385 E adbd    : failed to connect to socket 'tcp:7336': Connection refused
+--------- beginning of kernel
+06-05 10:44:16.611  7050  7056 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
+06-05 10:44:16.613  1380  1380 I InputAttributes: InputType.TYPE_NULL is specified
+06-05 10:44:16.614   338   338 I android.hardware.vibrator-service.example: Vibrator reporting capabilities
+06-05 10:44:16.640   530 18202 W ActivityTaskManager: Current config: {1.0 310mcc260mnc [en_US] ldltr sw411dp w411dp h804dp 560dpi nrml long port finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1440, 3120) mAppBounds=Rect(0, 136 - 1440, 2952) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} s.25} unchanged for IME proc io.github.ylimit.droidbotapp
+06-05 10:44:16.702  7076  7078 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
+06-05 10:44:16.784  7086  7086 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.profilebootclasspath"
+06-05 10:44:16.784  7086  7086 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_apex_image"
+06-05 10:44:16.784  7086  7086 I AndroidRuntime: Using default boot image
+06-05 10:44:16.780  7086  7086 W app_process: type=1400 audit(0.0:47292): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8368 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+06-05 10:44:16.786  7086  7086 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.disable_lock_profiling"
+06-05 10:44:16.786  7086  7086 I AndroidRuntime: Leaving lock profiling enabled
+06-05 10:44:16.786  7086  7086 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_generational_cc"
+06-05 10:44:16.813     0     0 W audit   : audit_lost=20342 audit_rate_limit=5 audit_backlog_limit=64
+06-05 10:44:16.813     0     0 E audit   : rate limit exceeded
+06-05 10:44:16.780  7086  7086 W app_process: type=1400 audit(0.0:47293): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8368 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+06-05 10:44:16.787  7086  7086 I app_process: Core platform API reporting enabled, enforcing=false
+06-05 10:44:16.836  7086  7086 W app_process: Unexpected CPU variant for X86 using defaults: x86
+06-05 10:44:16.836  7086  7086 I app_process: The ClassLoaderContext is a special shared library.
+06-05 10:44:16.841  7086  7086 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
+06-05 10:44:16.640   530 18202 W ActivityTaskManager: Current config: {1.0 310mcc260mnc [en_US] ldltr sw411dp w411dp h804dp 560dpi nrml long port finger qwerty/v/v dpad/v winConfig={ mBounds=Rect(0, 0 - 1440, 3120) mAppBounds=Rect(0, 136 - 1440, 2952) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} s.25} unchanged for IME proc io.github.ylimit.droidbotapp
+06-05 10:44:17.310  7107  7107 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.profilebootclasspath"
+06-05 10:44:17.310  7107  7107 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_apex_image"
+06-05 10:44:17.310  7107  7107 I AndroidRuntime: Using default boot image
+06-05 10:44:17.310  7107  7107 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.disable_lock_profiling"
+06-05 10:44:17.310  7107  7107 I AndroidRuntime: Leaving lock profiling enabled
+06-05 10:44:17.310  7107  7107 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_generational_cc"
+06-05 10:44:17.311  7107  7107 I app_process: Core platform API reporting enabled, enforcing=false
+06-05 10:44:17.345  7107  7107 W app_process: Unexpected CPU variant for X86 using defaults: x86
+06-05 10:44:17.345  7107  7107 I app_process: The ClassLoaderContext is a special shared library.
+06-05 10:44:17.350  7107  7107 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
+06-05 10:44:17.826  7130  7132 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
+06-05 10:44:17.847  3419  3419 I abb     : StartCommandInProcess(73657474696e67730067657400656e61 settings.get.ena [truncated])
+06-05 10:44:17.849  3419 17628 I abb     : oneway function results will be dropped but finished with status OK and parcel size 4
+06-05 10:44:17.851  3419  3419 I abb     : StartCommandInProcess(7061636b61676500696e7374616c6c00 package.install. [truncated])
+06-05 10:44:17.844   530   530 W Binder:530_20: type=1400 audit(0.0:47300): avc: denied { getopt } for scontext=u:r:system_server:s0 tcontext=u:r:shell:s0 tclass=unix_stream_socket permissive=0
+06-05 10:44:17.876  7139  7141 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
+06-05 10:44:17.876   530   530 W Binder:530_20: type=1400 audit(0.0:47303): avc: denied { getopt } for scontext=u:r:system_server:s0 tcontext=u:r:shell:s0 tclass=unix_stream_socket permissive=0
+06-05 10:44:17.908   530   635 W RuleEvaluation: Integrity rule files are not available.
+06-05 10:44:17.908   530   593 I PackageManager: Integrity check passed for file:///data/app/vmdl1391469306.tmp
+06-05 10:44:17.920   530   593 I PackageDexOptimizer: Running dexopt (dexoptNeeded=1) on: /data/app/~~yHb3LOeWy0jHq4mDRhtk0g==/com.simplemobiletools.calendar.pro-r_ax-PuKtDwZpZlj2eF8Ig==/base.apk pkg=com.simplemobiletools.calendar.pro isa=x86 dexoptFlags=boot_complete,profile_guided,public,enable_hidden_api_checks targetFilter=speed-profile oatDir=/data/app/~~yHb3LOeWy0jHq4mDRhtk0g==/com.simplemobiletools.calendar.pro-r_ax-PuKtDwZpZlj2eF8Ig==/oat classLoaderContext=PCL[]{}
+06-05 10:44:17.928  7142  7142 W dex2oat32: Unexpected CPU variant for X86 using defaults: x86
+06-05 10:44:17.928  7142  7142 W dex2oat32: Mismatch between dex2oat instruction set features to use (ISA: X86 Feature string: -ssse3,-sse4.1,-sse4.2,-avx,-avx2,-popcnt) and those from CPP defines (ISA: X86 Feature string: ssse3,-sse4.1,-sse4.2,-avx,-avx2,-popcnt) for the command line:
+06-05 10:44:17.928  7142  7142 W dex2oat32: /apex/com.android.art/bin/dex2oat32 --zip-fd=7 --zip-location=base.apk --input-vdex-fd=-1 --output-vdex-fd=9 --oat-fd=8 --oat-location=/data/app/~~yHb3LOeWy0jHq4mDRhtk0g==/com.simplemobiletools.calendar.pro-r_ax-PuKtDwZpZlj2eF8Ig==/oat/x86/base.odex --instruction-set=x86 --instruction-set-variant=x86 --instruction-set-features=default --runtime-arg -Xbootclasspath:/apex/com.android.art/javalib/core-oj.jar:/apex/com.android.art/javalib/core-libart.jar:/apex/com.android.art/javalib/core-icu4j.jar:/apex/com.android.art/javalib/okhttp.jar:/apex/com.android.art/javalib/bouncycastle.jar:/apex/com.android.art/javalib/apache-xml.jar:/system/framework/framework.jar:/system/framework/ext.jar:/system/framework/telephony-common.jar:/system/framework/voip-common.jar:/system/framework/ims-common.jar:/system/framework/framework-atb-backward-compatibility.jar --runtime-arg -Xms64m --runtime-arg -Xmx512m --updatable-bcp-packages-file=/system/etc/updatable-bcp-packages.txt --resolve-startup-const-strings=true --max-image-block-size=524288 --compiler-filter=speed-profile --swap-fd=10 --classpath-dir=/data/app/~~yHb3LOeWy0jHq4mDRhtk0g==/com.simplemobiletools.calendar.pro-r_ax-PuKtDwZpZlj2eF8Ig== --class-loader-context=PCL[]{} --generate-mini-debug-info --compact-dex-level=none --runtime-arg -Xtarget-sdk-version:33 --runtime-arg -Xhidden-api-policy:enabled --compilation-reason=install
+06-05 10:44:17.928  7142  7142 I dex2oat32: /apex/com.android.art/bin/dex2oat32 --input-vdex-fd=-1 --output-vdex-fd=9 --updatable-bcp-packages-file=/system/etc/updatable-bcp-packages.txt --resolve-startup-const-strings=true --max-image-block-size=524288 --compiler-filter=speed-profile --classpath-dir=/data/app/~~yHb3LOeWy0jHq4mDRhtk0g==/com.simplemobiletools.calendar.pro-r_ax-PuKtDwZpZlj2eF8Ig== --class-loader-context=PCL[]{} --generate-mini-debug-info --compact-dex-level=none --compilation-reason=install
+06-05 10:44:17.929  7142  7142 I dex2oat32: setting boot class path to /apex/com.android.art/javalib/core-oj.jar:/apex/com.android.art/javalib/core-libart.jar:/apex/com.android.art/javalib/core-icu4j.jar:/apex/com.android.art/javalib/okhttp.jar:/apex/com.android.art/javalib/bouncycastle.jar:/apex/com.android.art/javalib/apache-xml.jar:/system/framework/framework.jar:/system/framework/ext.jar:/system/framework/telephony-common.jar:/system/framework/voip-common.jar:/system/framework/ims-common.jar:/system/framework/framework-atb-backward-compatibility.jar
+06-05 10:44:17.960  7142  7142 W dex2oat32: Method Landroid/graphics/ColorSpace;.isWideGamut is abstract, but the declaring class is neither abstract nor an interface in dex file base.apk
+06-05 10:44:18.087  7142  7142 I dex2oat32: dex2oat took 159.870ms (398.296ms cpu) (threads: 4) arena alloc=3696B (3696B) java alloc=4480KB (4588208B) native alloc=7239KB (7412976B) free=3185KB (3261952B)
+06-05 10:44:18.091   426   638 E installd: Couldn't opendir /data/app/vmdl1391469306.tmp: No such file or directory
+06-05 10:44:18.091   426   638 E installd: Failed to delete /data/app/vmdl1391469306.tmp: No such file or directory
+06-05 10:44:18.120     0     0 W audit   : audit_lost=20348 audit_rate_limit=5 audit_backlog_limit=64
+06-05 10:44:18.120     0     0 E audit   : rate limit exceeded
+06-05 10:44:18.093  3419 17628 I abb     : oneway function results will be dropped but finished with status OK and parcel size 4
+06-05 10:44:18.093  1466  1466 I MediaProvider: Invalidating LocalCallingIdentity cache for package com.simplemobiletools.calendar.pro. Reason: package android.intent.action.PACKAGE_ADDED
+06-05 10:44:18.088   530   530 W Binder:530_20: type=1400 audit(0.0:47304): avc: denied { getopt } for scontext=u:r:system_server:s0 tcontext=u:r:shell:s0 tclass=unix_stream_socket permissive=0
+06-05 10:44:18.095   530   627 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS | 
+06-05 10:44:18.096   530   857 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.simplemobiletools.calendar.pro flg=0x4000010 (has extras) } to com.android.packageinstaller/.PackageInstalledReceiver
+06-05 10:44:18.096   530   576 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.simplemobiletools.calendar.pro flg=0x4000010 (has extras) } to com.android.gallery3d/.app.PackagesMonitor
+06-05 10:44:18.096   530   576 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.simplemobiletools.calendar.pro flg=0x4000010 (has extras) } to com.google.android.gms/.games.chimera.GamesSystemBroadcastReceiverProxy
+06-05 10:44:18.096   530   576 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.simplemobiletools.calendar.pro flg=0x4000010 (has extras) } to com.google.android.gms/.gass.chimera.PackageChangeBroadcastReceiver
+06-05 10:44:18.096   530   576 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.simplemobiletools.calendar.pro flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+06-05 10:44:18.097   530   575 W VoiceInteractionManager: no available voice recognition services found for user 0
+06-05 10:44:18.099   530   530 I Telecom : DefaultDialerCache: Refreshing default dialer for user 0: now com.android.dialer: DDC.oR@AQE
+06-05 10:44:18.100  1879  1918 I PermissionControllerServiceImpl: Updating user sensitive for uid 10132
+06-05 10:44:18.101  1317  6956 W GCM     : Unexpected forwarded intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.simplemobiletools.calendar.pro flg=0x4000010 cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) }
+06-05 10:44:18.101   530   857 W ActivityManager: Unable to start service Intent { act=com.google.android.gms.auth.key.retrieval.service.START pkg=com.google.android.gms } U=0: not found
+06-05 10:44:18.101  1317  6956 W GCM     : Unexpected forwarded intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.simplemobiletools.calendar.pro flg=0x4000010 cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) }
+06-05 10:44:18.101  1885  6960 I Auth    : [SupervisedAccountIntentOperation] onHandleIntent(): android.intent.action.PACKAGE_ADDED
+06-05 10:44:18.101  1885  6960 I ChromeSync: [Sync,SyncIntentOperation] Handling the intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.simplemobiletools.calendar.pro flg=0x4000010 cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+06-05 10:44:18.102  1885  6970 I FontsPackageChangeOp: Package com.simplemobiletools.calendar.pro has no metadata
+06-05 10:44:18.103   530   857 W ActivityManager: Unbind failed: could not find connection for android.os.BinderProxy@3a98aa1
+06-05 10:44:18.103  1885  1988 E GmsClient: unable to connect to service: com.google.android.gms.auth.key.retrieval.service.START on com.google.android.gms
+06-05 10:44:18.105   530   627 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS | 
+06-05 10:44:18.110  1885  6960 I ChromeSync: [Persistence,AffiliationManager] One of affiliation or grouping data for android://WnAYnnBvSExMcitQunFC-6BYLRs4Togun9HHnSXm_pQTGU64fi7cr3cMuqA9gebIa-pgIkwX1t5YWAtpadPJZg==@com.simplemobiletools.calendar.pro/ was not found. Marking affiliation data as stale...
+06-05 10:44:18.119   530   530 I Telecom : DefaultDialerCache: Refreshing default dialer for user 0: now com.android.dialer: DDC.oR@AQI
+06-05 10:44:18.122   530   575 W VoiceInteractionManager: no available voice interaction services found for user 0
+06-05 10:44:18.125  1885  6960 E ConfigFileUtils: Failed to read config file: /data/user_de/0/com.google.android.gms/app_chimera/next_container.pb: open failed: ENOENT (No such file or directory)
+06-05 10:44:18.133  1317  6963 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package:com.simplemobiletools.calendar.pro flg=0x5000010 cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+06-05 10:44:18.136  1317  6963 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package:com.simplemobiletools.calendar.pro flg=0x5000010 cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+06-05 10:44:18.136  1317  6965 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+06-05 10:44:18.137  1885  6960 I ChmraDebugLogger: [73] 1801
+06-05 10:44:18.137  1885  6960 I ChmraDebugLogger: [30] [Pay.optional:201817020000] permitMetered=true,
+06-05 10:44:18.138  1885  6960 W ChimeraConfigService: Retry attempt was throttled.
+06-05 10:44:18.139  1317  6961 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+06-05 10:44:18.141  1879  1918 I PermissionControllerServiceImpl: Updating user sensitive for uid 10132
+06-05 10:44:18.153  1885  6997 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms [CONTEXT service_id=21 ]
+06-05 10:44:18.160  1885  6997 I Icing   : Indexing done com.google.android.gms-apps [CONTEXT service_id=21 ]
+06-05 10:44:18.160  1885  6997 I Icing   : Indexing com.google.android.gms-internal.3p:MobileApplication from com.google.android.gms [CONTEXT service_id=21 ]
+06-05 10:44:18.168  1885  6997 I Icing   : Indexing com.google.android.gms-internal.3p:Message from com.google.android.gms [CONTEXT service_id=21 ]
+06-05 10:44:18.170  1885  6997 I Icing   : Indexing done com.google.android.gms-internal.3p:MobileApplication [CONTEXT service_id=21 ]
+06-05 10:44:18.170  1885  6997 I Icing   : Indexing done com.google.android.gms-internal.3p:Message [CONTEXT service_id=21 ]
+06-05 10:44:18.170  1885  6997 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms [CONTEXT service_id=21 ]
+06-05 10:44:18.177  1885  6997 I Icing   : Indexing com.google.android.gms-internal.3p:MobileApplication from com.google.android.gms [CONTEXT service_id=21 ]
+06-05 10:44:18.177  1885  6997 I Icing   : Indexing done com.google.android.gms-internal.3p:MobileApplication [CONTEXT service_id=21 ]
+06-05 10:44:18.177  1885  6997 I Icing   : Indexing com.google.android.gms-internal.3p:Message from com.google.android.gms [CONTEXT service_id=21 ]
+06-05 10:44:18.178  1885  6997 I Icing   : Indexing done com.google.android.gms-internal.3p:Message [CONTEXT service_id=21 ]
+06-05 10:44:18.178  1885  6997 I Icing   : Indexing done com.google.android.gms-apps [CONTEXT service_id=21 ]
+06-05 10:44:18.178  1885  6997 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms [CONTEXT service_id=21 ]
+06-05 10:44:18.178  1885  6997 I Icing   : Indexing done com.google.android.gms-apps [CONTEXT service_id=21 ]
+06-05 10:44:18.388   530   567 I RoleManagerService: Granting default roles...
+06-05 10:44:18.656  1380  1380 I LatinIME: Timeout waiting for dictionary load
+06-05 10:44:19.927  7159  7161 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
+06-05 10:44:19.956   178   178 I servicemanager: Since 'apexservice' could not be found, trying to start it as a lazy AIDL service
+06-05 10:44:19.985     0     0 I init    : starting service 'apexd'...
+06-05 10:44:19.989     0     0 I init    : Control message: Processed ctl.interface_start for 'aidl/apexservice' from pid: 178 (/system/bin/servicemanager)
+06-05 10:44:20.000     0     0 I apexd   : Scanning /system/apex for preinstalled data
+06-05 10:44:20.002     0     0 I apexd   : Scanning /system_ext/apex for preinstalled data
+06-05 10:44:20.002     0     0 I apexd   : ... does not exist. Skipping
+06-05 10:44:20.002     0     0 I apexd   : Scanning /product/apex for preinstalled data
+06-05 10:44:20.003     0     0 I apexd   : ... does not exist. Skipping
+06-05 10:44:20.003     0     0 I apexd   : Scanning /vendor/apex for preinstalled data
+06-05 10:44:20.003     0     0 I apexd   : ... does not exist. Skipping
+06-05 10:44:20.004     0     0 I apexd   : Populating APEX database from mounts...
+06-05 10:44:20.004     0     0 I apexd   : Found "/apex/com.android.mediaprovider@300000000" backed by file /system/apex/com.android.mediaprovider.apex
+06-05 10:44:20.005     0     0 I apexd   : Found "/apex/com.android.tethering@300000000" backed by file /system/apex/com.android.tethering.apex
+06-05 10:44:20.006     0     0 I apexd   : Found "/apex/com.android.wifi@300000000" backed by file /system/apex/com.android.wifi.apex
+06-05 10:44:20.007     0     0 I apexd   : Found "/apex/com.android.cellbroadcast@300000000" backed by file /system/apex/com.android.cellbroadcast.apex
+06-05 10:44:20.007     0     0 I apexd   : Found "/apex/com.android.neuralnetworks@300000000" backed by file /system/apex/com.android.neuralnetworks.apex
+06-05 10:44:20.009     0     0 I apexd   : Found "/apex/com.android.resolv@300000000" backed by file /system/apex/com.android.resolv.apex
+06-05 10:44:20.009     0     0 I apexd   : Found "/apex/com.android.media.swcodec@300000000" backed by file /system/apex/com.android.media.swcodec.apex
+06-05 10:44:20.010     0     0 I apexd   : Found "/apex/com.android.conscrypt@300000000" backed by file /system/apex/com.android.conscrypt.apex
+06-05 10:44:20.011     0     0 I apexd   : Found "/apex/com.android.adbd@300000000" backed by file /system/apex/com.android.adbd.apex
+06-05 10:44:20.012     0     0 I apexd   : Found "/apex/com.android.art@1" backed by file /system/apex/com.android.art.debug.apex
+06-05 10:44:20.013     0     0 I apexd   : Found "/apex/com.android.permission@300000000" backed by file /system/apex/com.android.permission.apex
+06-05 10:44:20.013     0     0 I apexd   : Found "/apex/com.android.runtime@1" backed by file /system/apex/com.android.runtime.apex
+06-05 10:44:20.014     0     0 I apexd   : Found "/apex/com.android.sdkext@300000000" backed by file /system/apex/com.android.sdkext.apex
+06-05 10:44:20.014     0     0 I apexd   : Found "/apex/com.android.tzdata@300000000" backed by file /system/apex/com.android.tzdata.apex
+06-05 10:44:20.015     0     0 I apexd   : Found "/apex/com.android.media@300000000" backed by file /system/apex/com.android.media.apex
+06-05 10:44:20.015     0     0 I apexd   : Found "/apex/com.android.extservices@300000000" backed by file /system/apex/com.android.extservices.apex
+06-05 10:44:20.016     0     0 I apexd   : Found "/apex/com.android.vndk.v30@1" backed by file /system/apex/com.android.vndk.current.apex
+06-05 10:44:20.016     0     0 I apexd   : Found "/apex/com.android.os.statsd@300000000" backed by file /system/apex/com.android.os.statsd.apex
+06-05 10:44:20.017     0     0 I apexd   : Found "/apex/com.android.apex.cts.shim@1" backed by file /system/apex/com.android.apex.cts.shim.apex
+06-05 10:44:20.017     0     0 I apexd   : Found "/apex/com.android.i18n@1" backed by file /system/apex/com.android.i18n.apex
+06-05 10:44:20.018     0     0 I apexd   : Found "/apex/com.android.ipsec@300000000" backed by file /system/apex/com.android.ipsec.apex
+06-05 10:44:20.018     0     0 I apexd   : 21 packages restored.
+06-05 10:44:20.018     0     0 I AidlLazyServiceRegistrar: Registering service apexservice
+06-05 10:44:20.019     0     0 I AidlLazyServiceRegistrar: Trying to shut down the service. No clients in use for any service in process.
+06-05 10:44:19.991   178   178 I BpBinder: onLastStrongRef automatically unlinking death recipients: <uncached descriptor>
+06-05 10:44:19.991   178   178 I servicemanager: Tried to unregister apexservice, but there is about to be a client.
+06-05 10:44:20.019     0     0 I AidlLazyServiceRegistrar: Failed to unregister service apexservice
+06-05 10:44:20.153   179   179 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
+06-05 10:44:20.154  7182  7182 I Gralloc4: mapper 4.x is not supported
+06-05 10:44:20.554  1466  2347 I MediaProvider: Begin Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/screen_2023-06-05_104425.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
+06-05 10:44:20.556  1466  2347 W ModernMediaScanner: Failed to visit /sdcard/screen_2023-06-05_104425.png: java.nio.file.AccessDeniedException: /sdcard/screen_2023-06-05_104425.png
+06-05 10:44:20.557  1466  2347 I MediaProvider: Scanned internal due to REASON_DEMAND, found 0 items in 2ms, 0 inserts 0 updates 0 deletes
+06-05 10:44:20.548  1466  1466 W com.android.providers.media.module: type=1400 audit(0.0:47307): avc: denied { read } for comm=4173796E635461736B202331 name="primary" dev="tmpfs" ino=18207 scontext=u:r:mediaprovider_app:s0:c118,c256,c512,c768 tcontext=u:object_r:mnt_pass_through_file:s0 tclass=lnk_file permissive=0 app=com.android.providers.media.module
+06-05 10:44:20.558  1466  2347 I MediaProvider: End Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/screen_2023-06-05_104425.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
+06-05 10:44:20.583     0     0 W audit   : audit_lost=20350 audit_rate_limit=5 audit_backlog_limit=64
+06-05 10:44:20.584     0     0 E audit   : rate limit exceeded
+06-05 10:44:20.552  1466  1466 W com.android.providers.media.module: type=1400 audit(0.0:47308): avc: denied { read } for comm=4173796E635461736B202331 name="primary" dev="tmpfs" ino=18207 scontext=u:r:mediaprovider_app:s0:c118,c256,c512,c768 tcontext=u:object_r:mnt_pass_through_file:s0 tclass=lnk_file permissive=0 app=com.android.providers.media.module
+06-05 10:44:20.591  1466  1653 I MediaProvider: Deleted 1 items on external_primary due to com.android.shell
+06-05 10:44:20.633  7197  7199 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
+06-05 10:44:20.710   530 12803 I ActivityManager: Force stopping com.simplemobiletools.calendar.pro appid=10132 user=0: from pid 7209
+06-05 10:44:20.711  7209  7211 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
+06-05 10:44:20.764  7212  7212 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.profilebootclasspath"
+06-05 10:44:20.764  7212  7212 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_apex_image"
+06-05 10:44:20.764  7212  7212 I AndroidRuntime: Using default boot image
+06-05 10:44:20.764  7212  7212 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.disable_lock_profiling"
+06-05 10:44:20.764  7212  7212 I AndroidRuntime: Leaving lock profiling enabled
+06-05 10:44:20.764  7212  7212 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_generational_cc"
+06-05 10:44:20.766  7212  7212 W app_process: Could not reserve sentinel fault page
+06-05 10:44:20.766  7212  7212 I app_process: Core platform API reporting enabled, enforcing=false
+06-05 10:44:20.812  7212  7212 W app_process: Unexpected CPU variant for X86 using defaults: x86
+06-05 10:44:20.813  7212  7212 I app_process: The ClassLoaderContext is a special shared library.
+06-05 10:44:20.819  7212  7212 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
+06-05 10:44:20.825   530   568 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000100 cmp=com.android.launcher3/.uioverrides.QuickstepLauncher (has extras)} from uid 0
+06-05 10:44:20.826   393   393 I perfetto: ing_service_impl.cc:758 Configured tracing session 267, #sources:1, duration:5000 ms, #buffers:1, total buffer size:4096 KB, total sessions:1, uid:1071 session name: ""
+06-05 10:44:20.827   392   392 I perfetto: probes_producer.cc:230  Ftrace setup (target_buf=267)
+06-05 10:44:20.860   392   392 I perfetto: ftrace_procfs.cc:176    enabled ftrace
+06-05 10:44:20.887     0     0 W perfetto: enabled ftrace
+06-05 10:44:21.181     0     0 E ICMPv6  : RA: ndisc_router_discovery failed to add default route
+06-05 10:44:21.165   223   226 E android.system.suspend@1.0-service: Error opening kernel wakelock stats for: wakeup34: Permission denied
+06-05 10:44:21.170   223   226 E android.system.suspend@1.0-service: Error opening kernel wakelock stats for: wakeup35: Permission denied
+06-05 10:44:21.535   178   178 I servicemanager: Notifying apexservice they have clients: 1
+06-05 10:44:21.564     0     0 I AidlLazyServiceRegistrar: Process has 1 (of 1 available) client(s) in use after notification android.apex.IApexService has clients: 1
+06-05 10:44:22.489   179   179 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
+06-05 10:44:22.489  7248  7248 I Gralloc4: mapper 4.x is not supported
+06-05 10:44:22.873  7254  7256 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
+06-05 10:44:22.874  1466  2347 I MediaProvider: Begin Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/screen_2023-06-05_104427.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
+06-05 10:44:22.876  1466  2347 W ModernMediaScanner: Failed to visit /sdcard/screen_2023-06-05_104427.png: java.nio.file.AccessDeniedException: /sdcard/screen_2023-06-05_104427.png
+06-05 10:44:22.902     0     0 W audit   : audit_lost=20357 audit_rate_limit=5 audit_backlog_limit=64
+06-05 10:44:22.903     0     0 E audit   : rate limit exceeded
+06-05 10:44:22.877  1466  2347 I MediaProvider: Scanned internal due to REASON_DEMAND, found 0 items in 3ms, 0 inserts 0 updates 0 deletes
+06-05 10:44:22.868  1466  1466 W com.android.providers.media.module: type=1400 audit(0.0:47319): avc: denied { read } for comm=4173796E635461736B202331 name="primary" dev="tmpfs" ino=18207 scontext=u:r:mediaprovider_app:s0:c118,c256,c512,c768 tcontext=u:object_r:mnt_pass_through_file:s0 tclass=lnk_file permissive=0 app=com.android.providers.media.module
+06-05 10:44:22.878  1466  2347 I MediaProvider: End Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/screen_2023-06-05_104427.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
+06-05 10:44:22.868  1466  1466 W com.android.providers.media.module: type=1400 audit(0.0:47320): avc: denied { read } for comm=4173796E635461736B202331 name="primary" dev="tmpfs" ino=18207 scontext=u:r:mediaprovider_app:s0:c118,c256,c512,c768 tcontext=u:object_r:mnt_pass_through_file:s0 tclass=lnk_file permissive=0 app=com.android.providers.media.module
+06-05 10:44:22.904  1466 24747 I MediaProvider: Deleted 1 items on external_primary due to com.android.shell
+06-05 10:44:22.933  7266  7268 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
+06-05 10:44:23.175   179   179 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
+06-05 10:44:23.176  7289  7289 I Gralloc4: mapper 4.x is not supported
+06-05 10:44:23.556  1466  2347 I MediaProvider: Begin Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/screen_2023-06-05_104428.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
+06-05 10:44:23.557  1466  2347 W ModernMediaScanner: Failed to visit /sdcard/screen_2023-06-05_104428.png: java.nio.file.AccessDeniedException: /sdcard/screen_2023-06-05_104428.png
+06-05 10:44:23.558  1466  2347 I MediaProvider: Scanned internal due to REASON_DEMAND, found 0 items in 2ms, 0 inserts 0 updates 0 deletes
+06-05 10:44:23.559  1466  2347 I MediaProvider: End Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/screen_2023-06-05_104428.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
+06-05 10:44:23.588  1466  1652 I MediaProvider: Deleted 1 items on external_primary due to com.android.shell
+06-05 10:44:23.619  7304  7306 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
+06-05 10:44:23.806   179   179 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
+06-05 10:44:23.806  7326  7326 I Gralloc4: mapper 4.x is not supported
+06-05 10:44:23.963   509   509 E wifi_forwarder: qemu_pipe_open_ns:62: Could not connect to the 'pipe:qemud:wififorward' service: Invalid argument
+06-05 10:44:23.963   509   509 E wifi_forwarder: RemoteConnection failed to initialize: RemoteConnection failed to open pipe
+06-05 10:44:24.182  7332  7334 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
+06-05 10:44:24.180  1466  1466 W com.android.providers.media.module: type=1400 audit(0.0:47331): avc: denied { read } for comm=4173796E635461736B202331 name="primary" dev="tmpfs" ino=18207 scontext=u:r:mediaprovider_app:s0:c118,c256,c512,c768 tcontext=u:object_r:mnt_pass_through_file:s0 tclass=lnk_file permissive=0 app=com.android.providers.media.module
+06-05 10:44:24.183  1466  2347 I MediaProvider: Begin Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/screen_2023-06-05_104428.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
+06-05 10:44:24.186  1466  2347 W ModernMediaScanner: Failed to visit /sdcard/screen_2023-06-05_104428.png: java.nio.file.AccessDeniedException: /sdcard/screen_2023-06-05_104428.png
+06-05 10:44:24.212     0     0 W audit   : audit_lost=20364 audit_rate_limit=5 audit_backlog_limit=64
+06-05 10:44:24.213     0     0 E audit   : rate limit exceeded
+06-05 10:44:24.187  1466  2347 I MediaProvider: Scanned internal due to REASON_DEMAND, found 0 items in 3ms, 0 inserts 0 updates 0 deletes
+06-05 10:44:24.180  1466  1466 W com.android.providers.media.module: type=1400 audit(0.0:47333): avc: denied { read } for comm=4173796E635461736B202331 name="primary" dev="tmpfs" ino=18207 scontext=u:r:mediaprovider_app:s0:c118,c256,c512,c768 tcontext=u:object_r:mnt_pass_through_file:s0 tclass=lnk_file permissive=0 app=com.android.providers.media.module
+06-05 10:44:24.188  1466  2347 I MediaProvider: End Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/screen_2023-06-05_104428.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
+06-05 10:44:24.180  1466  1466 W com.android.providers.media.module: type=1400 audit(0.0:47334): avc: denied { read } for comm=4173796E635461736B202331 name="primary" dev="tmpfs" ino=18207 scontext=u:r:mediaprovider_app:s0:c118,c256,c512,c768 tcontext=u:object_r:mnt_pass_through_file:s0 tclass=lnk_file permissive=0 app=com.android.providers.media.module
+06-05 10:44:24.213  1466  1653 I MediaProvider: Deleted 1 items on external_primary due to com.android.shell
+06-05 10:44:24.246  7343  7345 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
+06-05 10:44:24.296   530   858 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.simplemobiletools.calendar.pro/.activities.SplashActivity.Orange} from uid 2000
+06-05 10:44:24.297   393   393 I perfetto: ing_service_impl.cc:758 Configured tracing session 268, #sources:1, duration:5000 ms, #buffers:1, total buffer size:4096 KB, total sessions:2, uid:1071 session name: ""
+06-05 10:44:24.297   392   392 I perfetto: probes_producer.cc:230  Ftrace setup (target_buf=268)
+06-05 10:44:24.307  7355  7357 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
+06-05 10:44:24.332   530   577 I ActivityManager: Start proc 7363:com.simplemobiletools.calendar.pro/u0a132 for pre-top-activity {com.simplemobiletools.calendar.pro/com.simplemobiletools.calendar.pro.activities.SplashActivity.Orange}
+06-05 10:44:24.336  7363  7363 W ls.calendar.pr: Unexpected CPU variant for X86 using defaults: x86
+06-05 10:44:24.339   385   401 I adbd    : jdwp connection from 7363
+06-05 10:44:24.342   530   859 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+06-05 10:44:24.342   530   859 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+06-05 10:44:24.342   530   859 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+06-05 10:44:24.343   530   859 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+06-05 10:44:24.343   530   859 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+06-05 10:44:24.343   530   859 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+06-05 10:44:24.343   530   859 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+06-05 10:44:24.343   530   859 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+06-05 10:44:24.343   530   859 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+06-05 10:44:24.343   530   859 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+06-05 10:44:24.343   530   859 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+06-05 10:44:24.343   530   859 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+06-05 10:44:24.343   530   859 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+06-05 10:44:24.343   530   859 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+06-05 10:44:24.343   530   859 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+06-05 10:44:24.343   530   859 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+06-05 10:44:24.343   530   859 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+06-05 10:44:24.343   530   859 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+06-05 10:44:24.343   530   859 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+06-05 10:44:24.343   530   859 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+06-05 10:44:24.351  7363  7363 I MultiDex: VM with version 2.1.0 has multidex support
+06-05 10:44:24.351  7363  7363 I MultiDex: Installing application
+06-05 10:44:24.351  7363  7363 I MultiDex: VM has multidex support, MultiDex support library is disabled.
+06-05 10:44:24.364   530   859 I ActivityTaskManager: START u0 {cmp=com.simplemobiletools.calendar.pro/.activities.MainActivity} from uid 10132
+06-05 10:44:24.370   530   859 W ActivityTaskManager: Tried to set launchTime (0) < mLastActivityLaunchTime (242262134)
+06-05 10:44:24.371   530   859 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+06-05 10:44:24.371   530   859 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+06-05 10:44:24.371   530   859 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+06-05 10:44:24.371   530   859 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+06-05 10:44:24.371   530   859 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+06-05 10:44:24.371   530   859 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+06-05 10:44:24.371   530   859 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+06-05 10:44:24.371   530   859 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+06-05 10:44:24.371   530   859 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+06-05 10:44:24.371   530   859 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+06-05 10:44:24.371   530   859 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+06-05 10:44:24.371   530   859 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+06-05 10:44:24.371   530   859 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+06-05 10:44:24.371   530   859 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+06-05 10:44:24.371   530   859 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+06-05 10:44:24.371   530   859 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+06-05 10:44:24.371   530   859 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+06-05 10:44:24.371   530   859 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+06-05 10:44:24.371   530   859 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+06-05 10:44:24.371   530   859 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+06-05 10:44:24.501   179   179 I hwservicemanager: getTransport: Cannot find entry android.hardware.configstore@1.0::ISurfaceFlingerConfigs/default in either framework or device manifest.
+06-05 10:44:24.501  7363  7389 W OpenGLRenderer: Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+06-05 10:44:24.515   179   179 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
+06-05 10:44:24.515  7363  7389 I Gralloc4: mapper 4.x is not supported
+06-05 10:44:24.559   530   575 I ActivityTaskManager: Displayed com.simplemobiletools.calendar.pro/.activities.MainActivity: +260ms
+06-05 10:44:24.564   343   405 W ServiceManager: Permission failure: android.permission.ACCESS_SURFACE_FLINGER from uid=10132 pid=7363
+06-05 10:44:25.548   179   179 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
+06-05 10:44:25.548  7436  7436 I Gralloc4: mapper 4.x is not supported
+06-05 10:44:25.710  1466  2347 I MediaProvider: Begin Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/screen_2023-06-05_104430.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
+06-05 10:44:25.704  1466  1466 W com.android.providers.media.module: type=1400 audit(0.0:47337): avc: denied { read } for comm=4173796E635461736B202331 name="primary" dev="tmpfs" ino=18207 scontext=u:r:mediaprovider_app:s0:c118,c256,c512,c768 tcontext=u:object_r:mnt_pass_through_file:s0 tclass=lnk_file permissive=0 app=com.android.providers.media.module
+06-05 10:44:25.739     0     0 W audit   : audit_lost=20365 audit_rate_limit=5 audit_backlog_limit=64
+06-05 10:44:25.740     0     0 E audit   : rate limit exceeded
+06-05 10:44:25.708  1466  1466 I chatty  : uid=10118(com.android.providers.media.module) identical 3 lines
+06-05 10:44:25.708  1466  1466 W com.android.providers.media.module: type=1400 audit(0.0:47341): avc: denied { read } for comm=4173796E635461736B202331 name="primary" dev="tmpfs" ino=18207 scontext=u:r:mediaprovider_app:s0:c118,c256,c512,c768 tcontext=u:object_r:mnt_pass_through_file:s0 tclass=lnk_file permissive=0 app=com.android.providers.media.module
+06-05 10:44:25.718  1466  2347 W ModernMediaScanner: Failed to visit /sdcard/screen_2023-06-05_104430.png: java.nio.file.AccessDeniedException: /sdcard/screen_2023-06-05_104430.png
+06-05 10:44:25.719  1466  2347 I MediaProvider: Scanned internal due to REASON_DEMAND, found 0 items in 8ms, 0 inserts 0 updates 0 deletes
+06-05 10:44:25.720  1466  2347 I MediaProvider: End Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/screen_2023-06-05_104430.png flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
+06-05 10:44:25.740  1466  1653 I MediaProvider: Deleted 1 items on external_primary due to com.android.shell
+06-05 10:44:25.775  7451  7453 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
+06-05 10:44:25.827   392   392 I perfetto: probes_producer.cc:329  Producer stop (id=267)
+06-05 10:44:25.831   393   393 I perfetto: ng_service_impl.cc:1948 Tracing session 267 ended, total sessions:1
+06-05 10:44:25.987   179   179 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
+06-05 10:44:25.987  7473  7473 I Gralloc4: mapper 4.x is not supported
+06-05 10:44:26.148  7479  7481 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4

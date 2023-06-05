@@ -1,0 +1,50 @@
+{
+  "tag": "2023-06-05_104310",
+  "event": {
+    "event_type": "click",
+    "log_lines": null,
+    "prompt": null,
+    "view": {
+      "package": "com.android.documentsui",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          1083,
+          2784
+        ],
+        [
+          1391,
+          2952
+        ]
+      ],
+      "resource_id": "android:id/button1",
+      "checked": false,
+      "text": "SAVE",
+      "class": "android.widget.Button",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 46,
+      "temp_id": 47,
+      "size": "308*168",
+      "signature": "[class]android.widget.Button[resource_id]android:id/button1[text]SAVE[enabled,,]",
+      "view_str": "264ba235866657fc190968aada41590f",
+      "content_free_signature": "[class]android.widget.Button[resource_id]android:id/button1"
+    },
+    "x": null,
+    "y": null
+  },
+  "start_state": "a70fc580234ac698122d87f6ac31a2c9acb1ff0da3476e6e5f48f269eace5861",
+  "stop_state": "8fea277c4c5d2bbe4cac9b0a8d27b28b11c349da594c87e60393b06bc95ec52e",
+  "event_str": "TouchEvent(state=a70fc580234ac698122d87f6ac31a2c9acb1ff0da3476e6e5f48f269eace5861, view=264ba235866657fc190968aada41590f(PickActivity/Button-SAVE))"
+}

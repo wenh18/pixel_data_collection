@@ -1,0 +1,50 @@
+{
+  "tag": "2023-06-05_104242",
+  "event": {
+    "event_type": "click",
+    "log_lines": null,
+    "prompt": null,
+    "view": {
+      "package": "com.simplemobiletools.calendar.pro",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "content_description": "More options",
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          1230,
+          164
+        ],
+        [
+          1370,
+          332
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.ImageView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": true,
+      "parent": 12,
+      "temp_id": 15,
+      "size": "140*168",
+      "signature": "[class]android.widget.ImageView[resource_id]None[text]None[enabled,,]",
+      "view_str": "6478412fb1810b9c850ba4e6a08d36b7",
+      "content_free_signature": "[class]android.widget.ImageView[resource_id]None"
+    },
+    "x": null,
+    "y": null
+  },
+  "start_state": "8fea277c4c5d2bbe4cac9b0a8d27b28b11c349da594c87e60393b06bc95ec52e",
+  "stop_state": "ec92ea6d8c22bad83232537df748b5e4bd3ae63625f375ea34c90cd04889ee08",
+  "event_str": "TouchEvent(state=8fea277c4c5d2bbe4cac9b0a8d27b28b11c349da594c87e60393b06bc95ec52e, view=6478412fb1810b9c850ba4e6a08d36b7(MainActivity/ImageView-))"
+}

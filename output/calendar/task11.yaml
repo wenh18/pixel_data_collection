@@ -1,0 +1,50 @@
+records:
+- Choice: 3
+  Input: 'null'
+  State: "<input id=0 class='EditText'>Search </input>\n <button id=1 class='Button'>Change\
+    \ view</button>\n <button id=2 class='Button'>Settings</button>\n <button id=3\
+    \ class='ImageView'>More options</button>\n <button id=4 class='b'></button>\n\
+    \ <button id=5 class='TextView'>June June</button>\n <button id=6 class='ImageButton'>New\
+    \ Event</button>\n <button id=7 class='ImageButton'>go back</button>"
+  state_str: 8fea277c4c5d2bbe4cac9b0a8d27b28b11c349da594c87e60393b06bc95ec52e
+- Choice: 1
+  Input: 'null'
+  State: "<button id=0 class='TextView'>Go to date </button>\n <button id=1 class='TextView'>Print\
+    \ </button>\n <button id=2 class='TextView'>Add holidays </button>\n <button id=3\
+    \ class='TextView'>Add contact birthdays </button>\n <button id=4 class='TextView'>Add\
+    \ contact anniversaries </button>\n <button id=5 class='TextView'>Import events\
+    \ from an .ics file </button>\n <button id=6 class='TextView'>Export events to\
+    \ an .ics file </button>\n <button id=7 class='TextView'>About </button>\n <button\
+    \ id=8 class='ImageButton'>go back</button>"
+  state_str: ec92ea6d8c22bad83232537df748b5e4bd3ae63625f375ea34c90cd04889ee08
+- Choice: 10
+  Input: 'null'
+  State: "<button id=0 class='FrameLayout'>Expand handle</button>\n <button id=1 class='Spinner'></button>\n\
+    \ <button id=2 class='TextView'>Save as PDF </button>\n <button id=3 class='LinearLayout'>Summary,\
+    \ copies 1, paper size Letter</button>\n <button id=4 class='TextView'>Copies:\
+    \ </button>\n <button id=5 class='TextView'>1 </button>\n <button id=6 class='TextView'>Paper\
+    \ size: </button>\n <button id=7 class='TextView'>Letter </button>\n <button id=8\
+    \ class='CompoundButton'>Page 1 of 1</button>\n <button id=9 class='TextView'>1/1\
+    \ </button>\n <button id=10 class='ImageButton'>Save to PDF</button>\n <button\
+    \ id=11 class='ImageButton'>go back</button>"
+  state_str: b91a3220538d40ee3dfdcb9857b76b9ea536068b16628a71c83ac55a05387f5c
+- Choice: 10
+  Input: 'null'
+  State: "<p id=0 class='TextView'>Downloads </p>\n <p id=1 class='TextView'>Downloads\
+    \ </p>\n <p id=2 class='TextView'>FILES IN DOWNLOADS </p>\n <button id=3 class='TextView'>Grid\
+    \ view</button>\n <button id=4 class='ImageButton'>Show roots</button>\n <p id=5\
+    \ class='TextView'>Downloads </p>\n <button id=6 class='TextView'>New folder</button>\n\
+    \ <button id=7 class='ImageView'>More options</button>\n <p id=8 class='TextView'>No\
+    \ items </p>\n <input id=9 class='EditText'>Simple Calendar </input>\n <button\
+    \ id=10 class='Button'>SAVE </button>\n <button id=11 class='ImageButton'>go back</button>"
+  state_str: 5d65ce067a564a38b7e722628cd7bd605a7699a39222127e1ab94998296da1cf
+- Choice: -1
+  Input: 'null'
+  State: "<input id=0 class='EditText'>Search </input>\n <button id=1 class='Button'>Change\
+    \ view</button>\n <button id=2 class='Button'>Settings</button>\n <button id=3\
+    \ class='ImageView'>More options</button>\n <button id=4 class='b'></button>\n\
+    \ <button id=5 class='TextView'>June June</button>\n <button id=6 class='ImageButton'>New\
+    \ Event</button>\n <button id=7 class='ImageButton'>go back</button>"
+  state_str: 8fea277c4c5d2bbe4cac9b0a8d27b28b11c349da594c87e60393b06bc95ec52e
+step_num: 5
+task_name: print out the calendar of June as PDF

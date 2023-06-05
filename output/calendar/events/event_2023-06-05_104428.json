@@ -1,5 +1,5 @@
 {
-  "tag": "2023-06-04_172146",
+  "tag": "2023-06-05_104428",
   "event": {
     "event_type": "intent",
     "log_lines": null,
@@ -7,6 +7,6 @@
     "intent": "am start com.simplemobiletools.calendar.pro/com.simplemobiletools.calendar.pro.activities.SplashActivity.Orange"
   },
   "start_state": "01db27677da5cf73bd556753fd21073d1076a906a92e2a0bb8e18ea0b0677b04",
-  "stop_state": "39d649cc169ac57f3816ed34a5b529a16a46704f6d270c3e5265f94fc4a3f522",
+  "stop_state": "8fea277c4c5d2bbe4cac9b0a8d27b28b11c349da594c87e60393b06bc95ec52e",
   "event_str": "IntentEvent(intent='am start com.simplemobiletools.calendar.pro/com.simplemobiletools.calendar.pro.activities.SplashActivity.Orange')"
 }

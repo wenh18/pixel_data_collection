@@ -1,12 +1,13 @@
 {
-  "tag": "2023-06-04_172158",
-  "state_str": "106060e167479e2e2f11ef1e982d3370e9c978df5c9fce2e9b902b8ba4cdf754",
-  "state_str_content_free": "4df77e808836389cd9b2cdd042fac6f1",
+  "tag": "2023-06-05_104234",
+  "state_str": "8fea277c4c5d2bbe4cac9b0a8d27b28b11c349da594c87e60393b06bc95ec52e",
+  "state_str_content_free": "3d36e0d2fbb76443d6eee53dbf53311d",
   "foreground_activity": "com.simplemobiletools.calendar.pro/.activities.MainActivity",
   "activity_stack": [
     "com.simplemobiletools.calendar.pro/.activities.MainActivity"
   ],
   "background_services": [
+    "com.google.android.gms/.icing.service.AppIndexingService",
     "com.android.providers.media.module/com.android.providers.media.fuse.ExternalStorageServiceImpl",
     "android.ext.services/.notification.Assistant",
     "com.google.android.gms/.deviceconnection.service.DeviceConnectionWatcherService",
@@ -19,6 +20,8 @@
     "com.google.android.gms/.gcm.GcmService",
     "com.google.android.gms/.auth.proximity.firstparty.SystemMemoryCacheService",
     "com.google.android.gms/.clearcut.debug.ClearcutDebugDumpService",
+    "com.android.printspooler/.model.PrintSpoolerService",
+    "com.android.permissioncontroller/.role.service.RoleControllerServiceImpl",
     "com.android.phone/com.android.internal.telephony.CellularNetworkService",
     "com.google.android.gms/com.google.location.nearby.direct.service.NearbyDirectService",
     "com.google.android.gms/.chimera.PersistentBoundBrokerService",
@@ -40,6 +43,8 @@
     "android/.hardware.location.GeofenceHardwareService",
     "com.android.se/.SecureElementService",
     "com.google.android.gms/.chimera.PersistentDirectBootAwareApiService",
+    "com.google.android.gms/.chimera.PersistentIntentOperationService",
+    "com.android.permissioncontroller/.permission.service.PermissionControllerServiceImpl",
     "com.android.bluetooth/.hid.HidDeviceService",
     "com.google.android.gms/.location.persistent.LocationPersistentService",
     "com.google.android.gms/.nearby.discovery.service.DiscoveryService",
@@ -69,6 +74,7 @@
     "com.android.phone/.TelephonyDebugService",
     "com.android.bluetooth/.hid.HidHostService",
     "com.google.android.gms/.locationsharing.service.LocationSharingSettingInjectorService",
+    "com.google.android.gms/.icing.service.IndexService",
     "com.android.bluetooth/.opp.BluetoothOppService",
     "com.android.bluetooth/.pan.PanService",
     "com.google.android.gms/com.google.android.location.reporting.service.LocationHistoryInjectorService",
@@ -91,8 +97,8 @@
       "content_description": null,
       "children": [
         1,
-        183,
-        184
+        167,
+        168
       ],
       "focused": false,
       "bounds": [
@@ -585,7 +591,7 @@
       "temp_id": 12,
       "size": "476*168",
       "signature": "[class]androidx.appcompat.widget.LinearLayoutCompat[resource_id]None[text]None[enabled,,]",
-      "view_str": "b104361f559f6c00da1a1c65211506a9",
+      "view_str": "885c7713f201d612956d3c4db4888baf",
       "content_free_signature": "[class]androidx.appcompat.widget.LinearLayoutCompat[resource_id]None"
     },
     {
@@ -635,7 +641,7 @@
       "is_password": false,
       "focusable": true,
       "enabled": true,
-      "content_description": "Filter events by type",
+      "content_description": "Settings",
       "children": [],
       "focused": false,
       "bounds": [
@@ -648,7 +654,7 @@
           332
         ]
       ],
-      "resource_id": "com.simplemobiletools.calendar.pro:id/filter",
+      "resource_id": "com.simplemobiletools.calendar.pro:id/settings",
       "checked": false,
       "text": null,
       "class": "android.widget.Button",
@@ -658,9 +664,9 @@
       "parent": 12,
       "temp_id": 14,
       "size": "168*168",
-      "signature": "[class]android.widget.Button[resource_id]com.simplemobiletools.calendar.pro:id/filter[text]None[enabled,,]",
-      "view_str": "1c3e8531abc4d464d4f33ac5997d6ac0",
-      "content_free_signature": "[class]android.widget.Button[resource_id]com.simplemobiletools.calendar.pro:id/filter"
+      "signature": "[class]android.widget.Button[resource_id]com.simplemobiletools.calendar.pro:id/settings[text]None[enabled,,]",
+      "view_str": "2ef4804d6533b20c302b6f6e970ada82",
+      "content_free_signature": "[class]android.widget.Button[resource_id]com.simplemobiletools.calendar.pro:id/settings"
     },
     {
       "package": "com.simplemobiletools.calendar.pro",
@@ -742,7 +748,7 @@
       "package": "com.simplemobiletools.calendar.pro",
       "visible": true,
       "checkable": false,
-      "child_count": 7,
+      "child_count": 3,
       "editable": false,
       "clickable": false,
       "is_password": false,
@@ -751,12 +757,8 @@
       "content_description": null,
       "children": [
         18,
-        19,
-        166,
-        167,
-        168,
-        169,
-        170
+        165,
+        166
       ],
       "focused": false,
       "bounds": [
@@ -780,45 +782,8 @@
       "temp_id": 17,
       "size": "1440*2592",
       "signature": "[class]android.view.ViewGroup[resource_id]com.simplemobiletools.calendar.pro:id/main_holder[text]None[enabled,,]",
-      "view_str": "600dfc6b7bbc083900425f5235d97d6f",
+      "view_str": "333c95efc8ac7dfba132332b27aba9da",
       "content_free_signature": "[class]android.view.ViewGroup[resource_id]com.simplemobiletools.calendar.pro:id/main_holder"
-    },
-    {
-      "package": "com.simplemobiletools.calendar.pro",
-      "visible": true,
-      "checkable": false,
-      "child_count": 0,
-      "editable": false,
-      "clickable": true,
-      "is_password": false,
-      "focusable": true,
-      "enabled": true,
-      "content_description": null,
-      "children": [],
-      "focused": false,
-      "bounds": [
-        [
-          0,
-          360
-        ],
-        [
-          1440,
-          2952
-        ]
-      ],
-      "resource_id": "com.simplemobiletools.calendar.pro:id/fab_extended_overlay",
-      "checked": false,
-      "text": null,
-      "class": "android.widget.RelativeLayout",
-      "scrollable": false,
-      "selected": false,
-      "long_clickable": false,
-      "parent": 17,
-      "temp_id": 18,
-      "size": "1440*2592",
-      "signature": "[class]android.widget.RelativeLayout[resource_id]com.simplemobiletools.calendar.pro:id/fab_extended_overlay[text]None[enabled,,]",
-      "view_str": "5884d387575c4bba71aad4d5cd36a6e2",
-      "content_free_signature": "[class]android.widget.RelativeLayout[resource_id]com.simplemobiletools.calendar.pro:id/fab_extended_overlay"
     },
     {
       "package": "com.simplemobiletools.calendar.pro",
@@ -832,7 +797,7 @@
       "enabled": false,
       "content_description": null,
       "children": [
-        20
+        19
       ],
       "focused": false,
       "bounds": [
@@ -842,7 +807,7 @@
         ],
         [
           1440,
-          2784
+          2952
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/swipe_refresh_layout",
@@ -853,8 +818,8 @@
       "selected": false,
       "long_clickable": false,
       "parent": 17,
-      "temp_id": 19,
-      "size": "1440*2424",
+      "temp_id": 18,
+      "size": "1440*2592",
       "signature": "[class]android.view.ViewGroup[resource_id]com.simplemobiletools.calendar.pro:id/swipe_refresh_layout[text]None[,,]",
       "view_str": "500d873aa28c839e5b4325b9e570bb5e",
       "content_free_signature": "[class]android.view.ViewGroup[resource_id]com.simplemobiletools.calendar.pro:id/swipe_refresh_layout"
@@ -871,7 +836,7 @@
       "enabled": true,
       "content_description": null,
       "children": [
-        21
+        20
       ],
       "focused": false,
       "bounds": [
@@ -881,7 +846,7 @@
         ],
         [
           1440,
-          2784
+          2952
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/fragments_holder",
@@ -891,9 +856,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 19,
-      "temp_id": 20,
-      "size": "1440*2424",
+      "parent": 18,
+      "temp_id": 19,
+      "size": "1440*2592",
       "signature": "[class]android.widget.FrameLayout[resource_id]com.simplemobiletools.calendar.pro:id/fragments_holder[text]None[enabled,,]",
       "view_str": "9d5ef749e6082c4009ad1b22a94667f9",
       "content_free_signature": "[class]android.widget.FrameLayout[resource_id]com.simplemobiletools.calendar.pro:id/fragments_holder"
@@ -910,9 +875,9 @@
       "enabled": true,
       "content_description": null,
       "children": [
-        22,
-        70,
-        118
+        21,
+        69,
+        117
       ],
       "focused": false,
       "bounds": [
@@ -922,7 +887,7 @@
         ],
         [
           1440,
-          2784
+          2952
         ]
       ],
       "resource_id": null,
@@ -932,9 +897,9 @@
       "scrollable": true,
       "selected": false,
       "long_clickable": false,
-      "parent": 20,
-      "temp_id": 21,
-      "size": "1440*2424",
+      "parent": 19,
+      "temp_id": 20,
+      "size": "1440*2592",
       "signature": "[class]androidx.viewpager.widget.b[resource_id]None[text]None[enabled,,]",
       "view_str": "663152f17deb14ec0b9ba5889466bdfa",
       "content_free_signature": "[class]androidx.viewpager.widget.b[resource_id]None"
@@ -951,10 +916,10 @@
       "enabled": true,
       "content_description": null,
       "children": [
+        22,
         23,
         24,
-        25,
-        26
+        25
       ],
       "focused": false,
       "bounds": [
@@ -964,7 +929,7 @@
         ],
         [
           0,
-          2784
+          2952
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_calendar_holder",
@@ -974,9 +939,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 21,
-      "temp_id": 22,
-      "size": "0*2424",
+      "parent": 20,
+      "temp_id": 21,
+      "size": "0*2592",
       "signature": "[class]android.widget.RelativeLayout[resource_id]com.simplemobiletools.calendar.pro:id/month_calendar_holder[text]None[enabled,,]",
       "view_str": "61bb295a16227b85aca7b580238d919e",
       "content_free_signature": "[class]android.widget.RelativeLayout[resource_id]com.simplemobiletools.calendar.pro:id/month_calendar_holder"
@@ -1011,8 +976,8 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 22,
-      "temp_id": 23,
+      "parent": 21,
+      "temp_id": 22,
       "size": "-1244*187",
       "signature": "[class]android.widget.ImageView[resource_id]com.simplemobiletools.calendar.pro:id/top_left_arrow[text]None[enabled,,]",
       "view_str": "60adc82eb43bb367f8c136c86cce8b77",
@@ -1048,8 +1013,8 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 22,
-      "temp_id": 24,
+      "parent": 21,
+      "temp_id": 23,
       "size": "-196*187",
       "signature": "[class]android.widget.TextView[resource_id]com.simplemobiletools.calendar.pro:id/top_value[text]May[enabled,,]",
       "view_str": "4525d377bcac125a105c4d8de01370b6",
@@ -1085,8 +1050,8 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 22,
-      "temp_id": 25,
+      "parent": 21,
+      "temp_id": 24,
       "size": "0*187",
       "signature": "[class]android.widget.ImageView[resource_id]com.simplemobiletools.calendar.pro:id/top_right_arrow[text]None[enabled,,]",
       "view_str": "9f7d822c180ad7ba620a9ddcdaa2d6ea",
@@ -1104,6 +1069,7 @@
       "enabled": true,
       "content_description": null,
       "children": [
+        26,
         27,
         28,
         29,
@@ -1145,8 +1111,7 @@
         65,
         66,
         67,
-        68,
-        69
+        68
       ],
       "focused": false,
       "bounds": [
@@ -1156,7 +1121,7 @@
         ],
         [
           0,
-          2784
+          2952
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_wrapper",
@@ -1166,9 +1131,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 22,
-      "temp_id": 26,
-      "size": "0*2237",
+      "parent": 21,
+      "temp_id": 25,
+      "size": "0*2405",
       "signature": "[class]android.widget.FrameLayout[resource_id]com.simplemobiletools.calendar.pro:id/month_view_wrapper[text]None[enabled,,]",
       "view_str": "64d4426dc2a63f3b3b0b66cf8e908a6e",
       "content_free_signature": "[class]android.widget.FrameLayout[resource_id]com.simplemobiletools.calendar.pro:id/month_view_wrapper"
@@ -1193,7 +1158,7 @@
         ],
         [
           0,
-          2784
+          2952
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view",
@@ -1203,9 +1168,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 26,
-      "temp_id": 27,
-      "size": "0*2237",
+      "parent": 25,
+      "temp_id": 26,
+      "size": "0*2405",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view[text]None[enabled,,]",
       "view_str": "93d1234fcb8f1226beb02ee6641dfee9",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view"
@@ -1230,7 +1195,7 @@
         ],
         [
           -1235,
-          1001
+          1029
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -1240,9 +1205,46 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 26,
+      "parent": 25,
+      "temp_id": 27,
+      "size": "-1235*384",
+      "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
+      "view_str": "4508d467e4cb8f44079f8c91638f6d81",
+      "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
+    },
+    {
+      "package": "com.simplemobiletools.calendar.pro",
+      "visible": false,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          645
+        ],
+        [
+          -1029,
+          1029
+        ]
+      ],
+      "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
+      "checked": false,
+      "text": null,
+      "class": "android.view.View",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 25,
       "temp_id": 28,
-      "size": "-1235*356",
+      "size": "-1029*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -1266,8 +1268,8 @@
           645
         ],
         [
-          -1029,
-          1001
+          -824,
+          1029
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -1277,9 +1279,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 26,
+      "parent": 25,
       "temp_id": 29,
-      "size": "-1029*356",
+      "size": "-824*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -1303,8 +1305,8 @@
           645
         ],
         [
-          -824,
-          1001
+          -618,
+          1029
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -1314,9 +1316,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 26,
+      "parent": 25,
       "temp_id": 30,
-      "size": "-824*356",
+      "size": "-618*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -1340,8 +1342,8 @@
           645
         ],
         [
-          -618,
-          1001
+          -412,
+          1029
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -1351,9 +1353,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 26,
+      "parent": 25,
       "temp_id": 31,
-      "size": "-618*356",
+      "size": "-412*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -1377,8 +1379,8 @@
           645
         ],
         [
-          -412,
-          1001
+          -206,
+          1029
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -1388,9 +1390,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 26,
+      "parent": 25,
       "temp_id": 32,
-      "size": "-412*356",
+      "size": "-206*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -1414,8 +1416,8 @@
           645
         ],
         [
-          -206,
-          1001
+          -1,
+          1029
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -1425,9 +1427,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 26,
+      "parent": 25,
       "temp_id": 33,
-      "size": "-206*356",
+      "size": "-1*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -1448,11 +1450,11 @@
       "bounds": [
         [
           0,
-          645
+          1030
         ],
         [
-          -1,
-          1001
+          -1235,
+          1414
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -1462,9 +1464,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 26,
+      "parent": 25,
       "temp_id": 34,
-      "size": "-1*356",
+      "size": "-1235*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -1485,11 +1487,11 @@
       "bounds": [
         [
           0,
-          1002
+          1030
         ],
         [
-          -1235,
-          1358
+          -1029,
+          1414
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -1499,9 +1501,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 26,
+      "parent": 25,
       "temp_id": 35,
-      "size": "-1235*356",
+      "size": "-1029*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -1522,11 +1524,11 @@
       "bounds": [
         [
           0,
-          1002
+          1030
         ],
         [
-          -1029,
-          1358
+          -824,
+          1414
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -1536,9 +1538,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 26,
+      "parent": 25,
       "temp_id": 36,
-      "size": "-1029*356",
+      "size": "-824*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -1559,11 +1561,11 @@
       "bounds": [
         [
           0,
-          1002
+          1030
         ],
         [
-          -824,
-          1358
+          -618,
+          1414
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -1573,9 +1575,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 26,
+      "parent": 25,
       "temp_id": 37,
-      "size": "-824*356",
+      "size": "-618*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -1596,11 +1598,11 @@
       "bounds": [
         [
           0,
-          1002
+          1030
         ],
         [
-          -618,
-          1358
+          -412,
+          1414
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -1610,9 +1612,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 26,
+      "parent": 25,
       "temp_id": 38,
-      "size": "-618*356",
+      "size": "-412*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -1633,11 +1635,11 @@
       "bounds": [
         [
           0,
-          1002
+          1030
         ],
         [
-          -412,
-          1358
+          -206,
+          1414
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -1647,9 +1649,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 26,
+      "parent": 25,
       "temp_id": 39,
-      "size": "-412*356",
+      "size": "-206*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -1670,11 +1672,11 @@
       "bounds": [
         [
           0,
-          1002
+          1030
         ],
         [
-          -206,
-          1358
+          -1,
+          1414
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -1684,9 +1686,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 26,
+      "parent": 25,
       "temp_id": 40,
-      "size": "-206*356",
+      "size": "-1*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -1707,11 +1709,11 @@
       "bounds": [
         [
           0,
-          1002
+          1414
         ],
         [
-          -1,
-          1358
+          -1235,
+          1798
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -1721,9 +1723,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 26,
+      "parent": 25,
       "temp_id": 41,
-      "size": "-1*356",
+      "size": "-1235*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -1744,11 +1746,11 @@
       "bounds": [
         [
           0,
-          1358
+          1414
         ],
         [
-          -1235,
-          1714
+          -1029,
+          1798
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -1758,9 +1760,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 26,
+      "parent": 25,
       "temp_id": 42,
-      "size": "-1235*356",
+      "size": "-1029*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -1781,11 +1783,11 @@
       "bounds": [
         [
           0,
-          1358
+          1414
         ],
         [
-          -1029,
-          1714
+          -824,
+          1798
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -1795,9 +1797,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 26,
+      "parent": 25,
       "temp_id": 43,
-      "size": "-1029*356",
+      "size": "-824*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -1818,11 +1820,11 @@
       "bounds": [
         [
           0,
-          1358
+          1414
         ],
         [
-          -824,
-          1714
+          -618,
+          1798
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -1832,9 +1834,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 26,
+      "parent": 25,
       "temp_id": 44,
-      "size": "-824*356",
+      "size": "-618*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -1855,11 +1857,11 @@
       "bounds": [
         [
           0,
-          1358
+          1414
         ],
         [
-          -618,
-          1714
+          -412,
+          1798
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -1869,9 +1871,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 26,
+      "parent": 25,
       "temp_id": 45,
-      "size": "-618*356",
+      "size": "-412*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -1892,11 +1894,11 @@
       "bounds": [
         [
           0,
-          1358
+          1414
         ],
         [
-          -412,
-          1714
+          -206,
+          1798
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -1906,9 +1908,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 26,
+      "parent": 25,
       "temp_id": 46,
-      "size": "-412*356",
+      "size": "-206*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -1929,11 +1931,11 @@
       "bounds": [
         [
           0,
-          1358
+          1414
         ],
         [
-          -206,
-          1714
+          -1,
+          1798
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -1943,9 +1945,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 26,
+      "parent": 25,
       "temp_id": 47,
-      "size": "-206*356",
+      "size": "-1*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -1966,11 +1968,11 @@
       "bounds": [
         [
           0,
-          1358
+          1799
         ],
         [
-          -1,
-          1714
+          -1235,
+          2183
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -1980,9 +1982,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 26,
+      "parent": 25,
       "temp_id": 48,
-      "size": "-1*356",
+      "size": "-1235*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -2003,11 +2005,11 @@
       "bounds": [
         [
           0,
-          1715
+          1799
         ],
         [
-          -1235,
-          2071
+          -1029,
+          2183
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -2017,9 +2019,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 26,
+      "parent": 25,
       "temp_id": 49,
-      "size": "-1235*356",
+      "size": "-1029*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -2040,11 +2042,11 @@
       "bounds": [
         [
           0,
-          1715
+          1799
         ],
         [
-          -1029,
-          2071
+          -824,
+          2183
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -2054,9 +2056,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 26,
+      "parent": 25,
       "temp_id": 50,
-      "size": "-1029*356",
+      "size": "-824*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -2077,11 +2079,11 @@
       "bounds": [
         [
           0,
-          1715
+          1799
         ],
         [
-          -824,
-          2071
+          -618,
+          2183
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -2091,9 +2093,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 26,
+      "parent": 25,
       "temp_id": 51,
-      "size": "-824*356",
+      "size": "-618*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -2114,11 +2116,11 @@
       "bounds": [
         [
           0,
-          1715
+          1799
         ],
         [
-          -618,
-          2071
+          -412,
+          2183
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -2128,9 +2130,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 26,
+      "parent": 25,
       "temp_id": 52,
-      "size": "-618*356",
+      "size": "-412*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -2151,11 +2153,11 @@
       "bounds": [
         [
           0,
-          1715
+          1799
         ],
         [
-          -412,
-          2071
+          -206,
+          2183
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -2165,9 +2167,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 26,
+      "parent": 25,
       "temp_id": 53,
-      "size": "-412*356",
+      "size": "-206*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -2188,11 +2190,11 @@
       "bounds": [
         [
           0,
-          1715
+          1799
         ],
         [
-          -206,
-          2071
+          -1,
+          2183
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -2202,9 +2204,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 26,
+      "parent": 25,
       "temp_id": 54,
-      "size": "-206*356",
+      "size": "-1*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -2225,11 +2227,11 @@
       "bounds": [
         [
           0,
-          1715
+          2183
         ],
         [
-          -1,
-          2071
+          -1235,
+          2567
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -2239,9 +2241,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 26,
+      "parent": 25,
       "temp_id": 55,
-      "size": "-1*356",
+      "size": "-1235*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -2262,11 +2264,11 @@
       "bounds": [
         [
           0,
-          2071
+          2183
         ],
         [
-          -1235,
-          2427
+          -1029,
+          2567
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -2276,9 +2278,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 26,
+      "parent": 25,
       "temp_id": 56,
-      "size": "-1235*356",
+      "size": "-1029*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -2299,48 +2301,11 @@
       "bounds": [
         [
           0,
-          2071
-        ],
-        [
-          -1029,
-          2427
-        ]
-      ],
-      "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
-      "checked": false,
-      "text": null,
-      "class": "android.view.View",
-      "scrollable": false,
-      "selected": false,
-      "long_clickable": false,
-      "parent": 26,
-      "temp_id": 57,
-      "size": "-1029*356",
-      "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
-      "view_str": "4508d467e4cb8f44079f8c91638f6d81",
-      "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
-    },
-    {
-      "package": "com.simplemobiletools.calendar.pro",
-      "visible": false,
-      "checkable": false,
-      "child_count": 0,
-      "editable": false,
-      "clickable": true,
-      "is_password": false,
-      "focusable": true,
-      "enabled": true,
-      "content_description": null,
-      "children": [],
-      "focused": false,
-      "bounds": [
-        [
-          0,
-          2071
+          2183
         ],
         [
           -824,
-          2427
+          2567
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -2350,9 +2315,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 26,
-      "temp_id": 58,
-      "size": "-824*356",
+      "parent": 25,
+      "temp_id": 57,
+      "size": "-824*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -2373,11 +2338,11 @@
       "bounds": [
         [
           0,
-          2071
+          2183
         ],
         [
           -618,
-          2427
+          2567
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -2387,9 +2352,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 26,
-      "temp_id": 59,
-      "size": "-618*356",
+      "parent": 25,
+      "temp_id": 58,
+      "size": "-618*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -2410,11 +2375,11 @@
       "bounds": [
         [
           0,
-          2071
+          2183
         ],
         [
           -412,
-          2427
+          2567
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -2424,9 +2389,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 26,
-      "temp_id": 60,
-      "size": "-412*356",
+      "parent": 25,
+      "temp_id": 59,
+      "size": "-412*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -2447,11 +2412,11 @@
       "bounds": [
         [
           0,
-          2071
+          2183
         ],
         [
           -206,
-          2427
+          2567
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -2461,9 +2426,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 26,
-      "temp_id": 61,
-      "size": "-206*356",
+      "parent": 25,
+      "temp_id": 60,
+      "size": "-206*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -2484,11 +2449,11 @@
       "bounds": [
         [
           0,
-          2071
+          2183
         ],
         [
           -1,
-          2427
+          2567
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -2498,9 +2463,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 26,
-      "temp_id": 62,
-      "size": "-1*356",
+      "parent": 25,
+      "temp_id": 61,
+      "size": "-1*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -2521,11 +2486,11 @@
       "bounds": [
         [
           0,
-          2428
+          2568
         ],
         [
           -1235,
-          2784
+          2952
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -2535,9 +2500,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 26,
-      "temp_id": 63,
-      "size": "-1235*356",
+      "parent": 25,
+      "temp_id": 62,
+      "size": "-1235*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -2558,11 +2523,11 @@
       "bounds": [
         [
           0,
-          2428
+          2568
         ],
         [
           -1029,
-          2784
+          2952
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -2572,9 +2537,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 26,
-      "temp_id": 64,
-      "size": "-1029*356",
+      "parent": 25,
+      "temp_id": 63,
+      "size": "-1029*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -2595,11 +2560,11 @@
       "bounds": [
         [
           0,
-          2428
+          2568
         ],
         [
           -824,
-          2784
+          2952
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -2609,9 +2574,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 26,
-      "temp_id": 65,
-      "size": "-824*356",
+      "parent": 25,
+      "temp_id": 64,
+      "size": "-824*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -2632,11 +2597,11 @@
       "bounds": [
         [
           0,
-          2428
+          2568
         ],
         [
           -618,
-          2784
+          2952
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -2646,9 +2611,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 26,
-      "temp_id": 66,
-      "size": "-618*356",
+      "parent": 25,
+      "temp_id": 65,
+      "size": "-618*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -2669,11 +2634,11 @@
       "bounds": [
         [
           0,
-          2428
+          2568
         ],
         [
           -412,
-          2784
+          2952
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -2683,9 +2648,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 26,
-      "temp_id": 67,
-      "size": "-412*356",
+      "parent": 25,
+      "temp_id": 66,
+      "size": "-412*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -2706,11 +2671,11 @@
       "bounds": [
         [
           0,
-          2428
+          2568
         ],
         [
           -206,
-          2784
+          2952
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -2720,9 +2685,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 26,
-      "temp_id": 68,
-      "size": "-206*356",
+      "parent": 25,
+      "temp_id": 67,
+      "size": "-206*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -2743,11 +2708,11 @@
       "bounds": [
         [
           0,
-          2428
+          2568
         ],
         [
           -1,
-          2784
+          2952
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -2757,9 +2722,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 26,
-      "temp_id": 69,
-      "size": "-1*356",
+      "parent": 25,
+      "temp_id": 68,
+      "size": "-1*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -2776,10 +2741,10 @@
       "enabled": true,
       "content_description": null,
       "children": [
+        70,
         71,
         72,
-        73,
-        74
+        73
       ],
       "focused": false,
       "bounds": [
@@ -2789,7 +2754,7 @@
         ],
         [
           1440,
-          2784
+          2952
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_calendar_holder",
@@ -2799,9 +2764,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 21,
-      "temp_id": 70,
-      "size": "1440*2424",
+      "parent": 20,
+      "temp_id": 69,
+      "size": "1440*2592",
       "signature": "[class]android.widget.RelativeLayout[resource_id]com.simplemobiletools.calendar.pro:id/month_calendar_holder[text]None[enabled,,]",
       "view_str": "eb938a56fcbcc7d33cae16755def1877",
       "content_free_signature": "[class]android.widget.RelativeLayout[resource_id]com.simplemobiletools.calendar.pro:id/month_calendar_holder"
@@ -2836,8 +2801,8 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 70,
-      "temp_id": 71,
+      "parent": 69,
+      "temp_id": 70,
       "size": "196*187",
       "signature": "[class]android.widget.ImageView[resource_id]com.simplemobiletools.calendar.pro:id/top_left_arrow[text]None[enabled,,]",
       "view_str": "60adc82eb43bb367f8c136c86cce8b77",
@@ -2873,8 +2838,8 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 70,
-      "temp_id": 72,
+      "parent": 69,
+      "temp_id": 71,
       "size": "1048*187",
       "signature": "[class]android.widget.TextView[resource_id]com.simplemobiletools.calendar.pro:id/top_value[text]June[enabled,,]",
       "view_str": "46c8490a238173eff257838d3a33c6ce",
@@ -2910,8 +2875,8 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 70,
-      "temp_id": 73,
+      "parent": 69,
+      "temp_id": 72,
       "size": "196*187",
       "signature": "[class]android.widget.ImageView[resource_id]com.simplemobiletools.calendar.pro:id/top_right_arrow[text]None[enabled,,]",
       "view_str": "9f7d822c180ad7ba620a9ddcdaa2d6ea",
@@ -2929,6 +2894,7 @@
       "enabled": true,
       "content_description": null,
       "children": [
+        74,
         75,
         76,
         77,
@@ -2970,8 +2936,7 @@
         113,
         114,
         115,
-        116,
-        117
+        116
       ],
       "focused": false,
       "bounds": [
@@ -2981,7 +2946,7 @@
         ],
         [
           1440,
-          2784
+          2952
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_wrapper",
@@ -2991,9 +2956,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 70,
-      "temp_id": 74,
-      "size": "1440*2237",
+      "parent": 69,
+      "temp_id": 73,
+      "size": "1440*2405",
       "signature": "[class]android.widget.FrameLayout[resource_id]com.simplemobiletools.calendar.pro:id/month_view_wrapper[text]None[enabled,,]",
       "view_str": "64d4426dc2a63f3b3b0b66cf8e908a6e",
       "content_free_signature": "[class]android.widget.FrameLayout[resource_id]com.simplemobiletools.calendar.pro:id/month_view_wrapper"
@@ -3018,7 +2983,7 @@
         ],
         [
           1440,
-          2784
+          2952
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view",
@@ -3028,9 +2993,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 74,
-      "temp_id": 75,
-      "size": "1440*2237",
+      "parent": 73,
+      "temp_id": 74,
+      "size": "1440*2405",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view[text]None[enabled,,]",
       "view_str": "93d1234fcb8f1226beb02ee6641dfee9",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view"
@@ -3055,7 +3020,7 @@
         ],
         [
           205,
-          1001
+          1029
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -3065,9 +3030,46 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 74,
+      "parent": 73,
+      "temp_id": 75,
+      "size": "205*384",
+      "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
+      "view_str": "4508d467e4cb8f44079f8c91638f6d81",
+      "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
+    },
+    {
+      "package": "com.simplemobiletools.calendar.pro",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          206,
+          645
+        ],
+        [
+          411,
+          1029
+        ]
+      ],
+      "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
+      "checked": false,
+      "text": null,
+      "class": "android.view.View",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 73,
       "temp_id": 76,
-      "size": "205*356",
+      "size": "205*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -3087,12 +3089,12 @@
       "focused": false,
       "bounds": [
         [
-          206,
+          411,
           645
         ],
         [
-          411,
-          1001
+          616,
+          1029
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -3102,9 +3104,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 74,
+      "parent": 73,
       "temp_id": 77,
-      "size": "205*356",
+      "size": "205*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -3124,12 +3126,12 @@
       "focused": false,
       "bounds": [
         [
-          411,
+          617,
           645
         ],
         [
-          616,
-          1001
+          822,
+          1029
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -3139,9 +3141,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 74,
+      "parent": 73,
       "temp_id": 78,
-      "size": "205*356",
+      "size": "205*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -3161,12 +3163,12 @@
       "focused": false,
       "bounds": [
         [
-          617,
+          823,
           645
         ],
         [
-          822,
-          1001
+          1028,
+          1029
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -3176,9 +3178,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 74,
+      "parent": 73,
       "temp_id": 79,
-      "size": "205*356",
+      "size": "205*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -3198,12 +3200,12 @@
       "focused": false,
       "bounds": [
         [
-          823,
+          1029,
           645
         ],
         [
-          1028,
-          1001
+          1234,
+          1029
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -3213,9 +3215,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 74,
+      "parent": 73,
       "temp_id": 80,
-      "size": "205*356",
+      "size": "205*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -3235,12 +3237,12 @@
       "focused": false,
       "bounds": [
         [
-          1029,
+          1234,
           645
         ],
         [
-          1234,
-          1001
+          1439,
+          1029
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -3250,9 +3252,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 74,
+      "parent": 73,
       "temp_id": 81,
-      "size": "205*356",
+      "size": "205*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -3272,12 +3274,12 @@
       "focused": false,
       "bounds": [
         [
-          1234,
-          645
+          0,
+          1030
         ],
         [
-          1439,
-          1001
+          205,
+          1414
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -3287,9 +3289,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 74,
+      "parent": 73,
       "temp_id": 82,
-      "size": "205*356",
+      "size": "205*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -3309,12 +3311,12 @@
       "focused": false,
       "bounds": [
         [
-          0,
-          1002
+          206,
+          1030
         ],
         [
-          205,
-          1358
+          411,
+          1414
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -3324,9 +3326,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 74,
+      "parent": 73,
       "temp_id": 83,
-      "size": "205*356",
+      "size": "205*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -3346,12 +3348,12 @@
       "focused": false,
       "bounds": [
         [
-          206,
-          1002
+          411,
+          1030
         ],
         [
-          411,
-          1358
+          616,
+          1414
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -3361,9 +3363,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 74,
+      "parent": 73,
       "temp_id": 84,
-      "size": "205*356",
+      "size": "205*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -3383,12 +3385,12 @@
       "focused": false,
       "bounds": [
         [
-          411,
-          1002
+          617,
+          1030
         ],
         [
-          616,
-          1358
+          822,
+          1414
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -3398,9 +3400,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 74,
+      "parent": 73,
       "temp_id": 85,
-      "size": "205*356",
+      "size": "205*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -3420,12 +3422,12 @@
       "focused": false,
       "bounds": [
         [
-          617,
-          1002
+          823,
+          1030
         ],
         [
-          822,
-          1358
+          1028,
+          1414
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -3435,9 +3437,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 74,
+      "parent": 73,
       "temp_id": 86,
-      "size": "205*356",
+      "size": "205*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -3457,12 +3459,12 @@
       "focused": false,
       "bounds": [
         [
-          823,
-          1002
+          1029,
+          1030
         ],
         [
-          1028,
-          1358
+          1234,
+          1414
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -3472,9 +3474,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 74,
+      "parent": 73,
       "temp_id": 87,
-      "size": "205*356",
+      "size": "205*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -3494,12 +3496,12 @@
       "focused": false,
       "bounds": [
         [
-          1029,
-          1002
+          1234,
+          1030
         ],
         [
-          1234,
-          1358
+          1439,
+          1414
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -3509,9 +3511,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 74,
+      "parent": 73,
       "temp_id": 88,
-      "size": "205*356",
+      "size": "205*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -3531,12 +3533,12 @@
       "focused": false,
       "bounds": [
         [
-          1234,
-          1002
+          0,
+          1414
         ],
         [
-          1439,
-          1358
+          205,
+          1798
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -3546,9 +3548,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 74,
+      "parent": 73,
       "temp_id": 89,
-      "size": "205*356",
+      "size": "205*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -3568,12 +3570,12 @@
       "focused": false,
       "bounds": [
         [
-          0,
-          1358
+          206,
+          1414
         ],
         [
-          205,
-          1714
+          411,
+          1798
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -3583,9 +3585,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 74,
+      "parent": 73,
       "temp_id": 90,
-      "size": "205*356",
+      "size": "205*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -3605,12 +3607,12 @@
       "focused": false,
       "bounds": [
         [
-          206,
-          1358
+          411,
+          1414
         ],
         [
-          411,
-          1714
+          616,
+          1798
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -3620,9 +3622,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 74,
+      "parent": 73,
       "temp_id": 91,
-      "size": "205*356",
+      "size": "205*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -3642,12 +3644,12 @@
       "focused": false,
       "bounds": [
         [
-          411,
-          1358
+          617,
+          1414
         ],
         [
-          616,
-          1714
+          822,
+          1798
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -3657,9 +3659,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 74,
+      "parent": 73,
       "temp_id": 92,
-      "size": "205*356",
+      "size": "205*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -3679,12 +3681,12 @@
       "focused": false,
       "bounds": [
         [
-          617,
-          1358
+          823,
+          1414
         ],
         [
-          822,
-          1714
+          1028,
+          1798
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -3694,9 +3696,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 74,
+      "parent": 73,
       "temp_id": 93,
-      "size": "205*356",
+      "size": "205*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -3716,12 +3718,12 @@
       "focused": false,
       "bounds": [
         [
-          823,
-          1358
+          1029,
+          1414
         ],
         [
-          1028,
-          1714
+          1234,
+          1798
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -3731,9 +3733,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 74,
+      "parent": 73,
       "temp_id": 94,
-      "size": "205*356",
+      "size": "205*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -3753,12 +3755,12 @@
       "focused": false,
       "bounds": [
         [
-          1029,
-          1358
+          1234,
+          1414
         ],
         [
-          1234,
-          1714
+          1439,
+          1798
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -3768,9 +3770,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 74,
+      "parent": 73,
       "temp_id": 95,
-      "size": "205*356",
+      "size": "205*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -3790,12 +3792,12 @@
       "focused": false,
       "bounds": [
         [
-          1234,
-          1358
+          0,
+          1799
         ],
         [
-          1439,
-          1714
+          205,
+          2183
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -3805,9 +3807,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 74,
+      "parent": 73,
       "temp_id": 96,
-      "size": "205*356",
+      "size": "205*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -3827,12 +3829,12 @@
       "focused": false,
       "bounds": [
         [
-          0,
-          1715
+          206,
+          1799
         ],
         [
-          205,
-          2071
+          411,
+          2183
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -3842,9 +3844,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 74,
+      "parent": 73,
       "temp_id": 97,
-      "size": "205*356",
+      "size": "205*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -3864,12 +3866,12 @@
       "focused": false,
       "bounds": [
         [
-          206,
-          1715
+          411,
+          1799
         ],
         [
-          411,
-          2071
+          616,
+          2183
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -3879,9 +3881,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 74,
+      "parent": 73,
       "temp_id": 98,
-      "size": "205*356",
+      "size": "205*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -3901,12 +3903,12 @@
       "focused": false,
       "bounds": [
         [
-          411,
-          1715
+          617,
+          1799
         ],
         [
-          616,
-          2071
+          822,
+          2183
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -3916,9 +3918,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 74,
+      "parent": 73,
       "temp_id": 99,
-      "size": "205*356",
+      "size": "205*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -3938,12 +3940,12 @@
       "focused": false,
       "bounds": [
         [
-          617,
-          1715
+          823,
+          1799
         ],
         [
-          822,
-          2071
+          1028,
+          2183
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -3953,9 +3955,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 74,
+      "parent": 73,
       "temp_id": 100,
-      "size": "205*356",
+      "size": "205*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -3975,12 +3977,12 @@
       "focused": false,
       "bounds": [
         [
-          823,
-          1715
+          1029,
+          1799
         ],
         [
-          1028,
-          2071
+          1234,
+          2183
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -3990,9 +3992,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 74,
+      "parent": 73,
       "temp_id": 101,
-      "size": "205*356",
+      "size": "205*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -4012,12 +4014,12 @@
       "focused": false,
       "bounds": [
         [
-          1029,
-          1715
+          1234,
+          1799
         ],
         [
-          1234,
-          2071
+          1439,
+          2183
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -4027,9 +4029,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 74,
+      "parent": 73,
       "temp_id": 102,
-      "size": "205*356",
+      "size": "205*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -4049,12 +4051,12 @@
       "focused": false,
       "bounds": [
         [
-          1234,
-          1715
+          0,
+          2183
         ],
         [
-          1439,
-          2071
+          205,
+          2567
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -4064,9 +4066,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 74,
+      "parent": 73,
       "temp_id": 103,
-      "size": "205*356",
+      "size": "205*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -4086,12 +4088,12 @@
       "focused": false,
       "bounds": [
         [
-          0,
-          2071
+          206,
+          2183
         ],
         [
-          205,
-          2427
+          411,
+          2567
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -4101,46 +4103,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 74,
+      "parent": 73,
       "temp_id": 104,
-      "size": "205*356",
-      "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
-      "view_str": "4508d467e4cb8f44079f8c91638f6d81",
-      "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
-    },
-    {
-      "package": "com.simplemobiletools.calendar.pro",
-      "visible": true,
-      "checkable": false,
-      "child_count": 0,
-      "editable": false,
-      "clickable": true,
-      "is_password": false,
-      "focusable": true,
-      "enabled": true,
-      "content_description": null,
-      "children": [],
-      "focused": false,
-      "bounds": [
-        [
-          206,
-          2071
-        ],
-        [
-          411,
-          2427
-        ]
-      ],
-      "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
-      "checked": false,
-      "text": null,
-      "class": "android.view.View",
-      "scrollable": false,
-      "selected": false,
-      "long_clickable": false,
-      "parent": 74,
-      "temp_id": 105,
-      "size": "205*356",
+      "size": "205*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -4161,11 +4126,11 @@
       "bounds": [
         [
           411,
-          2071
+          2183
         ],
         [
           616,
-          2427
+          2567
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -4175,9 +4140,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 74,
-      "temp_id": 106,
-      "size": "205*356",
+      "parent": 73,
+      "temp_id": 105,
+      "size": "205*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -4198,11 +4163,11 @@
       "bounds": [
         [
           617,
-          2071
+          2183
         ],
         [
           822,
-          2427
+          2567
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -4212,9 +4177,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 74,
-      "temp_id": 107,
-      "size": "205*356",
+      "parent": 73,
+      "temp_id": 106,
+      "size": "205*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -4235,11 +4200,11 @@
       "bounds": [
         [
           823,
-          2071
+          2183
         ],
         [
           1028,
-          2427
+          2567
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -4249,9 +4214,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 74,
-      "temp_id": 108,
-      "size": "205*356",
+      "parent": 73,
+      "temp_id": 107,
+      "size": "205*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -4272,11 +4237,11 @@
       "bounds": [
         [
           1029,
-          2071
+          2183
         ],
         [
           1234,
-          2427
+          2567
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -4286,9 +4251,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 74,
-      "temp_id": 109,
-      "size": "205*356",
+      "parent": 73,
+      "temp_id": 108,
+      "size": "205*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -4309,11 +4274,11 @@
       "bounds": [
         [
           1234,
-          2071
+          2183
         ],
         [
           1439,
-          2427
+          2567
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -4323,9 +4288,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 74,
-      "temp_id": 110,
-      "size": "205*356",
+      "parent": 73,
+      "temp_id": 109,
+      "size": "205*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -4346,11 +4311,11 @@
       "bounds": [
         [
           0,
-          2428
+          2568
         ],
         [
           205,
-          2784
+          2952
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -4360,9 +4325,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 74,
-      "temp_id": 111,
-      "size": "205*356",
+      "parent": 73,
+      "temp_id": 110,
+      "size": "205*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -4383,11 +4348,11 @@
       "bounds": [
         [
           206,
-          2428
+          2568
         ],
         [
           411,
-          2784
+          2952
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -4397,9 +4362,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 74,
-      "temp_id": 112,
-      "size": "205*356",
+      "parent": 73,
+      "temp_id": 111,
+      "size": "205*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -4420,11 +4385,11 @@
       "bounds": [
         [
           411,
-          2428
+          2568
         ],
         [
           616,
-          2784
+          2952
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -4434,9 +4399,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 74,
-      "temp_id": 113,
-      "size": "205*356",
+      "parent": 73,
+      "temp_id": 112,
+      "size": "205*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -4457,11 +4422,11 @@
       "bounds": [
         [
           617,
-          2428
+          2568
         ],
         [
           822,
-          2784
+          2952
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -4471,9 +4436,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 74,
-      "temp_id": 114,
-      "size": "205*356",
+      "parent": 73,
+      "temp_id": 113,
+      "size": "205*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -4494,11 +4459,11 @@
       "bounds": [
         [
           823,
-          2428
+          2568
         ],
         [
           1028,
-          2784
+          2952
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -4508,9 +4473,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 74,
-      "temp_id": 115,
-      "size": "205*356",
+      "parent": 73,
+      "temp_id": 114,
+      "size": "205*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -4531,11 +4496,11 @@
       "bounds": [
         [
           1029,
-          2428
+          2568
         ],
         [
           1234,
-          2784
+          2952
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -4545,9 +4510,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 74,
-      "temp_id": 116,
-      "size": "205*356",
+      "parent": 73,
+      "temp_id": 115,
+      "size": "205*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -4568,11 +4533,11 @@
       "bounds": [
         [
           1234,
-          2428
+          2568
         ],
         [
           1439,
-          2784
+          2952
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -4582,9 +4547,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 74,
-      "temp_id": 117,
-      "size": "205*356",
+      "parent": 73,
+      "temp_id": 116,
+      "size": "205*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -4601,10 +4566,10 @@
       "enabled": true,
       "content_description": null,
       "children": [
+        118,
         119,
         120,
-        121,
-        122
+        121
       ],
       "focused": false,
       "bounds": [
@@ -4614,7 +4579,7 @@
         ],
         [
           1440,
-          2784
+          2952
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_calendar_holder",
@@ -4624,9 +4589,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 21,
-      "temp_id": 118,
-      "size": "0*2424",
+      "parent": 20,
+      "temp_id": 117,
+      "size": "0*2592",
       "signature": "[class]android.widget.RelativeLayout[resource_id]com.simplemobiletools.calendar.pro:id/month_calendar_holder[text]None[enabled,,]",
       "view_str": "9b3f1b3bc1b35c6fb09d33c2dec7c1d9",
       "content_free_signature": "[class]android.widget.RelativeLayout[resource_id]com.simplemobiletools.calendar.pro:id/month_calendar_holder"
@@ -4661,8 +4626,8 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 118,
-      "temp_id": 119,
+      "parent": 117,
+      "temp_id": 118,
       "size": "0*187",
       "signature": "[class]android.widget.ImageView[resource_id]com.simplemobiletools.calendar.pro:id/top_left_arrow[text]None[enabled,,]",
       "view_str": "60adc82eb43bb367f8c136c86cce8b77",
@@ -4698,8 +4663,8 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 118,
-      "temp_id": 120,
+      "parent": 117,
+      "temp_id": 119,
       "size": "-196*187",
       "signature": "[class]android.widget.TextView[resource_id]com.simplemobiletools.calendar.pro:id/top_value[text]July[enabled,,]",
       "view_str": "6b1c6117c61e0fb08671a619d20f2473",
@@ -4735,8 +4700,8 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 118,
-      "temp_id": 121,
+      "parent": 117,
+      "temp_id": 120,
       "size": "-1244*187",
       "signature": "[class]android.widget.ImageView[resource_id]com.simplemobiletools.calendar.pro:id/top_right_arrow[text]None[enabled,,]",
       "view_str": "9f7d822c180ad7ba620a9ddcdaa2d6ea",
@@ -4754,6 +4719,7 @@
       "enabled": true,
       "content_description": null,
       "children": [
+        122,
         123,
         124,
         125,
@@ -4795,8 +4761,7 @@
         161,
         162,
         163,
-        164,
-        165
+        164
       ],
       "focused": false,
       "bounds": [
@@ -4806,7 +4771,7 @@
         ],
         [
           1440,
-          2784
+          2952
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_wrapper",
@@ -4816,9 +4781,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 118,
-      "temp_id": 122,
-      "size": "0*2237",
+      "parent": 117,
+      "temp_id": 121,
+      "size": "0*2405",
       "signature": "[class]android.widget.FrameLayout[resource_id]com.simplemobiletools.calendar.pro:id/month_view_wrapper[text]None[enabled,,]",
       "view_str": "64d4426dc2a63f3b3b0b66cf8e908a6e",
       "content_free_signature": "[class]android.widget.FrameLayout[resource_id]com.simplemobiletools.calendar.pro:id/month_view_wrapper"
@@ -4843,7 +4808,7 @@
         ],
         [
           1440,
-          2784
+          2952
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view",
@@ -4853,9 +4818,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 122,
-      "temp_id": 123,
-      "size": "0*2237",
+      "parent": 121,
+      "temp_id": 122,
+      "size": "0*2405",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view[text]None[enabled,,]",
       "view_str": "93d1234fcb8f1226beb02ee6641dfee9",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view"
@@ -4880,7 +4845,7 @@
         ],
         [
           1440,
-          1001
+          1029
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -4890,9 +4855,46 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 122,
+      "parent": 121,
+      "temp_id": 123,
+      "size": "0*384",
+      "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
+      "view_str": "4508d467e4cb8f44079f8c91638f6d81",
+      "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
+    },
+    {
+      "package": "com.simplemobiletools.calendar.pro",
+      "visible": false,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          1646,
+          645
+        ],
+        [
+          1440,
+          1029
+        ]
+      ],
+      "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
+      "checked": false,
+      "text": null,
+      "class": "android.view.View",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "parent": 121,
       "temp_id": 124,
-      "size": "0*356",
+      "size": "-206*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -4912,12 +4914,12 @@
       "focused": false,
       "bounds": [
         [
-          1646,
+          1851,
           645
         ],
         [
           1440,
-          1001
+          1029
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -4927,9 +4929,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 122,
+      "parent": 121,
       "temp_id": 125,
-      "size": "-206*356",
+      "size": "-411*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -4949,12 +4951,12 @@
       "focused": false,
       "bounds": [
         [
-          1851,
+          2057,
           645
         ],
         [
           1440,
-          1001
+          1029
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -4964,9 +4966,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 122,
+      "parent": 121,
       "temp_id": 126,
-      "size": "-411*356",
+      "size": "-617*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -4986,12 +4988,12 @@
       "focused": false,
       "bounds": [
         [
-          2057,
+          2263,
           645
         ],
         [
           1440,
-          1001
+          1029
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -5001,9 +5003,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 122,
+      "parent": 121,
       "temp_id": 127,
-      "size": "-617*356",
+      "size": "-823*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -5023,12 +5025,12 @@
       "focused": false,
       "bounds": [
         [
-          2263,
+          2469,
           645
         ],
         [
           1440,
-          1001
+          1029
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -5038,9 +5040,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 122,
+      "parent": 121,
       "temp_id": 128,
-      "size": "-823*356",
+      "size": "-1029*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -5060,12 +5062,12 @@
       "focused": false,
       "bounds": [
         [
-          2469,
+          2674,
           645
         ],
         [
           1440,
-          1001
+          1029
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -5075,9 +5077,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 122,
+      "parent": 121,
       "temp_id": 129,
-      "size": "-1029*356",
+      "size": "-1234*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -5097,12 +5099,12 @@
       "focused": false,
       "bounds": [
         [
-          2674,
-          645
+          1440,
+          1030
         ],
         [
           1440,
-          1001
+          1414
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -5112,9 +5114,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 122,
+      "parent": 121,
       "temp_id": 130,
-      "size": "-1234*356",
+      "size": "0*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -5134,12 +5136,12 @@
       "focused": false,
       "bounds": [
         [
-          1440,
-          1002
+          1646,
+          1030
         ],
         [
           1440,
-          1358
+          1414
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -5149,9 +5151,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 122,
+      "parent": 121,
       "temp_id": 131,
-      "size": "0*356",
+      "size": "-206*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -5171,12 +5173,12 @@
       "focused": false,
       "bounds": [
         [
-          1646,
-          1002
+          1851,
+          1030
         ],
         [
           1440,
-          1358
+          1414
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -5186,9 +5188,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 122,
+      "parent": 121,
       "temp_id": 132,
-      "size": "-206*356",
+      "size": "-411*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -5208,12 +5210,12 @@
       "focused": false,
       "bounds": [
         [
-          1851,
-          1002
+          2057,
+          1030
         ],
         [
           1440,
-          1358
+          1414
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -5223,9 +5225,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 122,
+      "parent": 121,
       "temp_id": 133,
-      "size": "-411*356",
+      "size": "-617*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -5245,12 +5247,12 @@
       "focused": false,
       "bounds": [
         [
-          2057,
-          1002
+          2263,
+          1030
         ],
         [
           1440,
-          1358
+          1414
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -5260,9 +5262,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 122,
+      "parent": 121,
       "temp_id": 134,
-      "size": "-617*356",
+      "size": "-823*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -5282,12 +5284,12 @@
       "focused": false,
       "bounds": [
         [
-          2263,
-          1002
+          2469,
+          1030
         ],
         [
           1440,
-          1358
+          1414
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -5297,9 +5299,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 122,
+      "parent": 121,
       "temp_id": 135,
-      "size": "-823*356",
+      "size": "-1029*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -5319,12 +5321,12 @@
       "focused": false,
       "bounds": [
         [
-          2469,
-          1002
+          2674,
+          1030
         ],
         [
           1440,
-          1358
+          1414
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -5334,9 +5336,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 122,
+      "parent": 121,
       "temp_id": 136,
-      "size": "-1029*356",
+      "size": "-1234*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -5356,12 +5358,12 @@
       "focused": false,
       "bounds": [
         [
-          2674,
-          1002
+          1440,
+          1414
         ],
         [
           1440,
-          1358
+          1798
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -5371,9 +5373,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 122,
+      "parent": 121,
       "temp_id": 137,
-      "size": "-1234*356",
+      "size": "0*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -5393,12 +5395,12 @@
       "focused": false,
       "bounds": [
         [
-          1440,
-          1358
+          1646,
+          1414
         ],
         [
           1440,
-          1714
+          1798
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -5408,9 +5410,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 122,
+      "parent": 121,
       "temp_id": 138,
-      "size": "0*356",
+      "size": "-206*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -5430,12 +5432,12 @@
       "focused": false,
       "bounds": [
         [
-          1646,
-          1358
+          1851,
+          1414
         ],
         [
           1440,
-          1714
+          1798
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -5445,9 +5447,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 122,
+      "parent": 121,
       "temp_id": 139,
-      "size": "-206*356",
+      "size": "-411*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -5467,12 +5469,12 @@
       "focused": false,
       "bounds": [
         [
-          1851,
-          1358
+          2057,
+          1414
         ],
         [
           1440,
-          1714
+          1798
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -5482,9 +5484,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 122,
+      "parent": 121,
       "temp_id": 140,
-      "size": "-411*356",
+      "size": "-617*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -5504,12 +5506,12 @@
       "focused": false,
       "bounds": [
         [
-          2057,
-          1358
+          2263,
+          1414
         ],
         [
           1440,
-          1714
+          1798
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -5519,9 +5521,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 122,
+      "parent": 121,
       "temp_id": 141,
-      "size": "-617*356",
+      "size": "-823*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -5541,12 +5543,12 @@
       "focused": false,
       "bounds": [
         [
-          2263,
-          1358
+          2469,
+          1414
         ],
         [
           1440,
-          1714
+          1798
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -5556,9 +5558,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 122,
+      "parent": 121,
       "temp_id": 142,
-      "size": "-823*356",
+      "size": "-1029*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -5578,12 +5580,12 @@
       "focused": false,
       "bounds": [
         [
-          2469,
-          1358
+          2674,
+          1414
         ],
         [
           1440,
-          1714
+          1798
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -5593,9 +5595,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 122,
+      "parent": 121,
       "temp_id": 143,
-      "size": "-1029*356",
+      "size": "-1234*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -5615,12 +5617,12 @@
       "focused": false,
       "bounds": [
         [
-          2674,
-          1358
+          1440,
+          1799
         ],
         [
           1440,
-          1714
+          2183
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -5630,9 +5632,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 122,
+      "parent": 121,
       "temp_id": 144,
-      "size": "-1234*356",
+      "size": "0*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -5652,12 +5654,12 @@
       "focused": false,
       "bounds": [
         [
-          1440,
-          1715
+          1646,
+          1799
         ],
         [
           1440,
-          2071
+          2183
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -5667,9 +5669,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 122,
+      "parent": 121,
       "temp_id": 145,
-      "size": "0*356",
+      "size": "-206*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -5689,12 +5691,12 @@
       "focused": false,
       "bounds": [
         [
-          1646,
-          1715
+          1851,
+          1799
         ],
         [
           1440,
-          2071
+          2183
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -5704,9 +5706,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 122,
+      "parent": 121,
       "temp_id": 146,
-      "size": "-206*356",
+      "size": "-411*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -5726,12 +5728,12 @@
       "focused": false,
       "bounds": [
         [
-          1851,
-          1715
+          2057,
+          1799
         ],
         [
           1440,
-          2071
+          2183
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -5741,9 +5743,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 122,
+      "parent": 121,
       "temp_id": 147,
-      "size": "-411*356",
+      "size": "-617*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -5763,12 +5765,12 @@
       "focused": false,
       "bounds": [
         [
-          2057,
-          1715
+          2263,
+          1799
         ],
         [
           1440,
-          2071
+          2183
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -5778,9 +5780,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 122,
+      "parent": 121,
       "temp_id": 148,
-      "size": "-617*356",
+      "size": "-823*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -5800,12 +5802,12 @@
       "focused": false,
       "bounds": [
         [
-          2263,
-          1715
+          2469,
+          1799
         ],
         [
           1440,
-          2071
+          2183
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -5815,9 +5817,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 122,
+      "parent": 121,
       "temp_id": 149,
-      "size": "-823*356",
+      "size": "-1029*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -5837,12 +5839,12 @@
       "focused": false,
       "bounds": [
         [
-          2469,
-          1715
+          2674,
+          1799
         ],
         [
           1440,
-          2071
+          2183
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -5852,9 +5854,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 122,
+      "parent": 121,
       "temp_id": 150,
-      "size": "-1029*356",
+      "size": "-1234*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -5874,12 +5876,12 @@
       "focused": false,
       "bounds": [
         [
-          2674,
-          1715
+          1440,
+          2183
         ],
         [
           1440,
-          2071
+          2567
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -5889,9 +5891,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 122,
+      "parent": 121,
       "temp_id": 151,
-      "size": "-1234*356",
+      "size": "0*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -5911,12 +5913,12 @@
       "focused": false,
       "bounds": [
         [
-          1440,
-          2071
+          1646,
+          2183
         ],
         [
           1440,
-          2427
+          2567
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -5926,9 +5928,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 122,
+      "parent": 121,
       "temp_id": 152,
-      "size": "0*356",
+      "size": "-206*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -5948,12 +5950,12 @@
       "focused": false,
       "bounds": [
         [
-          1646,
-          2071
+          1851,
+          2183
         ],
         [
           1440,
-          2427
+          2567
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -5963,46 +5965,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 122,
+      "parent": 121,
       "temp_id": 153,
-      "size": "-206*356",
-      "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
-      "view_str": "4508d467e4cb8f44079f8c91638f6d81",
-      "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
-    },
-    {
-      "package": "com.simplemobiletools.calendar.pro",
-      "visible": false,
-      "checkable": false,
-      "child_count": 0,
-      "editable": false,
-      "clickable": true,
-      "is_password": false,
-      "focusable": true,
-      "enabled": true,
-      "content_description": null,
-      "children": [],
-      "focused": false,
-      "bounds": [
-        [
-          1851,
-          2071
-        ],
-        [
-          1440,
-          2427
-        ]
-      ],
-      "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
-      "checked": false,
-      "text": null,
-      "class": "android.view.View",
-      "scrollable": false,
-      "selected": false,
-      "long_clickable": false,
-      "parent": 122,
-      "temp_id": 154,
-      "size": "-411*356",
+      "size": "-411*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -6023,11 +5988,11 @@
       "bounds": [
         [
           2057,
-          2071
+          2183
         ],
         [
           1440,
-          2427
+          2567
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -6037,9 +6002,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 122,
-      "temp_id": 155,
-      "size": "-617*356",
+      "parent": 121,
+      "temp_id": 154,
+      "size": "-617*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -6060,11 +6025,11 @@
       "bounds": [
         [
           2263,
-          2071
+          2183
         ],
         [
           1440,
-          2427
+          2567
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -6074,9 +6039,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 122,
-      "temp_id": 156,
-      "size": "-823*356",
+      "parent": 121,
+      "temp_id": 155,
+      "size": "-823*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -6097,11 +6062,11 @@
       "bounds": [
         [
           2469,
-          2071
+          2183
         ],
         [
           1440,
-          2427
+          2567
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -6111,9 +6076,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 122,
-      "temp_id": 157,
-      "size": "-1029*356",
+      "parent": 121,
+      "temp_id": 156,
+      "size": "-1029*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -6134,11 +6099,11 @@
       "bounds": [
         [
           2674,
-          2071
+          2183
         ],
         [
           1440,
-          2427
+          2567
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -6148,9 +6113,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 122,
-      "temp_id": 158,
-      "size": "-1234*356",
+      "parent": 121,
+      "temp_id": 157,
+      "size": "-1234*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -6171,11 +6136,11 @@
       "bounds": [
         [
           1440,
-          2428
+          2568
         ],
         [
           1440,
-          2784
+          2952
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -6185,9 +6150,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 122,
-      "temp_id": 159,
-      "size": "0*356",
+      "parent": 121,
+      "temp_id": 158,
+      "size": "0*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -6208,11 +6173,11 @@
       "bounds": [
         [
           1646,
-          2428
+          2568
         ],
         [
           1440,
-          2784
+          2952
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -6222,9 +6187,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 122,
-      "temp_id": 160,
-      "size": "-206*356",
+      "parent": 121,
+      "temp_id": 159,
+      "size": "-206*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -6245,11 +6210,11 @@
       "bounds": [
         [
           1851,
-          2428
+          2568
         ],
         [
           1440,
-          2784
+          2952
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -6259,9 +6224,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 122,
-      "temp_id": 161,
-      "size": "-411*356",
+      "parent": 121,
+      "temp_id": 160,
+      "size": "-411*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -6282,11 +6247,11 @@
       "bounds": [
         [
           2057,
-          2428
+          2568
         ],
         [
           1440,
-          2784
+          2952
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -6296,9 +6261,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 122,
-      "temp_id": 162,
-      "size": "-617*356",
+      "parent": 121,
+      "temp_id": 161,
+      "size": "-617*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -6319,11 +6284,11 @@
       "bounds": [
         [
           2263,
-          2428
+          2568
         ],
         [
           1440,
-          2784
+          2952
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -6333,9 +6298,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 122,
-      "temp_id": 163,
-      "size": "-823*356",
+      "parent": 121,
+      "temp_id": 162,
+      "size": "-823*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -6356,11 +6321,11 @@
       "bounds": [
         [
           2469,
-          2428
+          2568
         ],
         [
           1440,
-          2784
+          2952
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -6370,9 +6335,9 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 122,
-      "temp_id": 164,
-      "size": "-1029*356",
+      "parent": 121,
+      "temp_id": 163,
+      "size": "-1029*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
@@ -6393,11 +6358,11 @@
       "bounds": [
         [
           2674,
-          2428
+          2568
         ],
         [
           1440,
-          2784
+          2952
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/month_view_background",
@@ -6407,123 +6372,12 @@
       "scrollable": false,
       "selected": false,
       "long_clickable": false,
-      "parent": 122,
-      "temp_id": 165,
-      "size": "-1234*356",
+      "parent": 121,
+      "temp_id": 164,
+      "size": "-1234*384",
       "signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background[text]None[enabled,,]",
       "view_str": "4508d467e4cb8f44079f8c91638f6d81",
       "content_free_signature": "[class]android.view.View[resource_id]com.simplemobiletools.calendar.pro:id/month_view_background"
-    },
-    {
-      "package": "com.simplemobiletools.calendar.pro",
-      "visible": true,
-      "checkable": false,
-      "child_count": 0,
-      "editable": false,
-      "clickable": true,
-      "is_password": false,
-      "focusable": true,
-      "enabled": true,
-      "content_description": null,
-      "children": [],
-      "focused": false,
-      "bounds": [
-        [
-          998,
-          2350
-        ],
-        [
-          1188,
-          2463
-        ]
-      ],
-      "resource_id": "com.simplemobiletools.calendar.pro:id/fab_task_label",
-      "checked": false,
-      "text": "Task",
-      "class": "android.widget.TextView",
-      "scrollable": false,
-      "selected": false,
-      "long_clickable": false,
-      "parent": 17,
-      "temp_id": 166,
-      "size": "190*113",
-      "signature": "[class]android.widget.TextView[resource_id]com.simplemobiletools.calendar.pro:id/fab_task_label[text]Task[enabled,,]",
-      "view_str": "7272e0be759313f572736635bed75d56",
-      "content_free_signature": "[class]android.widget.TextView[resource_id]com.simplemobiletools.calendar.pro:id/fab_task_label"
-    },
-    {
-      "package": "com.simplemobiletools.calendar.pro",
-      "visible": true,
-      "checkable": false,
-      "child_count": 0,
-      "editable": false,
-      "clickable": true,
-      "is_password": false,
-      "focusable": true,
-      "enabled": true,
-      "content_description": null,
-      "children": [],
-      "focused": false,
-      "bounds": [
-        [
-          1216,
-          2336
-        ],
-        [
-          1356,
-          2476
-        ]
-      ],
-      "resource_id": "com.simplemobiletools.calendar.pro:id/fab_task_icon",
-      "checked": false,
-      "text": null,
-      "class": "android.widget.ImageView",
-      "scrollable": false,
-      "selected": false,
-      "long_clickable": false,
-      "parent": 17,
-      "temp_id": 167,
-      "size": "140*140",
-      "signature": "[class]android.widget.ImageView[resource_id]com.simplemobiletools.calendar.pro:id/fab_task_icon[text]None[enabled,,]",
-      "view_str": "e2cc2d55a8f8e8c2b1ae4cd1cc1467a6",
-      "content_free_signature": "[class]android.widget.ImageView[resource_id]com.simplemobiletools.calendar.pro:id/fab_task_icon"
-    },
-    {
-      "package": "com.simplemobiletools.calendar.pro",
-      "visible": true,
-      "checkable": false,
-      "child_count": 0,
-      "editable": false,
-      "clickable": true,
-      "is_password": false,
-      "focusable": true,
-      "enabled": true,
-      "content_description": null,
-      "children": [],
-      "focused": false,
-      "bounds": [
-        [
-          977,
-          2574
-        ],
-        [
-          1188,
-          2687
-        ]
-      ],
-      "resource_id": "com.simplemobiletools.calendar.pro:id/fab_event_label",
-      "checked": false,
-      "text": "Event",
-      "class": "android.widget.TextView",
-      "scrollable": false,
-      "selected": false,
-      "long_clickable": false,
-      "parent": 17,
-      "temp_id": 168,
-      "size": "211*113",
-      "signature": "[class]android.widget.TextView[resource_id]com.simplemobiletools.calendar.pro:id/fab_event_label[text]Event[enabled,,]",
-      "view_str": "a7d6f087804db5678d23d268879a4440",
-      "content_free_signature": "[class]android.widget.TextView[resource_id]com.simplemobiletools.calendar.pro:id/fab_event_label"
     },
     {
       "package": "com.simplemobiletools.calendar.pro",
@@ -6541,11 +6395,11 @@
       "bounds": [
         [
           1188,
-          2532
+          2700
         ],
         [
           1384,
-          2728
+          2896
         ]
       ],
       "resource_id": "com.simplemobiletools.calendar.pro:id/calendar_fab",
@@ -6556,7 +6410,7 @@
       "selected": false,
       "long_clickable": false,
       "parent": 17,
-      "temp_id": 169,
+      "temp_id": 165,
       "size": "196*196",
       "signature": "[class]android.widget.ImageButton[resource_id]com.simplemobiletools.calendar.pro:id/calendar_fab[text]None[enabled,,]",
       "view_str": "2edde7db0f2ee6d2c9fd7a5cf59160ef",
@@ -6564,26 +6418,21 @@
     },
     {
       "package": "com.simplemobiletools.calendar.pro",
-      "visible": true,
+      "visible": false,
       "checkable": false,
-      "child_count": 4,
+      "child_count": 0,
       "editable": false,
       "clickable": false,
       "is_password": false,
       "focusable": true,
       "enabled": true,
       "content_description": null,
-      "children": [
-        171,
-        174,
-        177,
-        180
-      ],
+      "children": [],
       "focused": false,
       "bounds": [
         [
           0,
-          2784
+          2952
         ],
         [
           1440,
@@ -6598,467 +6447,11 @@
       "selected": false,
       "long_clickable": false,
       "parent": 17,
-      "temp_id": 170,
-      "size": "1440*168",
+      "temp_id": 166,
+      "size": "1440*0",
       "signature": "[class]androidx.recyclerview.widget.RecyclerView[resource_id]com.simplemobiletools.calendar.pro:id/quick_event_type_filter[text]None[enabled,,]",
-      "view_str": "9bc4d8acede960f7f63736c94cd54259",
+      "view_str": "e2c18b8e71e298d332edadff02087f3c",
       "content_free_signature": "[class]androidx.recyclerview.widget.RecyclerView[resource_id]com.simplemobiletools.calendar.pro:id/quick_event_type_filter"
-    },
-    {
-      "package": "com.simplemobiletools.calendar.pro",
-      "visible": true,
-      "checkable": false,
-      "child_count": 2,
-      "editable": false,
-      "clickable": false,
-      "is_password": false,
-      "focusable": false,
-      "enabled": true,
-      "content_description": null,
-      "children": [
-        172,
-        173
-      ],
-      "focused": false,
-      "bounds": [
-        [
-          0,
-          2784
-        ],
-        [
-          360,
-          2952
-        ]
-      ],
-      "resource_id": "com.simplemobiletools.calendar.pro:id/quick_filter_event_type_holder",
-      "checked": false,
-      "text": null,
-      "class": "android.widget.RelativeLayout",
-      "scrollable": false,
-      "selected": false,
-      "long_clickable": false,
-      "parent": 170,
-      "temp_id": 171,
-      "size": "360*168",
-      "signature": "[class]android.widget.RelativeLayout[resource_id]com.simplemobiletools.calendar.pro:id/quick_filter_event_type_holder[text]None[enabled,,]",
-      "view_str": "5e7c34911ccd6253b7354ae550ae0d69",
-      "content_free_signature": "[class]android.widget.RelativeLayout[resource_id]com.simplemobiletools.calendar.pro:id/quick_filter_event_type_holder"
-    },
-    {
-      "package": "com.simplemobiletools.calendar.pro",
-      "visible": true,
-      "checkable": false,
-      "child_count": 0,
-      "editable": false,
-      "clickable": true,
-      "is_password": false,
-      "focusable": true,
-      "enabled": true,
-      "content_description": null,
-      "children": [],
-      "focused": false,
-      "bounds": [
-        [
-          0,
-          2784
-        ],
-        [
-          360,
-          2952
-        ]
-      ],
-      "resource_id": "com.simplemobiletools.calendar.pro:id/quick_filter_event_type",
-      "checked": false,
-      "text": "Anniversaries",
-      "class": "android.widget.Button",
-      "scrollable": false,
-      "selected": false,
-      "long_clickable": false,
-      "parent": 171,
-      "temp_id": 172,
-      "size": "360*168",
-      "signature": "[class]android.widget.Button[resource_id]com.simplemobiletools.calendar.pro:id/quick_filter_event_type[text]Anniversaries[enabled,,]",
-      "view_str": "bf503dbe3bea87fc690a3f80f9fffd08",
-      "content_free_signature": "[class]android.widget.Button[resource_id]com.simplemobiletools.calendar.pro:id/quick_filter_event_type"
-    },
-    {
-      "package": "com.simplemobiletools.calendar.pro",
-      "visible": true,
-      "checkable": false,
-      "child_count": 0,
-      "editable": false,
-      "clickable": false,
-      "is_password": false,
-      "focusable": false,
-      "enabled": true,
-      "content_description": null,
-      "children": [],
-      "focused": false,
-      "bounds": [
-        [
-          0,
-          2931
-        ],
-        [
-          360,
-          2952
-        ]
-      ],
-      "resource_id": "com.simplemobiletools.calendar.pro:id/quick_filter_event_type_color",
-      "checked": false,
-      "text": null,
-      "class": "android.widget.ImageView",
-      "scrollable": false,
-      "selected": false,
-      "long_clickable": false,
-      "parent": 171,
-      "temp_id": 173,
-      "size": "360*21",
-      "signature": "[class]android.widget.ImageView[resource_id]com.simplemobiletools.calendar.pro:id/quick_filter_event_type_color[text]None[enabled,,]",
-      "view_str": "6f0f2f3a76ed90b6d3c3951204c3f343",
-      "content_free_signature": "[class]android.widget.ImageView[resource_id]com.simplemobiletools.calendar.pro:id/quick_filter_event_type_color"
-    },
-    {
-      "package": "com.simplemobiletools.calendar.pro",
-      "visible": true,
-      "checkable": false,
-      "child_count": 2,
-      "editable": false,
-      "clickable": false,
-      "is_password": false,
-      "focusable": false,
-      "enabled": true,
-      "content_description": null,
-      "children": [
-        175,
-        176
-      ],
-      "focused": false,
-      "bounds": [
-        [
-          360,
-          2784
-        ],
-        [
-          720,
-          2952
-        ]
-      ],
-      "resource_id": "com.simplemobiletools.calendar.pro:id/quick_filter_event_type_holder",
-      "checked": false,
-      "text": null,
-      "class": "android.widget.RelativeLayout",
-      "scrollable": false,
-      "selected": false,
-      "long_clickable": false,
-      "parent": 170,
-      "temp_id": 174,
-      "size": "360*168",
-      "signature": "[class]android.widget.RelativeLayout[resource_id]com.simplemobiletools.calendar.pro:id/quick_filter_event_type_holder[text]None[enabled,,]",
-      "view_str": "d1aa14bde18bf706b144c41cdf26b1e6",
-      "content_free_signature": "[class]android.widget.RelativeLayout[resource_id]com.simplemobiletools.calendar.pro:id/quick_filter_event_type_holder"
-    },
-    {
-      "package": "com.simplemobiletools.calendar.pro",
-      "visible": true,
-      "checkable": false,
-      "child_count": 0,
-      "editable": false,
-      "clickable": true,
-      "is_password": false,
-      "focusable": true,
-      "enabled": true,
-      "content_description": null,
-      "children": [],
-      "focused": false,
-      "bounds": [
-        [
-          360,
-          2784
-        ],
-        [
-          720,
-          2952
-        ]
-      ],
-      "resource_id": "com.simplemobiletools.calendar.pro:id/quick_filter_event_type",
-      "checked": false,
-      "text": "Birthdays",
-      "class": "android.widget.Button",
-      "scrollable": false,
-      "selected": false,
-      "long_clickable": false,
-      "parent": 174,
-      "temp_id": 175,
-      "size": "360*168",
-      "signature": "[class]android.widget.Button[resource_id]com.simplemobiletools.calendar.pro:id/quick_filter_event_type[text]Birthdays[enabled,,]",
-      "view_str": "e4b47227bef6d05da445f60d2e2befeb",
-      "content_free_signature": "[class]android.widget.Button[resource_id]com.simplemobiletools.calendar.pro:id/quick_filter_event_type"
-    },
-    {
-      "package": "com.simplemobiletools.calendar.pro",
-      "visible": true,
-      "checkable": false,
-      "child_count": 0,
-      "editable": false,
-      "clickable": false,
-      "is_password": false,
-      "focusable": false,
-      "enabled": true,
-      "content_description": null,
-      "children": [],
-      "focused": false,
-      "bounds": [
-        [
-          360,
-          2931
-        ],
-        [
-          720,
-          2952
-        ]
-      ],
-      "resource_id": "com.simplemobiletools.calendar.pro:id/quick_filter_event_type_color",
-      "checked": false,
-      "text": null,
-      "class": "android.widget.ImageView",
-      "scrollable": false,
-      "selected": false,
-      "long_clickable": false,
-      "parent": 174,
-      "temp_id": 176,
-      "size": "360*21",
-      "signature": "[class]android.widget.ImageView[resource_id]com.simplemobiletools.calendar.pro:id/quick_filter_event_type_color[text]None[enabled,,]",
-      "view_str": "6f0f2f3a76ed90b6d3c3951204c3f343",
-      "content_free_signature": "[class]android.widget.ImageView[resource_id]com.simplemobiletools.calendar.pro:id/quick_filter_event_type_color"
-    },
-    {
-      "package": "com.simplemobiletools.calendar.pro",
-      "visible": true,
-      "checkable": false,
-      "child_count": 2,
-      "editable": false,
-      "clickable": false,
-      "is_password": false,
-      "focusable": false,
-      "enabled": true,
-      "content_description": null,
-      "children": [
-        178,
-        179
-      ],
-      "focused": false,
-      "bounds": [
-        [
-          720,
-          2784
-        ],
-        [
-          1080,
-          2952
-        ]
-      ],
-      "resource_id": "com.simplemobiletools.calendar.pro:id/quick_filter_event_type_holder",
-      "checked": false,
-      "text": null,
-      "class": "android.widget.RelativeLayout",
-      "scrollable": false,
-      "selected": false,
-      "long_clickable": false,
-      "parent": 170,
-      "temp_id": 177,
-      "size": "360*168",
-      "signature": "[class]android.widget.RelativeLayout[resource_id]com.simplemobiletools.calendar.pro:id/quick_filter_event_type_holder[text]None[enabled,,]",
-      "view_str": "008880bb6983f71884f4c9a5db022d11",
-      "content_free_signature": "[class]android.widget.RelativeLayout[resource_id]com.simplemobiletools.calendar.pro:id/quick_filter_event_type_holder"
-    },
-    {
-      "package": "com.simplemobiletools.calendar.pro",
-      "visible": true,
-      "checkable": false,
-      "child_count": 0,
-      "editable": false,
-      "clickable": true,
-      "is_password": false,
-      "focusable": true,
-      "enabled": true,
-      "content_description": null,
-      "children": [],
-      "focused": false,
-      "bounds": [
-        [
-          720,
-          2784
-        ],
-        [
-          1080,
-          2952
-        ]
-      ],
-      "resource_id": "com.simplemobiletools.calendar.pro:id/quick_filter_event_type",
-      "checked": false,
-      "text": "Holidays",
-      "class": "android.widget.Button",
-      "scrollable": false,
-      "selected": false,
-      "long_clickable": false,
-      "parent": 177,
-      "temp_id": 178,
-      "size": "360*168",
-      "signature": "[class]android.widget.Button[resource_id]com.simplemobiletools.calendar.pro:id/quick_filter_event_type[text]Holidays[enabled,,]",
-      "view_str": "0872fe94142a1cd08fbb25cc1824dc25",
-      "content_free_signature": "[class]android.widget.Button[resource_id]com.simplemobiletools.calendar.pro:id/quick_filter_event_type"
-    },
-    {
-      "package": "com.simplemobiletools.calendar.pro",
-      "visible": true,
-      "checkable": false,
-      "child_count": 0,
-      "editable": false,
-      "clickable": false,
-      "is_password": false,
-      "focusable": false,
-      "enabled": true,
-      "content_description": null,
-      "children": [],
-      "focused": false,
-      "bounds": [
-        [
-          720,
-          2931
-        ],
-        [
-          1080,
-          2952
-        ]
-      ],
-      "resource_id": "com.simplemobiletools.calendar.pro:id/quick_filter_event_type_color",
-      "checked": false,
-      "text": null,
-      "class": "android.widget.ImageView",
-      "scrollable": false,
-      "selected": false,
-      "long_clickable": false,
-      "parent": 177,
-      "temp_id": 179,
-      "size": "360*21",
-      "signature": "[class]android.widget.ImageView[resource_id]com.simplemobiletools.calendar.pro:id/quick_filter_event_type_color[text]None[enabled,,]",
-      "view_str": "6f0f2f3a76ed90b6d3c3951204c3f343",
-      "content_free_signature": "[class]android.widget.ImageView[resource_id]com.simplemobiletools.calendar.pro:id/quick_filter_event_type_color"
-    },
-    {
-      "package": "com.simplemobiletools.calendar.pro",
-      "visible": true,
-      "checkable": false,
-      "child_count": 2,
-      "editable": false,
-      "clickable": false,
-      "is_password": false,
-      "focusable": false,
-      "enabled": true,
-      "content_description": null,
-      "children": [
-        181,
-        182
-      ],
-      "focused": false,
-      "bounds": [
-        [
-          1080,
-          2784
-        ],
-        [
-          1440,
-          2952
-        ]
-      ],
-      "resource_id": "com.simplemobiletools.calendar.pro:id/quick_filter_event_type_holder",
-      "checked": false,
-      "text": null,
-      "class": "android.widget.RelativeLayout",
-      "scrollable": false,
-      "selected": false,
-      "long_clickable": false,
-      "parent": 170,
-      "temp_id": 180,
-      "size": "360*168",
-      "signature": "[class]android.widget.RelativeLayout[resource_id]com.simplemobiletools.calendar.pro:id/quick_filter_event_type_holder[text]None[enabled,,]",
-      "view_str": "07da58b965aa8c3529f5b9c24ec4d5b9",
-      "content_free_signature": "[class]android.widget.RelativeLayout[resource_id]com.simplemobiletools.calendar.pro:id/quick_filter_event_type_holder"
-    },
-    {
-      "package": "com.simplemobiletools.calendar.pro",
-      "visible": true,
-      "checkable": false,
-      "child_count": 0,
-      "editable": false,
-      "clickable": true,
-      "is_password": false,
-      "focusable": true,
-      "enabled": true,
-      "content_description": null,
-      "children": [],
-      "focused": false,
-      "bounds": [
-        [
-          1080,
-          2784
-        ],
-        [
-          1440,
-          2952
-        ]
-      ],
-      "resource_id": "com.simplemobiletools.calendar.pro:id/quick_filter_event_type",
-      "checked": false,
-      "text": "Regular event",
-      "class": "android.widget.Button",
-      "scrollable": false,
-      "selected": false,
-      "long_clickable": false,
-      "parent": 180,
-      "temp_id": 181,
-      "size": "360*168",
-      "signature": "[class]android.widget.Button[resource_id]com.simplemobiletools.calendar.pro:id/quick_filter_event_type[text]Regular event[enabled,,]",
-      "view_str": "e944a01ff5377ce098d62cd7bcd92b75",
-      "content_free_signature": "[class]android.widget.Button[resource_id]com.simplemobiletools.calendar.pro:id/quick_filter_event_type"
-    },
-    {
-      "package": "com.simplemobiletools.calendar.pro",
-      "visible": true,
-      "checkable": false,
-      "child_count": 0,
-      "editable": false,
-      "clickable": false,
-      "is_password": false,
-      "focusable": false,
-      "enabled": true,
-      "content_description": null,
-      "children": [],
-      "focused": false,
-      "bounds": [
-        [
-          1080,
-          2931
-        ],
-        [
-          1440,
-          2952
-        ]
-      ],
-      "resource_id": "com.simplemobiletools.calendar.pro:id/quick_filter_event_type_color",
-      "checked": false,
-      "text": null,
-      "class": "android.widget.ImageView",
-      "scrollable": false,
-      "selected": false,
-      "long_clickable": false,
-      "parent": 180,
-      "temp_id": 182,
-      "size": "360*21",
-      "signature": "[class]android.widget.ImageView[resource_id]com.simplemobiletools.calendar.pro:id/quick_filter_event_type_color[text]None[enabled,,]",
-      "view_str": "6f0f2f3a76ed90b6d3c3951204c3f343",
-      "content_free_signature": "[class]android.widget.ImageView[resource_id]com.simplemobiletools.calendar.pro:id/quick_filter_event_type_color"
     },
     {
       "package": "com.simplemobiletools.calendar.pro",
@@ -7091,7 +6484,7 @@
       "selected": false,
       "long_clickable": false,
       "parent": 0,
-      "temp_id": 183,
+      "temp_id": 167,
       "size": "1440*136",
       "signature": "[class]android.view.View[resource_id]android:id/statusBarBackground[text]None[enabled,,]",
       "view_str": "7d6adc0f9dec45fb1a4b814e25673be1",
@@ -7128,7 +6521,7 @@
       "selected": false,
       "long_clickable": false,
       "parent": 0,
-      "temp_id": 184,
+      "temp_id": 168,
       "size": "1440*168",
       "signature": "[class]android.view.View[resource_id]android:id/navigationBarBackground[text]None[enabled,,]",
       "view_str": "681250168f4c37c7fd878046cc1f1765",
